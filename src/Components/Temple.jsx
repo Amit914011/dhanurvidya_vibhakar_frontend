@@ -29,7 +29,7 @@ export default function Temple() {
           <table className="table-auto border border-gray-400 w-full">
             <thead>
               <tr className=" font-bold text-black text-xl">
-                <th className="border border-gray-400 px-4 py-2 ">Days</th>
+                <th className="border border-gray-400 px-4 py-2 ">Dayss</th>
                 <th className="border border-gray-400 px-4 py-2">Temple Darshan Session</th>
                 <th className="border border-gray-400 px-4 py-2">Timings</th>
               </tr>
