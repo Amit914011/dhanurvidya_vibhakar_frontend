@@ -18,7 +18,6 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
-
 const Septvidya = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,50 +62,47 @@ const Septvidya = () => {
 
   return (
     <section
-      className="relative w-full h-screen bg-cover bg-center flex flex-row-reverse items-center overflow-hidden"
+      className="relative w-full min-h-screen bg-cover bg-center flex flex-col md:flex-row items-center overflow-hidden"
       style={{ backgroundImage: `url(${newbg})` }}
     >
       {/* Right Section with Carousel */}
-      <div className="relative w-full md:w-3/5 lg:w-3/4 mb-8 overflow-hidden py- mt-56 mr-10 h-full rounded-lg">
-          <Swiper
-            modules={[Autoplay, Pagination]} 
-            spaceBetween={30}
-            slidesPerView={1}
-            breakpoints={{
-              768: { slidesPerView: 2 }, // 2 cards on tablet and larger screens
-            }}
-            autoplay={{ delay: 3000 }}
-            pagination={{ clickable: true }}
-            loop={true}
-            className="w-full"
-          >
-            {cards.map((card, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative w-full h-80 sm:h-96 lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
-                  {/* Front side of the card */}
-                  <div
-                    className="absolute w-full h-full transition-opacity duration-500"
-                    style={{
-                      backgroundImage: `url(${card.image})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center'
-                    }}
-                  >
-                    
-                  </div>
+      <div className="relative w-full md:w-3/5 lg:w-3/4 mb-8 overflow-hidden py-8 mt-20 md:mt-56 mr-10 h-full rounded-lg">
+        <Swiper
+          modules={[Autoplay, Pagination]} 
+          spaceBetween={30}
+          slidesPerView={1}
+          breakpoints={{
+            768: { slidesPerView: 2 }, // 2 cards on tablet and larger screens
+            1024: { slidesPerView: 3 }, // 3 cards on desktop
+          }}
+          autoplay={{ delay: 3000 }}
+          pagination={{ clickable: true }}
+          loop={true}
+          className="w-full"
+        >
+          {cards.map((card, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative w-full h-80 sm:h-96 lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
+                {/* Front side of the card */}
+                <div
+                  className="absolute w-full h-full transition-opacity duration-500"
+                  style={{
+                    backgroundImage: `url(${card.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                >
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          
-        </div>
-
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
       {/* Left Section with Icons and Text */}
-      <div className="w-1/2 md:w-2/5 p-8 text-gray-500  fade-in ">
-        <h1 className="ml-20 text-3xl font-bold animate-pulse text-yellow-800 ">Sapt Vidya</h1>
-        <div className="grid grid-cols-2 gap-8 mt-8">
+      <div className="w-full md:w-2/5 p-8 text-gray-500 fade-in">
+        <h1 className="ml-0 md:ml-20 text-3xl font-bold animate-pulse text-yellow-800 ">Sapt Vidya</h1>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-8">
           {/* First Section with 3 Icons */}
           <div className="flex flex-col items-start mt-6">
             {/* Icon 1 */}
@@ -117,51 +113,49 @@ const Septvidya = () => {
               <h1 className="text-[15px] font-bold mt-2">DHANUR VIDYA</h1>
               <p className="mt-2 text-[13px] w-32">The ancient art of archery</p>
             </div>
-            {/* Repeat for other icons */}
             {/* Icon 2 */}
             <div className="flex flex-col items-start group mt-10">
               <div className="w-16 h-16">
-                <img src={KUNTHA_VIDYA} alt="Dhanur Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                <img src={KUNTHA_VIDYA} alt="Kuntha Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
               </div>
               <h1 className="text-[15px] font-bold mt-2">KUNTHA VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">the ancient art of spear</p>
+              <p className="mt-2 text-[13px] w-32">The ancient art of spear</p>
             </div>
             {/* Icon 3 */}
             <div className="flex flex-col items-start group mt-6 ">
               <div className="w-16 h-16">
-                <img src={BAHU_VIDYA} alt="Dhanur Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                <img src={BAHU_VIDYA} alt="Bahuv Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
               </div>
               <h1 className="text-[15px] font-bold mt-z">BAHU VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">the ancient art of sword welding</p>
+              <p className="mt-2 text-[13px] w-32">The ancient art of sword welding</p>
             </div>
           </div>
 
           {/* Second Section with 3 Icons */}
-          <div className="flex flex-col items-start space-y-">
+          <div className="flex flex-col items-start space-y-4">
             {/* Icon 1 */}
             <div className="flex flex-col items-start group">
               <div className="w-16 h-15">
-                <img src={KSHURIKA_VIDYA} alt="Dhanur Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                <img src={KSHURIKA_VIDYA} alt="Kshurika Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
               </div>
               <h1 className="text-[15px] font-bold mt-2">KSHURIKA VIDYA</h1>
               <p className="mt-2 text-[13px] w-32">The art of self defense</p>
             </div>
-            {/* Repeat for other icons */}
             {/* Icon 2 */}
             <div className="flex flex-col items-start group mt-4">
               <div className="w-16 h-16">
-                <img src={GADA_VIDYA} alt="Dhanur Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                <img src={GADA_VIDYA} alt="Gada Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
               </div>
               <h1 className="text-[15px] font-bold mt-9">GADA VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">the ancient art of mace</p>
+              <p className="mt-2 text-[13px] w-32">The ancient art of mace</p>
             </div>
             {/* Icon 3 */}
             <div className="flex flex-col items-start group mt-4">
               <div className="w-16 h-16">
-                <img src={CHAKRA_VIDYA} alt="Dhanur Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                <img src={CHAKRA_VIDYA} alt="Chakra Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
               </div>
-              <h1 className="text-[15px] font-bold mt-2">CHAKRA VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">The ancient art of disc</p>
+              <h1 className="text-[15px] font-bold mt-9">CHAKRA VIDYA</h1>
+              <p className="mt-2 text-[13px] w-32">The art of wheel throwing</p>
             </div>
           </div>
         </div>

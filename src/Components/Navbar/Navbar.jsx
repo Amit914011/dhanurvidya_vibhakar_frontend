@@ -53,7 +53,7 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="previous-live-draw" className="block">
+                      <Link to="/up" className="block">
                         Upcoming projects
                       </Link>
                     </li>
@@ -137,7 +137,7 @@ export default function Navbar() {
                   </Link>
                   <ul className="sumenu">
                     <li>
-                      <Link to="/support" className="block">
+                      <Link to="/origin" className="block">
                         Origin
                       </Link>
                     </li>
@@ -147,29 +147,29 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/support" className="block">
+                      <Link to="/khadagvidya" className="block">
                         Khadgavidya
                       </Link>
                     </li>
                     <li>
-                      <Link to="/fraud-awareness" className="block">
+                      <Link to="/gadavidya" className="block">
                         Gadavidya
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="/community">
+                  <Link to="/course">
                     Courses <IoMdArrowDropdown className="inline icon" />
                   </Link>
                   <ul className="sumenu">
                     <li>
-                      <Link to="/support" className="block">
+                      <Link to="/threedays" className="block">
                         3 Days Camp
                       </Link>
                     </li>
                     <li>
-                      <Link to="/support" className="block">
+                      <Link to="/fivedays" className="block">
                         5 Days Camp
                       </Link>
                     </li>
@@ -186,7 +186,7 @@ export default function Navbar() {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/community">
+                  <Link to="/gurukulam">
                     Gurukulam <IoMdArrowDropdown className="inline icon" />
                   </Link>
                   <ul className="sumenu">
@@ -198,16 +198,16 @@ export default function Navbar() {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/community">
-                    Tempale <IoMdArrowDropdown className="inline icon" />
+                  <Link to="/temple">
+                    Temple <IoMdArrowDropdown className="inline icon" />
                   </Link>
-                  <ul className="sumenu">
+                  {/* <ul className="sumenu">
                     <li>
                       <Link to="/support" className="block">
                         Tirupati
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li>
                   <Link to="/community">
@@ -215,8 +215,8 @@ export default function Navbar() {
                   </Link>
                   <ul className="sumenu">
                     <li>
-                      <Link to="/support" className="block">
-                        Volunteer
+                      <Link to="/volenteer" className="block">
+                        Valentier
                       </Link>
                     </li>
                     <li>
@@ -225,7 +225,7 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/support" className="block">
+                      <Link to="/career" className="block">
                         Careers
                       </Link>
                     </li>
@@ -235,7 +235,7 @@ export default function Navbar() {
                   <Link to="/blog">Events</Link>
                 </li>
                 <li>
-                  <Link to="/about-us" className="block">
+                  <Link to="/contact" className="block">
                     Contact
                   </Link>
                 </li>

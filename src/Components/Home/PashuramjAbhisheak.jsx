@@ -21,8 +21,8 @@ const PashuramjAbhisheak = () => {
     { id: 3, image: pic3, title: "Card 3 Title", location: "Location 3", description: "Back side content for Card 3" },
     { id: 4, image: pic4, title: "Card 4 Title", location: "Location 4", description: "Back side content for Card 4" },
     { id: 5, image: pic5, title: "Card 5 Title", location: "Location 5", description: "Back side content for Card 5" },
-    { id: 6, image: pic6, title: "Card 6 Title", location: "Location 6", description: "Back side content for Card 6" },
-  ];
+    { id: 6, image: pic6, title: "Card 6 Title", location: "Location 6", description: "Back side content for Card 6" },
+  ];
 
   return (
     <div className="bg-cover bg-center text-black" style={{ backgroundImage: `url(${bgImage})` }}>
@@ -32,10 +32,9 @@ const PashuramjAbhisheak = () => {
           Pashuram Abhishekam
         </h1>
       </div>
-
       {/* Swiper Section */}
       <Swiper
-        modules={[Pagination, Autoplay]} 
+        modules={[Pagination, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         pagination={{
@@ -45,15 +44,13 @@ const PashuramjAbhisheak = () => {
         }}
         autoplay={{ delay: 3000 }}
         loop={true}
-        className="mb-12"
-      >
+        className="mb-12">
         {[image7, image2].map((image, index) => (
           <SwiperSlide key={index}>
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-[450px] object-cover sm:h-[300px] md:h-[400px] lg:h-[450px]"
-            />
+              className="w-full h-[450px] object-cover sm:h-[300px] md:h-[400px] lg:h-[450px]"/>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -72,17 +69,17 @@ const PashuramjAbhisheak = () => {
         {/* Right Section with Cards */}
         <div className="relative w-full md:w-3/5 lg:w-2/3 mb-8 overflow-hidden py- mt-1">
           <Swiper
-            modules={[Autoplay, Pagination]} 
+            modules={[Autoplay, Pagination]}
             spaceBetween={30}
             slidesPerView={1}
             breakpoints={{
               768: { slidesPerView: 2 }, // 2 cards on tablet and larger screens
+              1024: { slidesPerView: 3 }, // 3 cards on larger screens
             }}
             autoplay={{ delay: 3000 }}
             pagination={{ clickable: true }}
             loop={true}
-            className="w-full"
-          >
+            className="w-full">
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
                 <div className="relative w-full h-80 sm:h-96 lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
@@ -90,17 +87,16 @@ const PashuramjAbhisheak = () => {
                   <div
                     className="absolute w-full h-full transition-opacity duration-500"
                     style={{
-                      backgroundImage: `url(${card.image})`,
+                      backgroundImage:`url(${card.image})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
-                    }}
-                  >
+                    }}>
                     <div className="flex flex-col h-full justify-between p-4">
                       <div className="flex justify-between items-start">
                         <span className="bg-green-500 text-white px-2 py-1 text-sm">
                           OFFER ONLINE
                         </span>
-                        <div className="flex flex-col text-white rounded-lg ">
+                        <div className="flex flex-col text-white rounded-lg">
                           <ul className="text-sm leading-9">
                             <li className="bg-[#bc4034] rounded-lg px-2 mb-1">List Item 1</li>
                             <li className="bg-[#bc4034] rounded-lg px-2 mb-1">List Item 2</li>
@@ -122,16 +118,12 @@ const PashuramjAbhisheak = () => {
           </Swiper>
 
           <Link
-            to="/rituals" 
-            className="text-4xl mt-7 font-semibold bg-[#bc4034] text-white px-2 py-2 inline-block hover:bg-[#ee580c] hover:text-white transition-colors duration-300 ease-in-out"
-          >
+            to="/rituals"
+            className="text-4xl mt-7 font-semibold bg-[#bc4034] text-white px-2 py-2 inline-block hover:bg-[#ee580c] hover:text-white transition-colors duration-300 ease-in-out" >
             Explore All Rituals
           </Link>
         </div>
-        
       </div>
-
-      
     </div>
   );
 };

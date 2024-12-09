@@ -31,30 +31,29 @@ export default function Home() {
   return (
     <>
   
-    <div className=" mx-auto relative  z-[-1] pt-[70px]">
-    <Swiper
-          modules={[Pagination, Autoplay]} 
-          spaceBetween={50}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 2000 }}
-          loop={true}
-          className="mb-12"
-        >
-          {slides.map(slide => (
-            <SwiperSlide key={slide.id}>
-              <img
-                src={slide.image}
-                alt={`Slide ${slide.id}`}
-                className="w-full h-[40px] object-cover  sm:h-[300px] md:h-[400px] lg:h-[500px]"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-  
-     
+  <div className="mx-auto relative z-[-1] pt-[70px]">
+  <Swiper
+    modules={[Pagination, Autoplay]} 
+    spaceBetween={50}
+    slidesPerView={1}
+    pagination={{ clickable: true }}
+    autoplay={{ delay: 2000 }}
+    loop={true}
+    className="mb-12"
+  >
+    {slides.map(slide => (
+      <SwiperSlide key={slide.id}>
+        <img
+          src={slide.image}
+          alt={`Slide ${slide.id}`}
+          className="w-full object-cover sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px]"
+        />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
 
-      </div>
+
       <Septvidya/>
       <Camps/>
       <FAQ/>
