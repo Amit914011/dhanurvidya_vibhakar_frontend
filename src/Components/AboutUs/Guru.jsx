@@ -15,7 +15,7 @@ export default function Guru() {
 
   return (
     <>
-      <div className='pt-20 w-full'>
+      <div className='pt-14  w-full'>
         <img src={guru} alt="" className='w-full'/>   
       </div>
       <div className="flex justify-center items-center mt-10">

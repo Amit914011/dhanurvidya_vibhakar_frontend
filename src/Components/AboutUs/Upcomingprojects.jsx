@@ -15,7 +15,7 @@ import tirupati1 from '../../assets/tirupati.png'
 
 export default function Upcomingprojects() {
   return (
-    <div className="w-full pt-20">
+    <div className="w-full pt-14">
       <div className="w-full">
         <img 
           src={img} 
@@ -26,13 +26,13 @@ export default function Upcomingprojects() {
   <img 
     src={project} 
     alt="Project" 
-    className="w-500 h-500 object-cover" />
+    className="w-[500px] object-cover" />
 </div>
-<div className="flex justify-center items-center w-full">
+<div className="flex justify-center items-center w-full px-3">
   <img 
     src={projectss} 
     alt="Project" 
-    className="w-full max-w-[800px] h-auto object-cover rounded-md"
+    className="w-full  h-auto object-cover rounded-md"
   />
 </div>
 
