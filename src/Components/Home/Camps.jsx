@@ -99,61 +99,61 @@ const Camps = () => {
     
     
      style={{ backgroundImage: `url(${bgImage})` }} >
-      <div className="flex justify-between w-screen">
-        <img src={logo4} alt="Logo" className="w-40 h-16 object-cover ml-28" />
-        <h1 className="text-black text-4xl font-bold mb-8 mr-96">Our Camps</h1>
+      <div className="flex flex-col items-center md:flex md:flex-row justify-evenly w-screen  md:items-start">
+        <img src={logo4} alt="Logo" className="w-40 h-16 object-cover" />
+        <h1 className="text-black text-2xl md:text-4xl font-bold mb-8">Our Camps</h1>
       </div>
 
-        <h1 className=" text-center font-bold text-4xl mt-9 text-[#800000] ">DHANURVEDA CAMP</h1>
-        <div className="flex justify-evenly py-12 space-x-6">
+        <h1 className=" text-center font-bold text-2xl md:text-4xl  text-[#800000] py-2">DHANURVEDA CAMP</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-evenly w-full gap-2 md:px-5 ">
   {/* Card 1 */}
   <motion.div
-    className="bg-white shadow-lg rounded-lg w-96 h-auto p-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col"
+    className="bg-white shadow-lg rounded-lg h-auto p-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
   >
-    <img src={pic4} alt="Camp 1" className="w-full h-48 object-cover rounded-lg" />
+    <img src={pic4} alt="Camp 1" className="w-full h-[350px]  object-cover rounded-lg" />
     <h1 className="mt-10 mb-3 text-center text-xl font-semibold text-black">Dhanurvidya's Camp</h1>
     <p className="text-gray-600 mt- text-center leading-relaxed flex-grow">
       Explore the ancient art of archery. Learn the techniques and disciplines
       that warriors once mastered to defend kingdoms.
     </p>
-    <button className="bg-gray-500 py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
+    <button className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
       Learn More
     </button>
   </motion.div>
 
   {/* Card 2 */}
   <motion.div
-    className="bg-white shadow-lg rounded-lg w-96 h-auto p-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col"
+    className="bg-white shadow-lg rounded-lg  h-auto p-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6 }}
   >
-    <img src={pic2} alt="Camp 2" className="w-full h-48 object-cover rounded-lg" />
+    <img src={pic2} alt="Camp 2" className="w-full h-[350px] object-cover rounded-lg" />
     <h1 className="mt-10 mb-3 text-center text-xl font-semibold text-black">Gada Vidya Camp</h1>
     <p className="text-gray-600  text-center leading-relaxed flex-grow">
       Dive into the practice of wielding the powerful mace, a symbol of strength and valor in ancient battles.
     </p>
-    <button className="bg-gray-500 py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
+    <button className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
       Learn More
     </button>
   </motion.div>
 
   {/* Card 3 */}
   <motion.div
-    className="bg-white shadow-lg rounded-lg w-96 h-auto p-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col"
+    className="bg-white shadow-lg rounded-lg  h-auto p-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.7 }}
   >
-    <img src={pic3} alt="Camp 3" className="w-full h-48 object-cover rounded-lg" />
+    <img src={pic3} alt="Camp 3" className="w-full h-[350px] object-cover rounded-lg" />
     <h1 className="mt-10 mb-3 text-black text-center text-xl font-semibold">Khadga Vidya Camp</h1>
     <p className="text-gray-600  text-center leading-relaxed flex-grow">
       Learn the fine art of swordsmanship, honing your skills in close combat with traditional weaponry.
     </p>
-    <button className="bg-gray-500 py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block mt-4">
+    <button className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block mt-4">
       Learn More
     </button>
   </motion.div>
@@ -167,13 +167,13 @@ const Camps = () => {
   style={{ backgroundImage: `url(${bgImage1})` }}
 >
   <div className="text-center flex flex-col gap-4 text-black">
-    <p className="text-4xl font-bold ml-4 mr-4 mt-5 text-[#800000] leading-10">
+    <p className="text-xl md:text-4xl font-bold ml-4 mr-4 md:mt-5 text-[#800000] leading-10">
       "धनुर् गृहीत्वा उपनिषदं महास्त्रं शरं ह्युपासा निशितं सन्धयीत। <br />
    <span className="">   आयम्य तद्भावगतं स्वमेतत् तत् तत्त्वमस्य लक्ष्यं सधनम् हि विद्धि॥"</span>
     </p>
   </div>
 
-  <div className="w-full md:w-3/5 mb-8 md:mb-0 overflow-hidden py-3 mt-12 mx-auto">
+  <div className="w-full mb-8 md:mb-0 overflow-hidden py-3 mt-12 mx-auto">
     <div
       className="flex transition-transform duration-500 ease-in-out"
       style={{ transform: `translateX(-${carouselIndex * (100 / visibleCards)}%)` }}

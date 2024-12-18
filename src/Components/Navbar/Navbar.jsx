@@ -13,6 +13,9 @@ export default function Navbar() {
   const [menuOpen1, setMenuOpen1] = useState(false);
   const [menuOpen2, setMenuOpen2] = useState(false);
   const [menuOpen3, setMenuOpen3] = useState(false);
+  const [menuOpen4, setMenuOpen4] = useState(false);
+  const [menuOpen5, setMenuOpen5] = useState(false);
+  
 
   return (
     <>
@@ -37,31 +40,19 @@ export default function Navbar() {
                     About Us <IoMdArrowDropdown className="inline icon" />
                   </p>
                   <ul className="sumenu">
-                    <li>
-                      <Link to="/guru" className="block">
-                        Guru
+                      {
+                        [{"title":"Guru","link":"/guru"},
+                          {"title":"Guru Sankalpa","link":"/"},
+                          {"title":" Associated centres","link":"/"},
+                          {"title":" Upcoming projects","link":"/up"},
+                          {"title":"Bhargava Upasana","link":"/"}
+                      ].map((item,index)=>(
+                     <li key={index}>
+                      <Link to={item.link} className="block">
+                        {item.title}
                       </Link>
                     </li>
-                    <li>
-                      <Link to="previous-live-draw" className="block">
-                        Guru Sankalpa
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="previous-live-draw" className="block">
-                        Associated centres
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/up" className="block">
-                        Upcoming projects
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="previous-live-draw" className="block">
-                        Bhargava Upasana
-                      </Link>
-                    </li>
+                      ))}
                   </ul>
                 </li>
                 <li>
@@ -69,120 +60,69 @@ export default function Navbar() {
                     Rituals <IoMdArrowDropdown className="inline icon" />
                   </p>
                   <ul className="sumenu">
-                    <li>
-                      <Link to="/abhi" className="block">
-                        Abhisekam
+
+                  {
+                        [{"title":"Abhisekam","link":"/abhi"},
+                          {"title":"Abhisekam","link":"/"},
+                          {"title":" Navagraha Homam / Shanti Homam","link":"/"},
+                          {"title":" Lakshmi Homam","link":"/"},
+                          {"title":"Maha Mrithyunjaya Homam","link":"/"},
+                          {"title":"Mahalakshmi Homam","link":"/"},
+                          {"title":"Sri Suktha Homam","link":"/"},
+                          {"title":"Sudarshan Homam","link":"/"},
+                          {"title":" Chandi Homam","link":"/"},
+                          {"title":" Booh Varaha Homam","link":"/"},
+                          {"title":" Saraswathi Homam","link":"/"},
+                          {"title":" Ayushya Homam","link":"/"},
+                      ].map((item,index)=>(
+                     <li key={index}>
+                      <Link to={item.link} className="block">
+                        {item.title}
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/support" className="block">
-                        Abhisekam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/support" className="block">
-                        Navagraha Homam / Shanti Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Lakshmi Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Maha Mrithyunjaya Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Mahalakshmi Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Sri Suktha Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Sudarshan Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Chandi Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Booh Varaha Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Saraswathi Homam
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        Ayushya Homam
-                      </Link>
-                    </li>
+                      ))}
+
                   </ul>
                 </li>
                 <li>
-                  <Link to="/community">
+                  <p>
                     Dhanurveda <IoMdArrowDropdown className="inline icon" />
-                  </Link>
+                  </p>
                   <ul className="sumenu">
-                    <li>
-                      <Link to="/origin" className="block">
-                        Origin
+                  {
+                        [{"title":"Origin","link":"/origin"},
+                          {"title":"Dhanurvidya","link":"/khadagvidya"},
+                          {"title":"Khadgavidya","link":"/"},
+                          {"title":" Gadavidya","link":"/gadavidya"},
+                          {"title":"Maha Mrithyunjaya Homam","link":"/"},
+                          {"title":"Mahalakshmi Homam","link":"/"},
+                      ].map((item,index)=>(
+                     <li key={index}>
+                      <Link to={item.link} className="block">
+                        {item.title}
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/dhanur" className="block">
-                        Dhanurvidya
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/khadagvidya" className="block">
-                        Khadgavidya
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/gadavidya" className="block">
-                        Gadavidya
-                      </Link>
-                    </li>
-                  </ul>
+                      ))}
+
+                    </ul>
                 </li>
                 <li>
                   <Link to="/course">
                     Courses <IoMdArrowDropdown className="inline icon" />
                   </Link>
                   <ul className="sumenu">
-                    <li>
-                      <Link to="/threedays" className="block">
-                        3 Days Camp
+                  {
+                        [{"title":"3 Days Camp","link":"/threedays"},
+                          {"title":"5 Days Camp","link":"/fivedays"},
+                          {"title":"7 Days Camp","link":"/"},
+                          {"title":" 11 Days Camp","link":"/"},
+                      ].map((item,index)=>(
+                     <li key={index}>
+                      <Link to={item.link} className="block">
+                        {item.title}
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/fivedays" className="block">
-                        5 Days Camp
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/support" className="block">
-                        7 Days Camp
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/fraud-awareness" className="block">
-                        11 Days Camp
-                      </Link>
-                    </li>
+                      ))}
                   </ul>
                 </li>
                 <li>
@@ -191,7 +131,7 @@ export default function Navbar() {
                   </Link>
                   <ul className="sumenu">
                     <li>
-                      <Link to="/support" className="block">
+                      <Link to="/" className="block">
                         Tirupati
                       </Link>
                     </li>
@@ -203,7 +143,7 @@ export default function Navbar() {
                   </Link>
                   {/* <ul className="sumenu">
                     <li>
-                      <Link to="/support" className="block">
+                      <Link to="/" className="block">
                         Tirupati
                       </Link>
                     </li>
@@ -214,25 +154,22 @@ export default function Navbar() {
                     Get Involved <IoMdArrowDropdown className="inline icon" />
                   </Link>
                   <ul className="sumenu">
-                    <li>
-                      <Link to="/volenteer" className="block">
-                        Valentier
+
+                  {
+                        [{"title":"Valentier","link":"/volenteer"},
+                          {"title":" Offer Seva","link":"/"},
+                          {"title":"Careers","link":"/"},
+                      ].map((item,index)=>(
+                     <li key={index}>
+                      <Link to={item.link} className="block">
+                        {item.title}
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/support" className="block">
-                        Offer Seva
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/career" className="block">
-                        Careers
-                      </Link>
-                    </li>
+                      ))} 
                   </ul>
                 </li>
                 <li>
-                  <Link to="/blog">Events</Link>
+                  <Link to="/">Events</Link>
                 </li>
                 <li>
                   <Link to="/contact" className="block">
@@ -244,15 +181,17 @@ export default function Navbar() {
           </div>
         </div>
 
+
+
         {/* Mobile Menu */}
-        <div className="block lg:hidden px-[20px] md:px-[50px] relative w-full overflow-hidden">
+        <div className="h-[60px] block lg:hidden px-[20px] md:px-[50px] bg-[#5E0000] w-full overflow-hidden fixed">
           <div className="flex justify-between items-center">
             <Link to="/">
-              <img src="" alt="" className="w-[100px]" />
+              <img src={logo} alt="" className="w-[100px]" />
             </Link>
             <div className="flex items-center">
               <GiHamburgerMenu
-                className="text-3xl mt-3 cursor-pointer"
+                className="text-3xl mt-3 cursor-pointer text-white"
                 onClick={() => {
                   setShow("show");
                 }}
@@ -266,118 +205,182 @@ export default function Navbar() {
         >
           <MdClose
             className="absolute top-[20px] text-2xl cursor-pointer"
-            onClick={() => {
-              setShow("");
-            }}
+            onClick={() => {setShow("");}}
           />
           <ul className="mainMobileMenu z-50">
             <li className="hover:bg-blue-50 ">
-              <Link to="#" className="block pl-2">
-                Buy Now
+              <Link to="/" className="block pl-2" onClick={() => {
+              setShow("");
+            }}>
+                Home
               </Link>
             </li>
             <li>
-              <Link to="/" className="mr-20 pl-2">
-                Play
-              </Link>
-              <IoMdArrowDropdown
-                className="inline cursor-pointer"
-                onClick={() => setMenuOpen(!menuOpen)}
-              />
-              <ul className={`${menuOpen ? "block" : "hidden"}`}>
-                <li className="hover:bg-gray-50">
-                  <Link to="/how-to-withdraw" className="pl-2">
-                    How To Withdraw
-                  </Link>
-                </li>
-                <li className="hover:bg-gray-50">
-                  <Link to="/faq" className="pl-2">
-                    FAQs
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/draw" className="mr-14 pl-2">
-                Draws
-              </Link>
-              <IoMdArrowDropdown
-                className="inline cursor-pointer"
-                onClick={() => setMenuOpen1(!menuOpen1)}
-              />
-              <ul className={`${menuOpen1 ? "block" : "hidden"}`}>
-                <li className="hover:bg-gray-50">
-                  <Link to="/previous-live-draw" className="pl-2">
-                    Previous Live Draws
-                  </Link>
-                </li>
-                <li className="hover:bg-gray-50">
-                  <Link to="/faq" className="pl-2 mr-16">
-                    Winners
-                  </Link>
-                  <IoMdArrowDropdown
-                    className="inline cursor-pointer"
-                    onClick={() => setMenuOpen3(!menuOpen3)}
-                  />
-                  <ul className={`${menuOpen3 ? "block" : "hidden"}`}>
-                    <li>
-                      <Link to="/mahzooz-millionaires" className="block ml-4">
-                        Mahzooz Millionaires Club
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/tripple" className="block pl-4">
-                        Mahazooz Triple 100 Club
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/hall-of-fame" className="block pl-4">
-                        Mahazooz Hall of Fame
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/community" className="mr-14 pl-2">
-                Community
-              </Link>
-              <IoMdArrowDropdown
-                className="inline cursor-pointer"
-                onClick={() => setMenuOpen2(!menuOpen2)}
-              />
-              <ul className={`${menuOpen2 ? "block" : "hidden"}`}>
-                <li>
-                  <Link to="/support" className="block pl-2">
-                    Supports Initiatives
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/fraud-awareness" className="block pl-2">
-                    Fraud Awareness
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/blog" className="block pl-2">
-                Latest News
-              </Link>
-            </li>
-            <li>
-              <Link to="/about-us" className="block pl-2">
+              <div className="flex justify-between " onClick={() => setMenuOpen(!menuOpen)}>
+              <p className="mr-20 pl-2"  >
                 About Us
+              </p>
+              <IoMdArrowDropdown
+                className="inline cursor-pointer"
+                
+              />
+              </div>
+              <ul className={`${menuOpen ? "block" : "hidden"}`}>
+              {
+                        [{"title":"Guru","link":"/guru"},
+                          {"title":"Guru Sankalpa","link":"/"},
+                          {"title":" Associated centres","link":"/"},
+                          {"title":" Upcoming projects","link":"/up"},
+                          {"title":"Bhargava Upasana","link":"/"}
+                      ].map((item,index)=>(
+                     <li key={index}  onClick={() => {setShow("");}}>
+                      <Link to={item.link} className="block">
+                        {item.title}
+                      </Link>
+                    </li>
+                      ))}
+              </ul>
+            </li>
+            <li>
+             <div className="flex justify-between" onClick={() => setMenuOpen1(!menuOpen1)}>
+             <p className="mr-14 pl-2" >
+                Rituals
+              </p>
+              <IoMdArrowDropdown
+                className="inline cursor-pointer"
+                
+              />
+             </div>
+              <ul className={`${menuOpen1 ? "block" : "hidden"}`}>
+              {
+                        [{"title":"Abhisekam","link":"/abhi"},
+                          {"title":"Abhisekam","link":"/"},
+                          {"title":" Navagraha Homam / Shanti Homam","link":"/"},
+                          {"title":" Lakshmi Homam","link":"/"},
+                          {"title":"Maha Mrithyunjaya Homam","link":"/"},
+                          {"title":"Mahalakshmi Homam","link":"/"},
+                          {"title":"Sri Suktha Homam","link":"/"},
+                          {"title":"Sudarshan Homam","link":"/"},
+                          {"title":" Chandi Homam","link":"/"},
+                          {"title":" Booh Varaha Homam","link":"/"},
+                          {"title":" Saraswathi Homam","link":"/"},
+                          {"title":" Ayushya Homam","link":"/"},
+                      ].map((item,index)=>(
+                     <li key={index} onClick={() => {setShow("");}}>
+                      <Link to={item.link} className="block">
+                        {item.title}
+                      </Link>
+                    </li>
+                      ))}
+                </ul>
+            </li>
+            <li>
+             <div className="flex justify-between" onClick={() => setMenuOpen2(!menuOpen2)}>
+             <p className="mr-14 pl-2" >
+                Dhanurveda
+              </p>
+              <IoMdArrowDropdown
+                className="inline cursor-pointer"
+                
+              />
+             </div>
+              <ul className={`${menuOpen2 ? "block" : "hidden"}`}>
+              {
+                        [{"title":"Origin","link":"/origin"},
+                          {"title":"Dhanurvidya","link":"/khadagvidya"},
+                          {"title":"Khadgavidya","link":"/"},
+                          {"title":" Gadavidya","link":"/gadavidya"},
+                          {"title":"Maha Mrithyunjaya Homam","link":"/"},
+                          {"title":"Mahalakshmi Homam","link":"/"},
+                      ].map((item,index)=>(
+                     <li key={index} onClick={() => {setShow("");}}>
+                      <Link to={item.link} className="block">
+                        {item.title}
+                      </Link>
+                    </li>
+                      ))}
+              </ul>
+            </li>
+            <li>
+             <div className="flex justify-between" onClick={() => setMenuOpen3(!menuOpen3)}>
+             <p className="mr-14 pl-2" >
+                Courses
+              </p>
+              <IoMdArrowDropdown
+                className="inline cursor-pointer"
+                
+              />
+             </div>
+              <ul className={`${menuOpen3 ? "block" : "hidden"}`}>
+              {
+                        [{"title":"3 Days Camp","link":"/threedays"},
+                          {"title":"5 Days Camp","link":"/fivedays"},
+                          {"title":"7 Days Camp","link":"/"},
+                          {"title":" 11 Days Camp","link":"/"},
+                      ].map((item,index)=>(
+                     <li key={index} onClick={() => {setShow("");}}>
+                      <Link to={item.link} className="block">
+                        {item.title}
+                      </Link>
+                    </li>
+                      ))}
+              </ul>
+            </li>
+            <li>
+             <div className="flex justify-between" onClick={() => setMenuOpen4(!menuOpen4)}>
+             <p className="mr-14 pl-2" >
+             Gurukulam 
+              </p>
+              <IoMdArrowDropdown
+                className="inline cursor-pointer"
+                
+              />
+             </div>
+              <ul className={`${menuOpen4 ? "block" : "hidden"}`}>
+              {
+                        [{"title":"Tirupati","link":"/threedays"},
+                         
+                      ].map((item,index)=>(
+                     <li key={index} onClick={() => {setShow("");}}>
+                      <Link to={item.link} className="block">
+                        {item.title}
+                      </Link>
+                    </li>
+                      ))}
+              </ul>
+            </li>
+            <li>
+             <div className="flex justify-between" onClick={() => setMenuOpen5(!menuOpen5)}>
+             <p className="mr-14 pl-2" >            
+Get Involved 
+              </p>
+              <IoMdArrowDropdown
+                className="inline cursor-pointer"
+                
+              />
+             </div>
+              <ul className={`${menuOpen5 ? "block" : "hidden"}`}>
+              {
+                        [{"title":"Valentier","link":"/volenteer"},
+                          {"title":" Offer Seva","link":"/"},
+                          {"title":"Careers","link":"/"},
+                      ].map((item,index)=>(
+                     <li key={index} onClick={() => {setShow("");}}>
+                      <Link to={item.link} className="block">
+                        {item.title}
+                      </Link>
+                    </li>
+                      ))}
+              </ul>
+            </li>
+            <li>
+              <Link to="/" className="block pl-2" onClick={() => {setShow("");}}>
+                Events
               </Link>
             </li>
             <li>
-              <Link to="/login" className="block pl-2">
-                Log In
-              </Link>
-            </li>
-            <li>
-              <Link to="/create-account" className="block pl-2">
-                Create Account
+              <Link to="/contact" className="block pl-2" onClick={() => {setShow("");}}>
+                Contact
               </Link>
             </li>
           </ul>

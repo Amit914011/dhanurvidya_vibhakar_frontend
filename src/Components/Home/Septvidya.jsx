@@ -62,11 +62,11 @@ const Septvidya = () => {
 
   return (
     <section
-      className="relative w-full min-h-screen bg-cover bg-center flex flex-col md:flex-row items-center overflow-hidden"
+      className="relative w-full justify-center min-h-screen bg-cover bg-center flex flex-col md:flex-row items-center rounded-lg overflow-hidden"
       style={{ backgroundImage: `url(${newbg})` }}
     >
       {/* Right Section with Carousel */}
-      <div className="relative w-full md:w-3/5 lg:w-3/4 mb-8 overflow-hidden py-8 mt-20 md:mt-56 mr-10 h-full rounded-lg">
+      <div className="relative w-full px-2 md:w-[60%]  mb-8 overflow-hidden py-8   h-full rounded-lg">
         <Swiper
           modules={[Autoplay, Pagination]} 
           spaceBetween={30}
@@ -82,7 +82,7 @@ const Septvidya = () => {
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="relative w-full h-80 sm:h-96 lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
+              <div className="relative w-full h-80  sm:h-96 lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
                 {/* Front side of the card */}
                 <div
                   className="absolute w-full h-full transition-opacity duration-500"
@@ -100,13 +100,13 @@ const Septvidya = () => {
       </div>
 
       {/* Left Section with Icons and Text */}
-      <div className="w-full md:w-2/5 p-8 text-gray-500 fade-in">
-        <h1 className="ml-0 md:ml-20 text-3xl font-bold animate-pulse text-yellow-800 ">Sapt Vidya</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+      <div className="w-full md:w-[40%] pl-7 md:pl-0  text-gray-500 fade-in">
+        <h1 className="ml-0 text-center text-3xl font-bold animate-pulse text-yellow-800 ">Sapt Vidya</h1>
+        <div className="grid  grid-cols-2 px-2 xl:px-0 w-full  justify-center items-start">
           {/* First Section with 3 Icons */}
-          <div className="flex flex-col items-start mt-6">
+          <div className="flex flex-col justify-center items-start">
             {/* Icon 1 */}
-            <div className="flex flex-col items-start group">
+            <div className="flex flex-col justify-center items-start group">
               <div className="w-16 h-18">
                 <img src={DHANUR_VIDYA} alt="Dhanur Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
               </div>

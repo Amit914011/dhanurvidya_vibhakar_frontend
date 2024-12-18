@@ -4,10 +4,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import image7 from '../../assets/banner7.png';
+import image7 from '../../assets/banner1.jpg';
 import image2 from '../../assets/banner2.jpg';
 import image3 from '../../assets/banner3.jpg';
-import image4 from '../../assets/banner4.png';
+import image4 from '../../assets/banner4.jpg';
 import Septvidya from '../Home/Septvidya';
 import Camps from '../Home/Camps';
 import FAQ from '../Home/FAQ';
@@ -39,7 +39,7 @@ export default function Home() {
     pagination={{ clickable: true }}
     autoplay={{ delay: 2000 }}
     loop={true}
-    className="mb-12"
+    className=""
   >
     {slides.map(slide => (
       <SwiperSlide key={slide.id}>

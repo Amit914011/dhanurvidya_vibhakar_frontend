@@ -28,7 +28,7 @@ const PashuramjAbhisheak = () => {
     <div className="bg-cover bg-center text-black" style={{ backgroundImage: `url(${bgImage})` }}>
       {/* Heading Section */}
       <div className="text-center py-8">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black uppercase tracking-wide hover:text-yellow-400">
+        <h1 className="text-lg  md:text-3xl sm:text-4xl lg:text-5xl font-bold text-black uppercase tracking-wide hover:text-yellow-400">
           Pashuram Abhishekam
         </h1>
       </div>
@@ -50,7 +50,7 @@ const PashuramjAbhisheak = () => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-[450px] object-cover sm:h-[300px] md:h-[400px] lg:h-[450px]"/>
+              className="w-full md:h-[450px] object-cover sm:h-[300px] lg:h-[450px]"/>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -58,10 +58,10 @@ const PashuramjAbhisheak = () => {
       <div className="flex flex-wrap md:flex-nowrap w-full">
         {/* Left Section with Text */}
         <div className="w-full md:w-2/5 lg:w-1/3 p-8 text-gray-500">
-          <h1 className="text-3xl font-bold animate-pulse text-yellow-800">
+          <h1 className="text-lg  text-center md:text-3xl font-bold animate-pulse text-yellow-800">
             Rituals and Offerings
           </h1>
-          <p className="leading-8 mt-10">
+          <p className="leading-8 mt-10 text-center">
             To allow devotees to be touched by the grace of Lord Parashurama, unique rituals designed to support individuals at every stage of life—from birth to death, and everything in between—are conducted at his sacred abode. These ceremonies are crafted to invoke the blessings of Lord Parashurama, the eternal warrior-sage, and to ensure his protection, strength, and wisdom throughout a devotee's journey in life.
           </p>
         </div>
@@ -97,15 +97,15 @@ const PashuramjAbhisheak = () => {
                           OFFER ONLINE
                         </span>
                         <div className="flex flex-col text-white rounded-lg">
-                          <ul className="text-sm leading-9">
+                          {/* <ul className="text-sm leading-9">
                             <li className="bg-[#bc4034] rounded-lg px-2 mb-1">List Item 1</li>
                             <li className="bg-[#bc4034] rounded-lg px-2 mb-1">List Item 2</li>
                             <li className="bg-[#bc4034] rounded-lg px-2">List Item 3</li>
-                          </ul>
+                          </ul> */}
                         </div>
                       </div>
                       <div className="flex flex-col mt-4">
-                        <h3 className="text-4xl font-extrabold text-white">{card.title}</h3>
+                        <h3 className="text-xl font-extrabold text-white">{card.title}</h3>
                         <div className="flex justify-between items-center mt-2">
                           <span className="text-xl text-white">{card.location}</span>
                         </div>
@@ -117,11 +117,11 @@ const PashuramjAbhisheak = () => {
             ))}
           </Swiper>
 
-          <Link
+         <div className="w-full"> <Link
             to="/rituals"
-            className="text-4xl mt-7 font-semibold bg-[#bc4034] text-white px-2 py-2 inline-block hover:bg-[#ee580c] hover:text-white transition-colors duration-300 ease-in-out" >
+            className="text-4xl mt-7 text-center font-semibold bg-[#bc4034] text-white  inline-block hover:bg-[#ee580c] hover:text-white transition-colors duration-300 ease-in-out" >
             Explore All Rituals
-          </Link>
+          </Link></div>
         </div>
       </div>
     </div>

@@ -25,10 +25,10 @@ function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setExpandedIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex + 1) % faqs.length));
-    }, 3000);
-    return () => clearInterval(interval);
+    setExpandedIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex + 1) % faqs.length));
+    // const interval = setInterval(() => {
+    // }, 100000);
+    // return () => clearInterval(interval);
   }, []);
 
   return (
@@ -38,15 +38,15 @@ function FAQ() {
     >
       <div className="font-bold flex flex-col gap-6 items-center text-maroon-600">
         <p className="text-2xl text-yellow-500 font-bold">Mastering Dhanur Vidya</p>
-        <h1 className="text-4xl md:text-5xl text-[#800000]">
+        <h1 className="text-2xl text-center md:text-5xl text-[#800000]">
           The <span className="text-maroon-600">Art of Warfare</span> in Ancient Times
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center mx-5 mt-20">
+      <div className="flex flex-col md:flex-row justify-between items-center pt-2 px-2">
         {/* FAQ Section (Left Side) */}
         <div className="w-full md:w-1/2">
-          <h1 className="text-3xl font-bold mb-8 text-[#800000]">Frequently Asked Questions</h1>
+          <h1 className=" text-lg text-center md:text-3xl font-bold mb-8 text-[#800000]">Frequently Asked Questions</h1>
 
           {faqs.map((faq, index) => (
             <motion.div
@@ -99,7 +99,7 @@ function FAQ() {
           <img
             src={dhanurVidyaImage}
             alt="Dhanur Vidya"
-            className="object-contain w-full max-w-lg mb-4"
+            className="object-contain w-full max-w-xl mb-4"
           />
         </motion.div>
       </div>
