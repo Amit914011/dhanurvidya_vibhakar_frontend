@@ -21,6 +21,7 @@ import Career from './Components/Get involved/Career.jsx'
 import Five from './Components/Courses/Five.jsx'
 import Course from './Components/Courses/Course.jsx'
 
+
 const router =createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -29,7 +30,7 @@ const router =createBrowserRouter(
    <Route path='/guru' element={<Guru/>}/>
    <Route path='/abhi' element={<Abhishekam/>}/>
    <Route path='/dhanur' element={<Dhanur/>}/>
-   <Route path='/up' element={<Upcomingprojects/>}/>
+   <Route path='/upcoming-projects' element={<Upcomingprojects/>}/>
    <Route path='/origin' element={<Origin/>}/>
    <Route path='/khadagvidya' element={<Khadagvidya/>}/>
    <Route path='/gadavidya' element={<Gadavidya/>}/>
@@ -41,7 +42,6 @@ const router =createBrowserRouter(
    <Route path='/career' element={<Career/>}/>
    <Route path='/fivedays' element={<Five/>}/>
    <Route path='/course' element={<Course/>}/>
-
     </Route>
     </>
   )

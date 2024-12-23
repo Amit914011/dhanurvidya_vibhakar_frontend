@@ -6,7 +6,7 @@ import pic4 from '../../assets/pic4.jpg'
 import bluebg from '../../assets/bluebg.png'
 export default function Volenteer() {
   return (
-    <div className='pt-20'>
+    <div className='pt-[60px] md:pt-16 '>
         <div className='w-full'>
             <img src={volenteer} alt="" className='w-full bg-cover' />
         </div>
@@ -16,14 +16,14 @@ export default function Volenteer() {
 </div>
 
 
-<div className="px-4 py-8 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+<div className=" py-8 sm:px-6 lg:px-8 max-w-7xl mx-auto">
   {/* Title Section */}
-  <h1 className="text-red-700 font-bold text-2xl sm:text-3xl lg:text-3xl leading-tight">
+  <h1 className="text-red-700 font-bold text-2xl sm:text-3xl lg:text-3xl px-3 leading-tight">
     A Pillar of Support for Isodhan Foundation and Parashurama Seva
   </h1>
 
   {/* Paragraph Section */}
-  <p className="text-black font-semibold text-lg sm:text-xl mt-4 sm:mt-6 mx-auto leading-relaxed">
+  <p className="text-black  text-lg sm:text-xl mt-4 sm:mt-6 mx-auto px-3">
     Volunteers play a unique and invaluable role in the services we provide at Isodhan Foundation, supporting Parashurama Seva and promoting the traditional Gurukulam way of life rooted in Dhanurveda. Your time, commitment, dedication, and skills are deeply valued by us and by the community that benefits from your contributions. Volunteer for many reasons, but the main motivation is often the joy of helping others. Volunteering can also provide opportunities to learn new skills, gain experience, and build confidence and self-esteem while connecting with like-minded individuals. <br></br><br></br>
         At Isodhan Foundation, we actively recruit volunteers to complement and enhance the services we offer. We recognize the immense value volunteers bring to our initiatives, supporting and encouraging those who generously dedicate their time and energy to enriching the quality of services, enhancing the spiritual experience, and preserving sacred traditions.
   </p>
@@ -35,7 +35,7 @@ export default function Volenteer() {
   </h1>
 
   {/* Paragraph Section */}
-  <p className="text-black font-medium text-lg sm:text-xl mt-4 sm:mt-6 mx-auto leading-relaxed">
+  <p className="text-black text-lg sm:text-xl mt-4 sm:mt-6 mx-auto leading-relaxed">
     Volunteering with Isodhan Foundation is deeply rewarding. It nurtures your personal growth, boosts self-confidence, and fosters a sense of fulfillment as you make meaningful contributions to the spiritual and cultural well-being of the community. Whether you're seeking new experiences, hoping to develop skills, or looking for a way to fulfill your dharma, volunteering with us is a unique opportunity.<br></br>
     We provide training and support, so no prior experience is required. Volunteers can engage in a variety of activities, such as:
   </p>

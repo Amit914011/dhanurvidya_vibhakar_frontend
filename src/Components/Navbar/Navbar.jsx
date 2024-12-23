@@ -5,7 +5,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import "./Navbar.css";
-import logo from "../../assets/logo1.jpeg";
+import logo from "../../assets/ISODHAN LOGO 1 .png";
 import { Link } from "react-router-dom";
 export default function Navbar() {
   const [show, setShow] = useState("");
@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className="buttommenubar">
             <div>
               <Link to='/' className="text-black font-bold ">
-                <img src={logo} alt="" className="w-20" />
+                <img src={logo} alt="" className="w-24" />
               </Link>
             </div>
             <div>
@@ -44,7 +44,7 @@ export default function Navbar() {
                         [{"title":"Guru","link":"/guru"},
                           {"title":"Guru Sankalpa","link":"/"},
                           {"title":" Associated centres","link":"/"},
-                          {"title":" Upcoming projects","link":"/up"},
+                          {"title":" Upcoming projects","link":"/upcoming-projects"},
                           {"title":"Bhargava Upasana","link":"/"}
                       ].map((item,index)=>(
                      <li key={index}>
@@ -62,18 +62,18 @@ export default function Navbar() {
                   <ul className="sumenu">
 
                   {
-                        [{"title":"Abhisekam","link":"/abhi"},
-                          {"title":"Abhisekam","link":"/"},
-                          {"title":" Navagraha Homam / Shanti Homam","link":"/"},
-                          {"title":" Lakshmi Homam","link":"/"},
-                          {"title":"Maha Mrithyunjaya Homam","link":"/"},
-                          {"title":"Mahalakshmi Homam","link":"/"},
-                          {"title":"Sri Suktha Homam","link":"/"},
-                          {"title":"Sudarshan Homam","link":"/"},
-                          {"title":" Chandi Homam","link":"/"},
-                          {"title":" Booh Varaha Homam","link":"/"},
-                          {"title":" Saraswathi Homam","link":"/"},
-                          {"title":" Ayushya Homam","link":"/"},
+                        [{"title":"Parashurama Rituals","link":"/abhi"},
+                          {"title":"Online Rituals","link":"/"},
+                          {"title":"Yagna and Homam","link":"/"},
+                          // {"title":" Lakshmi Homam","link":"/"},
+                          // {"title":"Maha Mrithyunjaya Homam","link":"/"},
+                          // {"title":"Mahalakshmi Homam","link":"/"},
+                          // {"title":"Sri Suktha Homam","link":"/"},
+                          // {"title":"Sudarshan Homam","link":"/"},
+                          // {"title":" Chandi Homam","link":"/"},
+                          // {"title":" Booh Varaha Homam","link":"/"},
+                          // {"title":" Saraswathi Homam","link":"/"},
+                          // {"title":" Ayushya Homam","link":"/"},
                       ].map((item,index)=>(
                      <li key={index}>
                       <Link to={item.link} className="block">
@@ -91,8 +91,8 @@ export default function Navbar() {
                   <ul className="sumenu">
                   {
                         [{"title":"Origin","link":"/origin"},
-                          {"title":"Dhanurvidya","link":"/khadagvidya"},
-                          {"title":"Khadgavidya","link":"/"},
+                          {"title":"Dhanurvidya","link":"/dhanur"},
+                          {"title":"Khadgavidya","link":"/khadagvidya"},
                           {"title":" Gadavidya","link":"/gadavidya"},
                           {"title":"Maha Mrithyunjaya Homam","link":"/"},
                           {"title":"Mahalakshmi Homam","link":"/"},
@@ -150,15 +150,15 @@ export default function Navbar() {
                   </ul> */}
                 </li>
                 <li>
-                  <Link to="/community">
+                  <p>
                     Get Involved <IoMdArrowDropdown className="inline icon" />
-                  </Link>
+                  </p>
                   <ul className="sumenu">
 
                   {
                         [{"title":"Valentier","link":"/volenteer"},
                           {"title":" Offer Seva","link":"/"},
-                          {"title":"Careers","link":"/"},
+                          {"title":"Careers","link":"/career"},
                       ].map((item,index)=>(
                      <li key={index}>
                       <Link to={item.link} className="block">
@@ -230,7 +230,7 @@ export default function Navbar() {
                         [{"title":"Guru","link":"/guru"},
                           {"title":"Guru Sankalpa","link":"/"},
                           {"title":" Associated centres","link":"/"},
-                          {"title":" Upcoming projects","link":"/up"},
+                          {"title":" Upcoming projects","link":"/upcoming-projects"},
                           {"title":"Bhargava Upasana","link":"/"}
                       ].map((item,index)=>(
                      <li key={index}  onClick={() => {setShow("");}}>

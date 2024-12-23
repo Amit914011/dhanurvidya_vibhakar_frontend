@@ -10,7 +10,7 @@ import fiveday4 from '../../assets/fiveday4.jpg'
 export default function ThreeDayscamp() {
   return (
     <div>
-       <div className="w-full pt-20">
+       <div className="w-full pt-[60px] md:pt-16">
   <img 
     src={fivedays} 
     alt="Gurukulam" 
@@ -19,7 +19,7 @@ export default function ThreeDayscamp() {
 <div className="flex justify-center items-center">
   <img src={fivedays1} alt="" className="max-w-full" />
 </div>
-<p className='font-serif text-black text-lg ml-3'>The ISODHAN Foundation presents an enriching five-day camp designed Introduce participants to the ancient martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya ithe art of the macel. in this immersive experience, participants will train under the guidance of seasoned Acharyas, embracing the authentic Gurukulam tradition that fosters discipline, focus, and respect for Vedic martial knowledge. The extended five-day format allows for in-depth practice and a more profound engagement with each martial Each day is thoughtfully planned to ensure a balanced experience of intensive skill-building and philosophical discussions, providing a deeper understanding of the purpose and values underpinning each technique. By the conclusion of the camp, learners will have cultivated essential skills, an appreciation of the arts historical significance, and personalized tips for ongoing practice at home. This program offers a unique opportunity to reconnect with India's timeless martial heritage in a supportive, traditional environment.</p>
+<p className='font-serif text-black text-lg ml-3 px-3'>The ISODHAN Foundation presents an enriching five-day camp designed Introduce participants to the ancient martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya ithe art of the macel. in this immersive experience, participants will train under the guidance of seasoned Acharyas, embracing the authentic Gurukulam tradition that fosters discipline, focus, and respect for Vedic martial knowledge. The extended five-day format allows for in-depth practice and a more profound engagement with each martial Each day is thoughtfully planned to ensure a balanced experience of intensive skill-building and philosophical discussions, providing a deeper understanding of the purpose and values underpinning each technique. By the conclusion of the camp, learners will have cultivated essential skills, an appreciation of the arts historical significance, and personalized tips for ongoing practice at home. This program offers a unique opportunity to reconnect with India's timeless martial heritage in a supportive, traditional environment.</p>
 
 
 <div className='bg-yellow-200'>
@@ -91,7 +91,7 @@ export default function ThreeDayscamp() {
   </div>
   <div className="flex flex-col items-center">
     <img src={fiveday4} alt="Image 3" className="max-w-[300px] w-full h-auto" />
-    <button className="mt-4 px-4 py-1 bg-orange-500 text-black font-bold rounded-3xl">
+    <button className="mt-4 px-4 py-1 bg-orange-500 mb-4 text-black font-bold rounded-3xl">
   15-17 | Dec | 2024 <br /> Learn more
 </button>
   </div>
@@ -127,9 +127,9 @@ export default function ThreeDayscamp() {
     </div>
 
     {/* Schedule Section */}
-    <div className="flex-1">
+    <div className="md:flex-1">
       <div className=" shadow-md rounded-lg p-6 md:p-8 bg-yellow-200">
-        <div className="flex flex-wrap gap-6">
+        <div className="md:flex flex-wrap gap-6">
           {/* Left Column */}
           <ul className="flex-1 text-sm sm:text-base font-bold">
             <li className="flex justify-between py-2 border-b">
@@ -211,11 +211,11 @@ export default function ThreeDayscamp() {
   </div>
 </div>
 
-<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-red-700 my-8">
+<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center  text-red-700 my-8">
         TESTIMONIALS
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 mb-3">
         {/* Placeholder for Testimonials */}
         <div className="bg-yellow-100 h-40 rounded-lg shadow-md flex items-center justify-center text-gray-400">
           Testimonial 1

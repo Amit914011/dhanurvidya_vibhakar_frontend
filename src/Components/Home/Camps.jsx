@@ -13,6 +13,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import bgImage from '../../assets/bg12.png'; // Add your background image here
 import bgImage1 from '../../assets/bg_c.jpg'; // Add your background image here
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 
 const contentData = [
@@ -119,9 +120,9 @@ const Camps = () => {
       Explore the ancient art of archery. Learn the techniques and disciplines
       that warriors once mastered to defend kingdoms.
     </p>
-    <button className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
+    <Link to='/dhanur' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
       Learn More
-    </button>
+    </Link>
   </motion.div>
 
   {/* Card 2 */}
@@ -136,9 +137,9 @@ const Camps = () => {
     <p className="text-gray-600  text-center leading-relaxed flex-grow">
       Dive into the practice of wielding the powerful mace, a symbol of strength and valor in ancient battles.
     </p>
-    <button className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
+    <Link to='/gadavidya' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
       Learn More
-    </button>
+    </Link>
   </motion.div>
 
   {/* Card 3 */}
@@ -153,9 +154,9 @@ const Camps = () => {
     <p className="text-gray-600  text-center leading-relaxed flex-grow">
       Learn the fine art of swordsmanship, honing your skills in close combat with traditional weaponry.
     </p>
-    <button className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block mt-4">
+    <Link to='/khadagvidya' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block mt-4">
       Learn More
-    </button>
+    </Link>
   </motion.div>
 </div>
 

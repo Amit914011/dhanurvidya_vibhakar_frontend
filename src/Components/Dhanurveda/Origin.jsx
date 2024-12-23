@@ -13,7 +13,7 @@ import relatedblog from '../../assets/relatedblog.png'
 import icons from '../../assets/icons.png'
 export default function Origin() {
   return (
-    <div className='pt-20'>
+    <div className=' pt-[60px] md:pt-18'>
       <div className="w-full text-center ">
   {/* Full-Width Responsive Image */}
   <img 
@@ -32,10 +32,10 @@ export default function Origin() {
 
 <section className="bg-white text-gray-900 p-6 sm:p-12">
       {/* Content Container */}
-      <div className="flex flex-col sm:flex-row items-center gap-6">
+      <div className="flex flex-col-reverse lg:flex-row items-center gap-4">
         {/* Text Section */}
         <div className="flex-1">
-          <p className="text-justify font-serif text-xl">
+          <p className="text-justify font-serif text-base md:text-xl">
           The Vedic corpus is categorized into a hierarchy that first begins with the infallible. Sruti, which is said to be eternal and unchanged Divine knowledge that is thought to be as sacred as the audible form of God Himself. The Vedas were not recorded in physical script; rather, they have been passed down generation after generation via a traditional Guru-Sishya paramapara. At the start of the Kali Yuga, sage Krishna Dwaipayana (more popularly known as Veda Vyasa, or the "Compiler of the Vedas"), segregated the Sruti and trained disciples who would each be responsible for the propagation of their respective sakha or branch of Vedic texts. The "four Vedas came to be known as the #g. Yajur, Sama, and the Atharvana. Each of the four Vedas had their own branches of Bramhana, Aranyaka, Samhita, Upanishads, and even associated Upavedas (ie.. traditional applied knowledge). The four Upavedas are Ayurveda (associated with the ig Vedal, Dhanurveda) (associated with the Yajur Vedal, Gandharvaveda) (associated with the Sama Veda), and either Arthashaastra or Stapathyaveda (associated with the Atharvana Veda).
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function Origin() {
     <section className="bg-white text-gray-900 p-6 sm:p-12">
         
       {/* Content Container */}
-      <div className="flex flex-col sm:flex-row items-center gap-6">
+      <div className="flex flex-col lg:flex-row items-center gap-6">
          {/* Image Section */}
          <div className="flex-1 flex justify-center">
           <img
@@ -62,7 +62,7 @@ export default function Origin() {
         </div>
         {/* Text Section */}
         <div className="flex-1">
-          <p className="text-justify font-serif text-xl">
+          <p className="text-justify font-serif text-base md:text-xl">
           Dhanurveda is literally translated as "the knowledge of the bow", with "Dhanu" meaning bow and "Veda" meaning knowledge. One can find this classical martial art mentioned time and time again in ancient Vedic literature, such as the Ithihaasas (namely, the Mahabharatam and Ramayanam) and Puraanas. Dhanurveda seemed to have served the purpose of training warriors in warfare and protecting society from animals/enemies; however, it also outlined yuddha neethi, or the morals of combat in the context of a civilization that placed Dharma, or righteousness, at the forefront of their societal ideals. Thus, it was ensured that those who wielded great physical fortitude and divine weapons had an equally strong sense of wellbeing and mental health so as to be responsible with their strengths.
           </p>
         </div>  
@@ -70,7 +70,7 @@ export default function Origin() {
     </section>
 
 <div>
-    <p className='font-serif text-xl'>Dhanurveda included in it the knowledge of shastras (i.e., conventional weapons) and astras (i.e., divine weapons yielding supernatural effects). While the knowledge of astraas has all but disappeared in the Kali Yuga and is seldom spoken of to the masses, our mission at ISVA is to revive the knowledge of conventional weapons. The seven conventional weapons are: Dhanus (Bow), Khadga (Sword), Kuntha (Spear), Gada (Mace), Chakra (Discus), Kshurika (Dagger) and Malla (Wrestling). The learning of each weapon involves unique postures, forms and techniques that are vital to the evolution of the practitioner's technique and individual personality. Today, while Dhanurveda has been largely lost, its impact can be seen on later styles of martial arts that were developed in India such as Varma Kalai, Gatka, Silambam, Mardani Khel, Kalaripayattu and Kusthi- which have themselves influenced and shaped foreign styles of martial arts such as Kung Fu. Truly speaking, Dhanurveda must be considered 'the mother of all martial arts'.</p>
+    <p className='font-serif text-base  md:text-xl px-6 text-justify'>Dhanurveda included in it the knowledge of shastras (i.e., conventional weapons) and astras (i.e., divine weapons yielding supernatural effects). While the knowledge of astraas has all but disappeared in the Kali Yuga and is seldom spoken of to the masses, our mission at ISVA is to revive the knowledge of conventional weapons. The seven conventional weapons are: Dhanus (Bow), Khadga (Sword), Kuntha (Spear), Gada (Mace), Chakra (Discus), Kshurika (Dagger) and Malla (Wrestling). The learning of each weapon involves unique postures, forms and techniques that are vital to the evolution of the practitioner's technique and individual personality. Today, while Dhanurveda has been largely lost, its impact can be seen on later styles of martial arts that were developed in India such as Varma Kalai, Gatka, Silambam, Mardani Khel, Kalaripayattu and Kusthi- which have themselves influenced and shaped foreign styles of martial arts such as Kung Fu. Truly speaking, Dhanurveda must be considered 'the mother of all martial arts'.</p>
 </div>
 <div className="flex justify-center items-center w-full px-4">
   {/* Centered Responsive Image */}
@@ -107,7 +107,7 @@ export default function Origin() {
     alt="Origin" 
     className="w-full max-w-[600px] h-auto object-contain rounded-lg" />
 </div>
-<div className="flex flex-wrap gap-6 justify-center">
+<div className="md:flex flex flex-col md:flex-row gap-6 justify-center p-3">
   {/* Image 1 with Title and Button */}
   <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
@@ -142,7 +142,7 @@ Learn More    </button>
     </button>
   </div>
 </div>
-<div className="flex justify-center items-center w-full px-4">
+<div className="md:flex flex flex-col md:flex-row justify-center items-center w-full px-4">
   {/* Centered Responsive Image */}
   <img 
     src={relatedprg} 
@@ -150,7 +150,7 @@ Learn More    </button>
     className="w-full max-w-[600px] h-auto object-contain rounded-lg" />
 </div>
 
-<div className="flex flex-wrap gap-6 justify-center">
+<div className="md:flex flex flex-col md:flex-row gap-6 justify-center p-3">
   {/* Image 1 with Title and Button */}
   <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
@@ -186,14 +186,14 @@ Learn More    </button>
   </div>
 </div>
 
-<div className="flex justify-center items-center w-full px-4">
+<div className="md:flex flex flex-col md:flex-row justify-center items-center w-full px-4">
   {/* Centered Responsive Image */}
   <img 
     src={relatedblog} 
     alt="Origin" 
     className="w-full max-w-[600px] h-auto object-contain rounded-lg" />
 </div>
-<div className="flex flex-wrap gap-6 justify-center">
+<div className="md:flex flex flex-col md:flex-row gap-6 justify-center p-3">
   {/* Image 1 with Title and Button */}
   <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>

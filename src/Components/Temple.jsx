@@ -5,7 +5,7 @@ import templeimg2 from '../assets/abhi2.jpg'
 
 export default function Temple() {
   return (
-    <div className='pt-20'>
+    <div className='pt-[50px] md:pt-16'>
         <div className='w-full'>
             <img src={templeimg} alt="" className='w-full bg-cover'/>
         </div>
@@ -15,7 +15,7 @@ export default function Temple() {
     alt="Temple" 
     className="max-w-full"/>
 </div>
-  <p className='font-serif text-black text-xl ml-10'> Details ISODHAN Temple, Parushurama Aradhana Mandira Tirupati Darshan Timings, ISODHAN Parashurama Temple Tirupati Timings, ISODHAN Parashurama Temple Tirupati Visiting Hours, Worship Timings, Opening & Closing Timings below.</p>
+  <p className='font-serif text-black md:text-xl text-center pt-3 md:px-5'> Details ISODHAN Temple, Parushurama Aradhana Mandira Tirupati Darshan Timings, ISODHAN Parashurama Temple Tirupati Timings, ISODHAN Parashurama Temple Tirupati Visiting Hours, Worship Timings, Opening & Closing Timings below.</p>
 
         <div className=" min-h-screen p-4">
       {/* Header Section */}

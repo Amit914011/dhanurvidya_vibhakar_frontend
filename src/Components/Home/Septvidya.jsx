@@ -66,14 +66,15 @@ const Septvidya = () => {
       style={{ backgroundImage: `url(${newbg})` }}
     >
       {/* Right Section with Carousel */}
-      <div className="relative w-full px-2 md:w-[60%]  mb-8 overflow-hidden py-8   h-full rounded-lg">
+      <div className="relative w-full px-2   mb-8 overflow-hidden   h-full rounded-lg">
         <Swiper
           modules={[Autoplay, Pagination]} 
-          spaceBetween={30}
+          spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
-            768: { slidesPerView: 2 }, // 2 cards on tablet and larger screens
-            1024: { slidesPerView: 3 }, // 3 cards on desktop
+            320: { slidesPerView: 2 }, // 2 slides for devices with a width of 460px or larger
+            768: { slidesPerView: 2 }, // 2 slides for devices with a width of 768px or larger
+            1024: { slidesPerView: 3 }, // 3 slides for devices with a width of 1024px or larger
           }}
           autoplay={{ delay: 3000 }}
           pagination={{ clickable: true }}

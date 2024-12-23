@@ -5,14 +5,14 @@ import career2 from '../../assets/career2.png'
 
 export default function Career() {
   return (
-    <div className='pt-20'>
+    <div className='pt-[60px] md:pt-16 '>
         <div>
             <img src={career2} alt="" className='w-full bg-cover' />
         </div>
         <div className="flex items-center justify-center">
     <img src={careerimg} alt="Career Image" className="max-w-full " />
 </div>
-<div className="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
+<div className="max-w-6xl mx-auto p-6 rounded-lg shadow-md">
     <h1 className="text-black text-center font-bold text-2xl md:text-3xl">
         Working with ISODHAN Foundation
     </h1>
@@ -29,7 +29,7 @@ export default function Career() {
         <p className='text-center text-lg'>Department Sanskrit Education</p>
         <p className="mt-2 text-black font-bold text-center text-xl">Manager</p>
         <p className='text-center text-lg'>Department: Facility & Utility </p>
-        <h1 className='font-bold text-red-700 text-center text-lg mt-20'>For more details,mail us at <br></br> internationaldhanurveda@gmail.com</h1>
+        <h1 className='fontbold text-red-700 text-center text-lg mt-20'>For more details,mail us at <br></br> internationaldhanurveda@gmail.com</h1>
     </div>
     <div className="flex-1 min-w-[250px] max-w-sm p-6 bg-yellow-200 rounded-lg shadow-md">
     <h1 className="text-2xl font-bold text-red-700">Hyderabad, Telangana.</h1>

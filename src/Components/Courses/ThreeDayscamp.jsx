@@ -10,7 +10,7 @@ import threedays6 from '../../assets/threedaygada.jpg'
 export default function ThreeDayscamp() {
   return (
     <div>
-       <div className="w-full pt-20">
+       <div className="w-full pt-[60px] md:pt-16">
   <img 
     src={threedays} 
     alt="Gurukulam" 
@@ -19,7 +19,7 @@ export default function ThreeDayscamp() {
 <div className="flex justify-center items-center">
   <img src={threedays1} alt="" className="max-w-full" />
 </div>
-<p className='font-serif text-black text-lg ml-3'>The ISODHAN Foundation is excited to host three-day camp dedicated to the traditional martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya (the art of the mace). This intensive camp is conducted in the authentic Gurukulam style, offering participants a unique opportunity to learn. in the ancient way, directly from knowledgeable Acharyas. Through this immersive approach, participants connect deeply with the spirit and teachings of these martial arts, developing foundational skills and insights into each. discipline. Each day follows a carefully designed Vedic curriculum that balances practical techniques with philosophical teachings, providing a holistic experience. By the end of the camp, learners will have a strong grasp of the basics of their chosen art form, along with personalized guidance to continue their practice independently. at home. This program is ideal for those who seek not only martial training but also a profound connection to India's rich cultural heritage.</p>
+<p className='font-serif text-black md:text-lg ml-3 px-5 mb-4'>The ISODHAN Foundation is excited to host three-day camp dedicated to the traditional martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya (the art of the mace). This intensive camp is conducted in the authentic Gurukulam style, offering participants a unique opportunity to learn. in the ancient way, directly from knowledgeable Acharyas. Through this immersive approach, participants connect deeply with the spirit and teachings of these martial arts, developing foundational skills and insights into each. discipline. Each day follows a carefully designed Vedic curriculum that balances practical techniques with philosophical teachings, providing a holistic experience. By the end of the camp, learners will have a strong grasp of the basics of their chosen art form, along with personalized guidance to continue their practice independently. at home. This program is ideal for those who seek not only martial training but also a profound connection to India's rich cultural heritage.</p>
 
 
 <div className='bg-yellow-200'>
@@ -91,40 +91,41 @@ export default function ThreeDayscamp() {
   </div>
   <div className="flex flex-col items-center">
     <img src={threedays6} alt="Image 3" className="max-w-[300px] w-full h-auto" />
-    <button className="mt-4 px-4 py-1 bg-orange-500 text-black font-bold rounded-3xl">
+    <button className="mt-4 px-4 py-1 bg-orange-500 mb-3 text-black font-bold rounded-3xl">
   15-17 | Dec | 2024 <br /> Learn more
 </button>
   </div>
 </div>
 
-<h1 className='text-center text-blue-950 font-bold text-4xl mt-10'>Sample Schedule of Daily Sessions</h1>
+<h1 className='text-center text-blue-950 font-bold text-2xl md:text-4xl mt-10'>Sample Schedule of Daily Sessions</h1>
 
-<div className="px-4 sm:px-8 md:px-16 lg:px-32 py-8">
+<div className="px-4 sm:px-8 md:px-16 lg:px-32">
   {/* Main Container with Flex Layout */}
-  <div className="flex flex-wrap gap-8">
+  <div className="md:flex flex-wrap gap-8">
     {/* Title and Description Section */}
     <div className="flex-1">
-      <h2 className="text-2xl sm:text-3xl md:text-2xl font-bold text-center text-red-800 mb-6 mt-10">
-        General Program of a Typical Day
-      </h2>
+  <h2 className="text-2xl sm:text-3xl md:text-2xl font-bold text-center text-red-800 mb-6 mt-10">
+    General Program of a Typical Day
+  </h2>
 
-      <p className="text-base sm:text-lg text-justify mb-6 leading-relaxed font-bold">
-        Provide a balanced blend of theoretical insights and practical training
-        in ancient Dhanurveda disciplines such as Dhanurvidya (Archery),
-        Khadgavidya (Sword), and Gadavidya (Mace). Each session is crafted to
-        maximize your learning and ensure every moment of your stay is impactful
-        and enriching.
-      </p>
+  <p className="text-base sm:text-lg text-justify mb-6 leading-relaxed">
+    Provide a balanced blend of theoretical insights and practical training
+    in ancient Dhanurveda disciplines such as Dhanurvidya (Archery),
+    Khadgavidya (Sword), and Gadavidya (Mace). Each session is crafted to
+    maximize your learning and ensure every moment of your stay is impactful
+    and enriching.
+  </p>
 
-      <p className="text-base sm:text-lg text-justify mb-6 leading-relaxed font-bold">
-        The teachings imparted during these sessions will serve as lifelong
-        tools, fostering discipline, focus, and self-mastery. Being immersed in
-        the gurukul's sacred environment, charged with spiritual and martial
-        energy, will not only enhance your understanding of these ancient arts
-        but also allow you to experience the profound wisdom and traditions they
-        embody.
-      </p>
-    </div>
+  <p className="text-base sm:text-lg text-justify mb-6 leading-relaxed">
+    The teachings imparted during these sessions will serve as lifelong
+    tools, fostering discipline, focus, and self-mastery. Being immersed in
+    the gurukul's sacred environment, charged with spiritual and martial
+    energy, will not only enhance your understanding of these ancient arts
+    but also allow you to experience the profound wisdom and traditions they
+    embody.
+  </p>
+</div>
+
 
     {/* Schedule Section */}
     <div className="flex-1">
@@ -215,7 +216,7 @@ export default function ThreeDayscamp() {
         TESTIMONIALS
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 px-5">
         {/* Placeholder for Testimonials */}
         <div className="bg-yellow-100 h-40 rounded-lg shadow-md flex items-center justify-center text-gray-400">
           Testimonial 1

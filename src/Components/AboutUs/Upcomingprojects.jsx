@@ -47,7 +47,7 @@ export default function Upcomingprojects() {
   />
 </div>
      
-        <p className='font-serif ml-10 text-xl'>The lord Parashurama Temple and Dhanurveda Gurukul project in Tirupati is a groundbreaking initiative to revive India's ancient martial arts and archery traditions from the Dhanurveda. With a full-stone lord Parashurama Temple as its centerpiece, crafted in line with Shilpashastra, this project offers a holistic Gurukul education in martial arts, spirituality, and intellect. By promoting Hari Nama and cultural heritage, it attracts pilgrims and scholars, blending spirituality with physical training for learning experience.</p>
+        <p className='font-serif ml-10 text-base md:text-xl px-[70px]'>The lord Parashurama Temple and Dhanurveda Gurukul project in Tirupati is a groundbreaking initiative to revive India's ancient martial arts and archery traditions from the Dhanurveda. With a full-stone lord Parashurama Temple as its centerpiece, crafted in line with Shilpashastra, this project offers a holistic Gurukul education in martial arts, spirituality, and intellect. By promoting Hari Nama and cultural heritage, it attracts pilgrims and scholars, blending spirituality with physical training for learning experience.</p>
       </div>
       <div className="relative w-full mt-10">
   {/* Image */}
@@ -109,7 +109,7 @@ export default function Upcomingprojects() {
 
   {/* Responsive Content */}
   <div className=" md:text-left">
-    <p className="text-base md:text-lg lg:text-xl text-black font-serif mb-10">
+    <p className="text-base md:text-lg lg:text-xl text-black font-serif mb-10 px-[70px]">
       The ISODHAN Foundation's Gurukul Temple in Hyderabad is a sacred space for seekers of spiritual and personal growth, blending devotion with the ancient art of Dhanurveda. Rooted in Lord Hari's teachings, the temple offers Moksha Marga, the path to liberation, through meditation, worship, and martial training. Support this initiative to revive timeless wisdom, fostering resilience and enlightenment in future generations. Join us and contribute to a legacy of strength and devotion.
     </p>
   </div>
@@ -173,7 +173,7 @@ export default function Upcomingprojects() {
 
   {/* Responsive Content */}
   <div className=" md:text-left">
-    <p className="text-base md:text-lg lg:text-xl text-black font-serif mb-10">
+    <p className="text-base md:text-lg lg:text-xl text-black font-serif mb-10 px-[70px]">
     The ISODHAN Foundation is revitalizing the ancient art of "Dhanurveda, the Vedic tradition of martial arts and archery, through the Dhanurveda Project. This initiative aims to preserve, teach, and promote these timeless skills, integrating physical discipline with spiritual growth. By fostering knowledge and practice of these techniques, the foundation seeks to inspire a new generation to reconnect with India's rich heritage of warrior wisdom, values, and traditional self-defense arts.
     </p>
   </div>
@@ -201,7 +201,7 @@ export default function Upcomingprojects() {
 
   {/* Centered Content */}
   <div className="w-full md:w-1/3 flex justify-center text-center mb-4 px-4">
-    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-xl text-red-800 font-bold line-clamp-none">
+    <h1 className="text-lg md:text-xl lg:text-2xl xl:text-xl  text-red-800 font-bold line-clamp-none">
       "REVIVING DHANURVEDA IS MORE THAN TEACHING MARTIAL ARTS, IT IS RECONNECTING WITH THE ESSENCE OF INDIA'S WARRIOR WISDOM AND ANCESTRAL STRENGTH"
     </h1>
   </div>
@@ -230,7 +230,7 @@ export default function Upcomingprojects() {
 
   {/* Responsive Content */}
   <div className=" md:text-left">
-    <p className="text-base md:text-lg lg:text-xl text-black font-serif mb-10">
+    <p className="text-base md:text-lg lg:text-xl text-black font-serif mb-10 px-[70px]">
     "Under the guidance of Sri Sri Sri Vibhakar Tiwari Guru Ji, the ISODHAN Foundation and Parashurama movement revive the teachings of Lord Parashurama, blending devotion with the ancient martial art of Dhanurveda. Through the mantra 'Om Namo Bhagavate Parashuramaya,' devotees are called to follow Moksha Margam, the path to liberation. Guru Ji inspires seekers to cleanse past karma, embody righteousness, and strengthen both body and spirit through disciplined worship and inner resilience."
     </p>
   </div>

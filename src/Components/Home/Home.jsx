@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import image7 from '../../assets/banner1.jpg';
-import image2 from '../../assets/banner2.jpg';
-import image3 from '../../assets/banner3.jpg';
-import image4 from '../../assets/banner4.jpg';
+import {Pagination, Autoplay } from 'swiper/modules';
+import image7 from '../../assets//Banner Image/10.jpg';
+import image2 from '../../assets/Banner Image/11.jpg';
+import image3 from '../../assets/Banner Image/14.jpg';
+import image4 from '../../assets/Banner Image/15.jpg';
 import Septvidya from '../Home/Septvidya';
 import Camps from '../Home/Camps';
 import FAQ from '../Home/FAQ';
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
   
-  <div className="mx-auto relative z-[-1] pt-[70px]">
+  <div className="mx-auto relative z-[-1] pt-[60px]">
   <Swiper
     modules={[Pagination, Autoplay]} 
     spaceBetween={50}
@@ -46,7 +46,7 @@ export default function Home() {
         <img
           src={slide.image}
           alt={`Slide ${slide.id}`}
-          className="w-full object-cover sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px]"
+          className="w-full object-cover sm:h-[200px] md:h-[300px] lg:h-[520px] "
         />
       </SwiperSlide>
     ))}

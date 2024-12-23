@@ -1,7 +1,7 @@
 
 import React from 'react'
 import dhanurvidya1 from '../../assets/dhanurvidya1.jpg'
-import origin1 from '../../assets/origin.png'
+import origin1 from '../../assets/dhanurvidya3.png'
 import arrow from '../../assets/arrow.png'
 import dhanurbanner from '../../assets/dhanurbanner.png'
 import benefits from '../../assets/benefits.png'
@@ -15,7 +15,7 @@ import ishdhan from '../../assets/Ishdhanicon.png'
 
 export default function Dhanur() {
   return (
-    <div className='pt-20'>
+    <div className='pt-[60px] md:pt-16'>
      <div className="w-full">
   <img 
     src={dhanurvidya1} 
@@ -30,10 +30,10 @@ export default function Dhanur() {
 </div>
 <section className="bg-white text-gray-900 p-6 sm:p-12">
       {/* Content Container */}
-      <div className="flex flex-col sm:flex-row items-center gap-6">
+      <div className="flex flex-col-reverse sm:flex-row items-center gap-6">
         {/* Text Section */}
         <div className="flex-1">
-          <p className="text-justify font-serif text-lg">
+          <p className="text-justify font-serif md:text-lg">
           Dhanurvidya, the ancient art of archery, is the first of the saptavidyas or seven martial disciplines that make up the larger framework of Dhanurvidya, which is often revered as a foundational element of traditional Indian martial arts. Derived from the words dhanus (bow) and vidya (knowledge), Dhanurvidya is considered a sacred practice, with references dating back to the Rig Veda. In Vedic iconography, the bow is depicted as a divine weapon of the gods. Lord Shiva wields the Pinaka bow, Vishnu holds the Saranga, Rama carries the Kodhanda, and Parashurama bears the Vijaya bow, each symbolizing divine authority and strength. The association of bows with deities. underlines "Dhanurvidya's spiritual significance, beyond its application in combat.<br></br> <br></br>
 According to tradition, Dhanurvidya is not just a preferred form of martial skill; it is also revered as a discipline that unites body, mind, and spirit. In ancient India, mastery over archery was considered essential for Kshatriyas, the warrior class, as it represented both military prowess and an emblem of their identity. Legendary warriors from the Mahabharata and Ramayana-such as Arjuna with his bow Gandiva, Abhimanyu with his bow Rudra, and Rama, the heroic archer of Ayodhya-demonstrated mastery over archery, embodying the valor and spiritual fortitude intrinsic to the art. Through these figures, Dhanurvidya became immortalized in Indian literature and continues to inspire martial and spiritual practices today.
           </p>
@@ -65,7 +65,7 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
 
     {/* Text Section */}
     <div className="flex-1">
-      <p className="text-justify font-serif text-lg">
+      <p className="text-justify font-serif md:text-lg">
         In the modern era, the symbolic meaning of the bow and arrow has transcended physical weaponry, finding new relevance in meditation and mental discipline. The Mundaka Upanishad, one of the foundational spiritual texts of Hindu philosophy, uses the bow and arrow as a metaphor for the journey toward self-realization. In this metaphor, the bow represents spiritual practices and teachings, providing a stable foundation for one's journey. The arrow symbolizes the mind, which must be sharpened, focused, and directed with precision toward a singular goal. Drawing the bow is akin to concentrating the mind, directing thoughts with clarity, and channeling internal energy toward the target. In this context, the ultimate target is self-realization or inner peace- a state of profound awareness and tranquility. Just as an archer draws his bow with steady focus and unwavering resolve, practitioners of Dhanurvidya are taught to cultivate discipline, patience, and concentration.<br /><br />
         AL ISODHAN, we are dedicated to preserving the techniques and knowledge of Dhanurvidya in its purest form. Our curriculum emphasizes mastering both the physical techniques and the meditative principles embedded within the art. Training in Dhanurvidya not only enhances strength, balance, and precision but also builds mental clarity and discipline. Practitioners learn to synchronize their breath, align their body, and harness their mental focus-qualities essential for becoming a skilled archer. The physical discipline of drawing and releasing the bow fosters mindfulness, allowing practitioners to experience a heightened sense of awareness and calm.
         Dhanurvidya was historically integral to Indian warfare, with archers playing a crucial role in long-range attacks and forming the backbone of military strategy. Beyond the battlefield, however, Dhanurvidya also guided practitioners on an inner journey toward self-discipline and insight. In today's fast-paced world, the principles of Dhanurvidya are as relevant as ever, offering a path to physical mastery and inner peace. Interested in experiencing this powerful tradition firsthand? Register with ISODHAN to learn Dhanurvidya, and join us in preserving an art that has shaped warriors and seekers alike for centuries.
@@ -84,7 +84,7 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
   {/* Overlapping Content */}
   <div className="absolute inset-0 flex items-center justify-center">
     <div className="text-white px-6 py-4 rounded-md text-center max-w-[90%] md:max-w-[70%]">
-      <p className="text-3xl font-bold mt-2">
+      <p className="text-2xl md:text-3xl font-bold mt-2">
         "The art of Dhanurvidya turns fear into focus, and strength into grace."
       </p>
     </div>
@@ -94,12 +94,12 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
   <img src={benefits} alt="" />
 </div>
 
-<div className="benefits-container flex flex-col sm:flex-row gap-6">
+<div className="benefits-container flex flex-col sm:flex-row gap-6 px-3">
   <div className="benefits-image flex-1 flex justify-center">
     {/* Replace the src with your own image URL */}
     <img src={arrow2} alt="Archer Illustration" className="max-w-full h-auto" />
   </div>
-  <div className="benefits-list flex-1 text-xl">
+  <div className="benefits-list flex-1 md:text-xl">
     <ul>
       <li>
         <strong>Enhances Strength and Agility:</strong><br></br>
@@ -132,7 +132,7 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
   <img src={program} alt=""/>
 </div>
 
-<div className="flex flex-wrap gap-6 justify-center">
+<div className="flex flex-wrap gap-6 justify-center px-3">
   {/* Image 1 with Title and Button */}
   <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
@@ -168,11 +168,11 @@ Learn More    </button>
   </div>
 </div>
 
-<div className='text-center text-red-700 font-bold text-2xl mt-10'>
+<div className='text-center text-red-700 font-bold text-xl md:text-2xl mt-10'>
   <h1>13 DAYS DHANURVIDYA  <br></br>ACHARYA (TEACHER) SHIKSHA VARGA</h1>
 </div>
 
-<div className="flex flex-wrap justify-center gap-6 mt-10">
+<div className="flex flex-wrap justify-center gap-6 mt-10 px-3">
   <img 
     src={guru8} 
     alt="Image 1" 
@@ -194,7 +194,7 @@ Learn More    </button>
   <img src={relatedprg} alt="" />
 </div>
 
-<div className="flex flex-wrap gap-6 justify-center">
+<div className="flex flex-wrap gap-6 justify-center px-3 mb-3">
   {/* Image 1 with Title and Button */}
   <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
