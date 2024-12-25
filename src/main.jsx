@@ -20,6 +20,8 @@ import Contact from './Components/Contact.jsx'
 import Career from './Components/Get involved/Career.jsx'
 import Five from './Components/Courses/Five.jsx'
 import Course from './Components/Courses/Course.jsx'
+import TestPage from './Components/AboutUs/TestPage.jsx'
+import ParashuramRitual from './Components/Rituals/ParashuramRitual.jsx'
 
 
 const router =createBrowserRouter(
@@ -28,7 +30,7 @@ const router =createBrowserRouter(
     <Route path='/' element={<App/>}> 
     <Route path='' element={<Home/>}/>
    <Route path='/guru' element={<Guru/>}/>
-   <Route path='/abhi' element={<Abhishekam/>}/>
+   <Route path='/parashurama-rituals' element={<ParashuramRitual/>}/>
    <Route path='/dhanur' element={<Dhanur/>}/>
    <Route path='/upcoming-projects' element={<Upcomingprojects/>}/>
    <Route path='/origin' element={<Origin/>}/>
@@ -42,6 +44,7 @@ const router =createBrowserRouter(
    <Route path='/career' element={<Career/>}/>
    <Route path='/fivedays' element={<Five/>}/>
    <Route path='/course' element={<Course/>}/>
+   <Route path="/test" element={<TestPage/>}/>
     </Route>
     </>
   )

@@ -6,17 +6,19 @@ import pic3 from '../../assets/pic3.jpg';
 import pic4 from '../../assets/pic4.jpg';
 import pic5 from '../../assets/pic5.jpg';
 import pic6 from '../../assets/pic6.jpg';
-import DHANUR_VIDYA from '../../assets/DHANUR_VIDYA.png';
-import KUNTHA_VIDYA from '../../assets/KUNTHA_VIDYA.png';
-import GADA_VIDYA from '../../assets/GADA_VIDYA.png';
-import BAHU_VIDYA from '../../assets/BAHU_VIDYA.png';
-import CHAKRA_VIDYA from '../../assets/CHAKRA_VIDYA.png';
-import KSHURIKA_VIDYA from '../../assets/KSHURIKA_VIDYA.png';
+import DHANUR_VIDYA from '../../assets/dhanurvidya icon.png';
+import KUNTHA_VIDYA from '../../assets/kuntha vidya icon.png';
+import GADA_VIDYA from '../../assets/gada vidya icon.png';
+import BAHU_VIDYA from '../../assets/vahu vidya icon.png';
+import CHAKRA_VIDYA from '../../assets/chakra vidya.png';
+import KSHURIKA_VIDYA from '../../assets/kshurika vidya icon.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { Link } from 'react-router-dom';
+import aboutus from '../../assets/ABOUT US.png'
+import saptVidya from '../../assets/SAPT VIDYA.png'
 
 const Septvidya = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -62,17 +64,25 @@ const Septvidya = () => {
 
   return (
     <section
-      className="relative w-full justify-center min-h-screen bg-cover bg-center flex flex-col md:flex-row items-center rounded-lg overflow-hidden"
+      className="relative w-full justify-center min-h-screen bg-cover bg-center  rounded-lg overflow-hidden"
       style={{ backgroundImage: `url(${newbg})` }}
     >
-      {/* Right Section with Carousel */}
-      <div className="relative w-full px-2   mb-8 overflow-hidden   h-full rounded-lg">
+      <div className=" pt-2  px-[15px]  md:px-[200px] flex flex-col justify-center items-center">
+       
+        <img src={aboutus} alt="" />
+        <p className="text-justify md:text-center pb-3">Isodhan Foundation is a dedicated institution rooted in preserving and promoting the rich cultural heritage of India. Our mission is to revive the essence of Indian traditions, spirituality, and the Gurukulam system, nurturing a way of life that aligns with Dharma and universal harmony.
+
+At the heart of our vision is the revival of Dhanurveda, the ancient Vedic science of warfare and self-defense, emphasizing discipline, valor, and righteousness. Inspired by the teachings of Lord Parashurama, the protector of Dharma and embodiment of strength and justice, we aim to instill his virtues in every seeker.</p>
+      </div>
+     <div className="flex flex-col-reverse md:flex-row">
+       {/* Right Section with Carousel */}
+       <div className="relative w-full px-2   mb-8 overflow-hidden   h-full rounded-lg">
         <Swiper
           modules={[Autoplay, Pagination]} 
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
-            320: { slidesPerView: 2 }, // 2 slides for devices with a width of 460px or larger
+            320: { slidesPerView: 1 }, // 2 slides for devices with a width of 460px or larger
             768: { slidesPerView: 2 }, // 2 slides for devices with a width of 768px or larger
             1024: { slidesPerView: 3 }, // 3 slides for devices with a width of 1024px or larger
           }}
@@ -83,7 +93,7 @@ const Septvidya = () => {
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="relative w-full h-80  sm:h-96 lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
+              <div className="relative w-full h-[450px]  sm:h-96 lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
                 {/* Front side of the card */}
                 <div
                   className="absolute w-full h-full transition-opacity duration-500"
@@ -101,66 +111,93 @@ const Septvidya = () => {
       </div>
 
       {/* Left Section with Icons and Text */}
-      <div className="w-full md:w-[40%] pl-7 md:pl-0  text-gray-500 fade-in">
-        <h1 className="ml-0 text-center text-3xl font-bold animate-pulse text-yellow-800 ">Sapt Vidya</h1>
-        <div className="grid  grid-cols-2 px-2 xl:px-0 w-full  justify-center items-start">
-          {/* First Section with 3 Icons */}
-          <div className="flex flex-col justify-center items-start">
-            {/* Icon 1 */}
-            <div className="flex flex-col justify-center items-start group">
-              <div className="w-16 h-18">
-                <img src={DHANUR_VIDYA} alt="Dhanur Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
-              </div>
-              <h1 className="text-[15px] font-bold mt-2">DHANUR VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">The ancient art of archery</p>
-            </div>
-            {/* Icon 2 */}
-            <div className="flex flex-col items-start group mt-10">
-              <div className="w-16 h-16">
-                <img src={KUNTHA_VIDYA} alt="Kuntha Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
-              </div>
-              <h1 className="text-[15px] font-bold mt-2">KUNTHA VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">The ancient art of spear</p>
-            </div>
-            {/* Icon 3 */}
-            <div className="flex flex-col items-start group mt-6 ">
-              <div className="w-16 h-16">
-                <img src={BAHU_VIDYA} alt="Bahuv Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
-              </div>
-              <h1 className="text-[15px] font-bold mt-z">BAHU VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">The ancient art of sword welding</p>
-            </div>
-          </div>
+      <div className="w-full md:w-[40%]  md:pl-0 text-gray-500 fade-in">
+  <img src={saptVidya} alt="" />
 
-          {/* Second Section with 3 Icons */}
-          <div className="flex flex-col items-start space-y-4">
-            {/* Icon 1 */}
-            <div className="flex flex-col items-start group">
-              <div className="w-16 h-15">
-                <img src={KSHURIKA_VIDYA} alt="Kshurika Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
-              </div>
-              <h1 className="text-[15px] font-bold mt-2">KSHURIKA VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">The art of self defense</p>
-            </div>
-            {/* Icon 2 */}
-            <div className="flex flex-col items-start group mt-4">
-              <div className="w-16 h-16">
-                <img src={GADA_VIDYA} alt="Gada Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
-              </div>
-              <h1 className="text-[15px] font-bold mt-9">GADA VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">The ancient art of mace</p>
-            </div>
-            {/* Icon 3 */}
-            <div className="flex flex-col items-start group mt-4">
-              <div className="w-16 h-16">
-                <img src={CHAKRA_VIDYA} alt="Chakra Vidya" className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" />
-              </div>
-              <h1 className="text-[15px] font-bold mt-9">CHAKRA VIDYA</h1>
-              <p className="mt-2 text-[13px] w-32">The art of wheel throwing</p>
-            </div>
-          </div>
+  <div className="grid grid-cols-2  px-4 pb-5 md:px-0 w-full justify-center items-start">
+    {/* First Section with 3 Icons */}
+    <div className="flex flex-col items-center">
+      {/* Icon 1 */}
+      <div className="flex flex-col items-center group">
+        <div className="w-16 h-16 flex justify-center">
+          <img
+            src={DHANUR_VIDYA}
+            alt="Dhanur Vidya"
+            className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
         </div>
+        <h1 className="text-[15px] font-bold text-black mt-2 text-center">DHANUR VIDYA</h1>
+        <p className="mt-2 text-[13px] text-black text-center">The ancient art of archery</p>
       </div>
+      {/* Icon 2 */}
+      <div className="flex flex-col items-center group">
+        <div className="w-16 h-16">
+          <img
+            src={KUNTHA_VIDYA}
+            alt="Kuntha Vidya"
+            className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <h1 className="text-[15px] font-bold text-black mt-2 text-center">KUNTHA VIDYA</h1>
+        <p className="mt-2 text-[13px] text-black text-center">The ancient art of spear</p>
+      </div>
+      {/* Icon 3 */}
+      <div className="flex flex-col items-center group">
+        <div className="w-16 h-16">
+          <img
+            src={BAHU_VIDYA}
+            alt="Bahuv Vidya"
+            className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <h1 className="text-[15px] text-black font-bold mt-2 text-center">BAHU VIDYA</h1>
+        <p className="mt-2 text-[13px] text-black text-center">The ancient art of sword welding</p>
+      </div>
+    </div>
+
+    {/* Second Section with 3 Icons */}
+    <div className="flex flex-col items-center">
+      {/* Icon 1 */}
+      <div className="flex flex-col items-center group">
+        <div className="w-16 h-16">
+          <img
+            src={KSHURIKA_VIDYA}
+            alt="Kshurika Vidya"
+            className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <h1 className="text-[15px] text-black font-bold mt-2 text-center">KSHURIKA VIDYA</h1>
+        <p className="mt-2 text-[13px] text-black text-center">The art of self defense</p>
+      </div>
+      {/* Icon 2 */}
+      <div className="flex flex-col items-center group">
+        <div className="w-16 h-16">
+          <img
+            src={GADA_VIDYA}
+            alt="Gada Vidya"
+            className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <h1 className="text-[15px] text-black font-bold mt-2 text-center">GADA VIDYA</h1>
+        <p className="mt-2 text-[13px] text-black text-center">The ancient art of mace</p>
+      </div>
+      {/* Icon 3 */}
+      <div className="flex flex-col items-center group">
+        <div className="w-16 h-16">
+          <img
+            src={CHAKRA_VIDYA}
+            alt="Chakra Vidya"
+            className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <h1 className="text-[15px] text-black font-bold mt-2 text-center">CHAKRA VIDYA</h1>
+        <p className="mt-2 text-[13px] text-black text-center">The art of wheel throwing</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+     </div>
     </section>
   );
 };

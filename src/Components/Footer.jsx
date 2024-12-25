@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram ,faYoutube, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
-
+import footerLogo from '../assets/logo.png'
 
 const Footer = () => {
   return (
@@ -12,17 +12,17 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between space-y-8 lg:space-y-0">
 
           {/* First Section */}
-          <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
-            <h3 className="text-xl font-semibold text-white mb-3">Isodhan International Society</h3>
+          <div className="w-full lg:w-1/4  lg:mb-0">
+            <h3 className="font-semibold text-white mb-3">International Society for Dhanurveda</h3>
             <img 
-              src="http://localhost:5173/src/assets/logo1.jpeg" 
+              src={footerLogo}
               alt="Isodhan International Society Logo" 
-              className="w-32 h-auto" 
+              className="w-40 h-auto" 
             />
           </div>
 
           {/* About Section */}
-          <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
+          <div className="w-full lg:w-1/4  lg:mb-0">
             <h3 className="text-xl font-semibold text-white mb-3">Information</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="hover:text-orange-500">Home</a></li>
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links Section */}
-          <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
+          <div className="w-full lg:w-1/4  lg:mb-0">
             <h3 className="text-xl font-semibold text-white mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="hover:text-orange-500">Upcoming Srividya Classes</a></li>
@@ -75,7 +75,7 @@ const Footer = () => {
             <div className="flex items-start mb-2">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="text-lg mr-2" />
               <address className="not-italic text-sm">
-                Head office: ISODHAN DHANURVEDA GURUKULAM, Anna Rao Circle, beside more super market, Srinivasa Nagar, N G O Colony, Tirupati 517501
+                Head office: ISODHAN DHANURVEDA GURUKULAM, Anna Rao Circle, beside more super market, Srinivasa Nagar, N G O Colony, Tirupati 517501, Andhra Pradesh
               </address>
             </div>
           </div>

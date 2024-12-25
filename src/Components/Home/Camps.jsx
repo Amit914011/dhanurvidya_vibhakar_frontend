@@ -96,16 +96,12 @@ const Camps = () => {
 
   return (
     <>
-    <div className=" bg-cover bg-center py-16 overflow-hidden"
+    <div className=" bg-cover bg-center py-3 pb-5 px-2 md:py-10 overflow-hidden"
     
     
      style={{ backgroundImage: `url(${bgImage})` }} >
-      <div className="flex flex-col items-center md:flex md:flex-row justify-evenly w-screen  md:items-start">
-        <img src={logo4} alt="Logo" className="w-40 h-16 object-cover" />
-        <h1 className="text-black text-2xl md:text-4xl font-bold mb-8">Our Camps</h1>
-      </div>
-
-        <h1 className=" text-center font-bold text-2xl md:text-4xl  text-[#800000] py-2">DHANURVEDA CAMP</h1>
+      
+        <h1 className=" text-center font-bold text-2xl md:text-3xl  text-[#800000] py-2">DHANURVEDA CAMPS</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 justify-evenly w-full gap-2 md:px-5 ">
   {/* Card 1 */}
   <motion.div
@@ -120,7 +116,7 @@ const Camps = () => {
       Explore the ancient art of archery. Learn the techniques and disciplines
       that warriors once mastered to defend kingdoms.
     </p>
-    <Link to='/dhanur' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
+    <Link to='/dhanur' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-[#810000] mx-auto block ">
       Learn More
     </Link>
   </motion.div>
@@ -137,7 +133,7 @@ const Camps = () => {
     <p className="text-gray-600  text-center leading-relaxed flex-grow">
       Dive into the practice of wielding the powerful mace, a symbol of strength and valor in ancient battles.
     </p>
-    <Link to='/gadavidya' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block ">
+    <Link to='/gadavidya' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-[#810000] mx-auto block ">
       Learn More
     </Link>
   </motion.div>
@@ -154,7 +150,7 @@ const Camps = () => {
     <p className="text-gray-600  text-center leading-relaxed flex-grow">
       Learn the fine art of swordsmanship, honing your skills in close combat with traditional weaponry.
     </p>
-    <Link to='/khadagvidya' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-gray-900 mx-auto block mt-4">
+    <Link to='/khadagvidya' className="bg-[#5E0000] py-2 px-4 rounded-md text-white hover:bg-[#810000] mx-auto block mt-4">
       Learn More
     </Link>
   </motion.div>
@@ -164,7 +160,7 @@ const Camps = () => {
 </div>
 
 <div
-  className="w-full py-16 bg-cover bg-center bg-no-repeat"
+  className="w-full py-5 bg-cover bg-center bg-no-repeat"
   style={{ backgroundImage: `url(${bgImage1})` }}
 >
   <div className="text-center flex flex-col gap-4 text-black">
@@ -174,7 +170,7 @@ const Camps = () => {
     </p>
   </div>
 
-  <div className="w-full mb-8 md:mb-0 overflow-hidden py-3 mt-12 mx-auto">
+  <div className="w-full mb-8 md:mb-0 overflow-hidden py-3 mt-12 mx-auto px-[15px]">
     <div
       className="flex transition-transform duration-500 ease-in-out"
       style={{ transform: `translateX(-${carouselIndex * (100 / visibleCards)}%)` }}

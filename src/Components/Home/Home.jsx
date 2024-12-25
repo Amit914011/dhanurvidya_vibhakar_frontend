@@ -4,10 +4,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {Pagination, Autoplay } from 'swiper/modules';
-import image7 from '../../assets//Banner Image/10.jpg';
-import image2 from '../../assets/Banner Image/11.jpg';
-import image3 from '../../assets/Banner Image/14.jpg';
-import image4 from '../../assets/Banner Image/15.jpg';
+import image7 from '../../assets/banner3.jpg';
+import image2 from '../../assets/temple2.jpg';
+import image3 from '../../assets/banner2.jpg';
+// import image4 from '../../assets/Banner Image/15.jpg';
 import Septvidya from '../Home/Septvidya';
 import Camps from '../Home/Camps';
 import FAQ from '../Home/FAQ';
@@ -24,7 +24,7 @@ export default function Home() {
     { id: 1, image: image7 },
     { id: 2, image: image2 },
     { id: 3, image: image3 },
-    { id: 4, image: image4 },
+    // { id: 4, image: image4 },
   ];
 
   
@@ -46,7 +46,7 @@ export default function Home() {
         <img
           src={slide.image}
           alt={`Slide ${slide.id}`}
-          className="w-full object-cover sm:h-[200px] md:h-[300px] lg:h-[520px] "
+          className="w-full object-cover   "
         />
       </SwiperSlide>
     ))}

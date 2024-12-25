@@ -5,7 +5,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import "./Navbar.css";
-import logo from "../../assets/ISODHAN LOGO 1 .png";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 export default function Navbar() {
   const [show, setShow] = useState("");
@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className="buttommenubar">
             <div>
               <Link to='/' className="text-black font-bold ">
-                <img src={logo} alt="" className="w-24" />
+                <img src={logo} alt="" className="w-44" />
               </Link>
             </div>
             <div>
@@ -41,8 +41,8 @@ export default function Navbar() {
                   </p>
                   <ul className="sumenu">
                       {
-                        [{"title":"Guru","link":"/guru"},
-                          {"title":"Guru Sankalpa","link":"/"},
+                        [{"title":"Guru Ji","link":"/guru"},
+                          {"title":"Guru Ji Sankalpa","link":"/"},
                           {"title":" Associated centres","link":"/"},
                           {"title":" Upcoming projects","link":"/upcoming-projects"},
                           {"title":"Bhargava Upasana","link":"/"}
@@ -62,7 +62,7 @@ export default function Navbar() {
                   <ul className="sumenu">
 
                   {
-                        [{"title":"Parashurama Rituals","link":"/abhi"},
+                        [{"title":"Parashurama Rituals","link":"/parashurama-rituals"},
                           {"title":"Online Rituals","link":"/"},
                           {"title":"Yagna and Homam","link":"/"},
                           // {"title":" Lakshmi Homam","link":"/"},
@@ -187,11 +187,11 @@ export default function Navbar() {
         <div className="h-[60px] block lg:hidden px-[20px] md:px-[50px] bg-[#5E0000] w-full overflow-hidden fixed">
           <div className="flex justify-between items-center">
             <Link to="/">
-              <img src={logo} alt="" className="w-[100px]" />
+              <img src={logo} alt="" className="w-[150px]" />
             </Link>
             <div className="flex items-center">
               <GiHamburgerMenu
-                className="text-3xl mt-3 cursor-pointer text-white"
+                className="text-3xl  cursor-pointer text-white"
                 onClick={() => {
                   setShow("show");
                 }}

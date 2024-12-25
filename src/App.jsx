@@ -5,7 +5,7 @@ import Footer from './Components/Footer'
 import Header from './Components/Header'
 import Head from './Components/Head'
 import Navbar from './Components/Navbar/Navbar'
-
+import './App.css'
 
 export default function App() {
       const location = useLocation()

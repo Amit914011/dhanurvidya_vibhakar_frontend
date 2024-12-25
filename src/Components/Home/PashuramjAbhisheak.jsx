@@ -25,13 +25,13 @@ const PashuramjAbhisheak = () => {
   ];
 
   return (
-    <div className="bg-cover bg-center text-black" style={{ backgroundImage: `url(${bgImage})` }}>
+    <div className="bg-cover bg-center py-2 text-black" style={{ backgroundImage: `url(${bgImage})` }}>
       {/* Heading Section */}
-      <div className="text-center py-8">
-        <h1 className="text-lg  md:text-3xl sm:text-4xl lg:text-5xl font-bold text-black uppercase tracking-wide hover:text-yellow-400">
-          Pashuram Abhishekam
-        </h1>
-      </div>
+      <div className="text-center flex flex-col gap-4 text-black">
+    <p className="text-2xl pb-4 md:text-4xl font-bold ml-4 mr-4 md:mt-5 text-[#800000] leading-10">
+   Sri  Parashurama Swamy Abhishekam
+    </p>
+  </div>
       {/* Swiper Section */}
       <Swiper
         modules={[Pagination, Autoplay]}
@@ -57,17 +57,17 @@ const PashuramjAbhisheak = () => {
 
       <div className="flex flex-wrap md:flex-nowrap w-full">
         {/* Left Section with Text */}
-        <div className="w-full md:w-2/5 lg:w-1/3 p-8 text-gray-500">
-          <h1 className="text-lg  text-center md:text-3xl font-bold animate-pulse text-yellow-800">
+        <div className="w-full md:w-2/5 lg:w-1/3 px-8 text-gray-500">
+          <h1 className="text-2xl md:text-4xl font-bold text-center text-[#800000] leading-10 ">
             Rituals and Offerings
           </h1>
-          <p className="leading-8 mt-10 text-center">
+          <p className="leading-8 mt-2 pb-3">
             To allow devotees to be touched by the grace of Lord Parashurama, unique rituals designed to support individuals at every stage of life—from birth to death, and everything in between—are conducted at his sacred abode. These ceremonies are crafted to invoke the blessings of Lord Parashurama, the eternal warrior-sage, and to ensure his protection, strength, and wisdom throughout a devotee's journey in life.
           </p>
         </div>
 
         {/* Right Section with Cards */}
-        <div className="relative w-full md:w-3/5 lg:w-2/3 mb-8 overflow-hidden py- mt-1">
+        <div className="relative w-full md:w-3/5 lg:w-2/3 mb-8 overflow-hidden px-[15px] mt-1">
           <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={30}
@@ -82,7 +82,7 @@ const PashuramjAbhisheak = () => {
             className="w-full">
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="relative w-full h-80 sm:h-96 lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
+                <div className="relative w-full h-[500px] overflow-hidden lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
                   {/* Front side of the card */}
                   <div
                     className="absolute w-full h-full transition-opacity duration-500"
@@ -93,9 +93,9 @@ const PashuramjAbhisheak = () => {
                     }}>
                     <div className="flex flex-col h-full justify-between p-4">
                       <div className="flex justify-between items-start">
-                        <span className="bg-green-500 text-white px-2 py-1 text-sm">
+                        {/* <span className="bg-green-500 text-white px-2 py-1 text-sm">
                           OFFER ONLINE
-                        </span>
+                        </span> */}
                         <div className="flex flex-col text-white rounded-lg">
                           {/* <ul className="text-sm leading-9">
                             <li className="bg-[#bc4034] rounded-lg px-2 mb-1">List Item 1</li>

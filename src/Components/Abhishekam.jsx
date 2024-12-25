@@ -123,13 +123,7 @@ function Abhishekam() {
           Offer Online
         </h1>
 
-        <div className="absolute top-2 right-2 z-10 text-right space-y-1">
-          {card.listItems.map((item, index) => (
-            <p key={index} className="bg-gray-800 text-white text-xs px-2 py-1 rounded">
-              {item}
-            </p>
-          ))}
-        </div>
+        {/*  */}
 
         <div className="absolute inset-0 overflow-hidden">
           <img
@@ -180,13 +174,7 @@ function Abhishekam() {
           Offer Online
         </h1>
 
-        <div className="absolute top-2 right-2 z-10 text-right space-y-1">
-          {card.listItems.map((item, index) => (
-            <p key={index} className="bg-gray-800 text-white text-xs px-2 py-1 rounded">
-              {item}
-            </p>
-          ))}
-        </div>
+        {/*  */}
 
         <div className="absolute inset-0 overflow-hidden">
           <img
@@ -237,13 +225,7 @@ function Abhishekam() {
           Offer Online
         </h1>
 
-        <div className="absolute top-2 right-2 z-10 text-right space-y-1">
-          {card.listItems.map((item, index) => (
-            <p key={index} className="bg-gray-800 text-white text-xs px-2 py-1 rounded">
-              {item}
-            </p>
-          ))}
-        </div>
+        {/*  */}
 
         <div className="absolute inset-0 overflow-hidden">
           <img
@@ -294,13 +276,7 @@ Sahasranama Pooja Archana
           Offer Online
         </h1>
 
-        <div className="absolute top-2 right-2 z-10 text-right space-y-1">
-          {card.listItems.map((item, index) => (
-            <p key={index} className="bg-gray-800 text-white text-xs px-2 py-1 rounded">
-              {item}
-            </p>
-          ))}
-        </div>
+        {/*  */}
 
         <div className="absolute inset-0 overflow-hidden">
           <img
@@ -351,13 +327,7 @@ Sahasranama Pooja Archana
           Offer Online
         </h1>
 
-        <div className="absolute top-2 right-2 z-10 text-right space-y-1">
-          {card.listItems.map((item, index) => (
-            <p key={index} className="bg-gray-800 text-white text-xs px-2 py-1 rounded">
-              {item}
-            </p>
-          ))}
-        </div>
+        {/*  */}
 
         <div className="absolute inset-0 overflow-hidden">
           <img
@@ -408,13 +378,7 @@ Sahasranama Pooja Archana
           Offer Online
         </h1>
 
-        <div className="absolute top-2 right-2 z-10 text-right space-y-1">
-          {card.listItems.map((item, index) => (
-            <p key={index} className="bg-gray-800 text-white text-xs px-2 py-1 rounded">
-              {item}
-            </p>
-          ))}
-        </div>
+        
 
         <div className="absolute inset-0 overflow-hidden">
           <img
@@ -465,13 +429,7 @@ Sahasranama Pooja Archana
           Offer Online
         </h1>
 
-        <div className="absolute top-2 right-2 z-10 text-right space-y-1">
-          {card.listItems.map((item, index) => (
-            <p key={index} className="bg-gray-800 text-white text-xs px-2 py-1 rounded">
-              {item}
-            </p>
-          ))}
-        </div>
+        
 
         <div className="absolute inset-0 overflow-hidden">
           <img
@@ -523,13 +481,7 @@ Sahasranama Pooja Archana
           Offer Online
         </h1>
 
-        <div className="absolute top-2 right-2 z-10 text-right space-y-1">
-          {card.listItems.map((item, index) => (
-            <p key={index} className="bg-gray-800 text-white text-xs px-2 py-1 rounded">
-              {item}
-            </p>
-          ))}
-        </div>
+        
 
         <div className="absolute inset-0 overflow-hidden">
           <img

@@ -6,7 +6,7 @@ import scholar from '../assets/scholar.png'
 export default function Gurukulam() {
   return (
     <div>
-     <div className="w-full pt-20">
+     <div className="w-full pt-[60px] md:pt-16">
   <img 
     src={gurukulam} 
     alt="Gurukulam" 
@@ -26,30 +26,30 @@ export default function Gurukulam() {
 <div className="p-4">
       {/* Regular Classes Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4 text-black">Dhanurvidya Regular Classes</h2>
+        <h2 className="text-2xl font-bold  text-black">Dhanurvidya Regular Classes</h2>
         <div className="overflow-x-auto">
           <table className="table-auto border-collapse border border-gray-300 w-full text-left">
             <thead>
-              <tr className="bg-gray-200">
-                <th className="border border-gray-300 p-2">Class</th>
-                <th className="border border-gray-300 p-2">Frequency</th>
-                <th className="border border-gray-300 p-2">Session Duration</th>
-                <th className="border border-gray-300 p-2">Timings</th>
-                <th className="border border-gray-300 p-2">Holiday</th>
-                <th className="border border-gray-300 p-2">Notes</th>
+              <tr className="">
+                <th className="border border-gray-300 p-2 text-[16px] text-center">Class</th>
+                <th className="border border-gray-300 p-2 text-[16px] text-center">Frequency</th>
+                <th className="border border-gray-300 p-2 text-[16px] text-center">Session Duration</th>
+                <th className="border border-gray-300 p-2 text-[16px] text-center">Timings</th>
+                <th className="border border-gray-300 p-2 text-[16px] text-center">Holiday</th>
+                <th className="border border-gray-300 p-2 text-[16px] text-center">Notes</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 p-2">Dhanurvidya</td>
-                <td className="border border-gray-300 p-2">Daily (Monday to Sunday)</td>
-                <td className="border border-gray-300 p-2">1 to 1.5 hours per session</td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-gray-300 p-2 text-[14px]">Dhanurvidya</td>
+                <td className="border border-gray-300 p-2 text-[14px] w-[230px]">Daily (Monday to Sunday)</td>
+                <td className="border border-gray-300 p-2 text-[14px]">1 to 1.5 hours per session</td>
+                <td className="border border-gray-300 p-2 text-[14px] w-[260px]">
                   Morning: 06:30 AM - 08:00 AM <br />
                   Evening: 05:00 PM - 06:30 PM
                 </td>
-                <td className="border border-gray-300 p-2">Every Ashtami and Amavasya</td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-gray-300 p-2 text-[14px]">Every Ashtami and Amavasya</td>
+                <td className="border border-gray-300 p-2 text-[14px]">
                   Choose morning or evening session. Duration varies by skill level.
                 </td>
               </tr>
@@ -57,18 +57,18 @@ export default function Gurukulam() {
           </table>
         </div>
         <div className="mt-4">
-          <h3 className="font-bold text-xl text-black">Additional Information for Participants:</h3>
-          <ul className="list-disc pl-5 mt-2">
+          <h3 className="font-bold text-lg text-black">Additional Information for Participants:</h3>
+          <ul className="list-disc pl-10 mt-2 ">
             <li>
-              <span className="font-semibold font-serif">Skill-based Duration:</span> Class duration may range from 1 to 1.5 hours,
+              <span className="font-semibold ">Skill-based Duration:</span> Class duration may range from 1 to 1.5 hours,
               tailored to each participant's skill and progress.
             </li>
             <li>
-              <span className="font-semibold font-serif">Flexible Timing:</span> Participants may select either the morning or
+              <span className="font-semibold ">Flexible Timing:</span> Participants may select either the morning or
               evening session based on availability.
             </li>
             <li>
-              <span className="font-semibold font-serif">Scheduled Holidays:</span> No classes are held on Ashtami (the 8th lunar
+              <span className="font-semibold ">Scheduled Holidays:</span> No classes are held on Ashtami (the 8th lunar
               day) and Amavasya (new moon day).
             </li>
           </ul>
@@ -77,7 +77,7 @@ export default function Gurukulam() {
 
       {/* Weekend Classes Section */}
       <div>
-        <h2 className="text-xl font-bold mb-4 text-black">Dhanurvidya Weekend Classes</h2>
+        <h2 className="text-2xl font-bold mb-4 text-black">Dhanurvidya Weekend Classes</h2>
         <div className="overflow-x-auto">
           <table className="table-auto border-collapse border border-gray-300 w-full text-left">
             <thead>
@@ -109,11 +109,11 @@ export default function Gurukulam() {
           <h3 className="font-bold text-black text-xl">Additional Information for Participants:</h3>
           <ul className="list-disc pl-5 pt-2">
             <li>
-              <span className="font-semibold font-serif">Skill-based Duration:</span> Class length may vary between 1 to 1.5 hours
+              <span className="font-semibold ">Skill-based Duration:</span> Class length may vary between 1 to 1.5 hours
               depending on the participant's progress and skill level.
             </li>
             <li>
-              <span className="font-semibold font-serif">Flexible Timing:</span> You may select either the morning or evening
+              <span className="font-semibold ">Flexible Timing:</span> You may select either the morning or evening
               session as per your preference.
             </li>
           </ul>
@@ -161,15 +161,15 @@ export default function Gurukulam() {
           <h3 className="font-bold text-xl text-black">Additional Information for Participants:</h3>
           <ul className="list-disc pl-5 mt-2">
             <li>
-              <span className="font-semibold font-serif">Skill-based Duration:</span> Class duration may range from 1 to 1.5 hours,
+              <span className="font-semibold ">Skill-based Duration:</span> Class duration may range from 1 to 1.5 hours,
               tailored to each participant's skill and progress.
             </li>
             <li>
-              <span className="font-semibold font-serif">Flexible Timing:</span> Participants may select either the morning or
+              <span className="font-semibold ">Flexible Timing:</span> Participants may select either the morning or
               evening session based on availability.
             </li>
             <li>
-              <span className="font-semibold font-serif">Scheduled Holidays:</span> No classes are held on Ashtami (the 8th lunar
+              <span className="font-semibold ">Scheduled Holidays:</span> No classes are held on Ashtami (the 8th lunar
               day) and Amavasya (new moon day).
             </li>
           </ul>
@@ -210,11 +210,11 @@ export default function Gurukulam() {
           <h3 className="font-bold text-black text-xl">Additional Information for Participants:</h3>
           <ul className="list-disc pl-5 pt-2">
             <li>
-              <span className="font-semibold font-serif">Skill-based Duration:</span> Class length may vary between 1 to 1.5 hours
+              <span className="font-semibold ">Skill-based Duration:</span> Class length may vary between 1 to 1.5 hours
               depending on the participant's progress and skill level.
             </li>
             <li>
-              <span className="font-semibold font-serif">Flexible Timing:</span> You may select either the morning or evening
+              <span className="font-semibold ">Flexible Timing:</span> You may select either the morning or evening
               session as per your preference.
             </li>
           </ul>

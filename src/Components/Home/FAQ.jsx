@@ -33,7 +33,7 @@ function FAQ() {
 
   return (
     <div
-      className="py-24 bg-cover bg-center text-black"
+      className="py-3 px-[15px] bg-cover bg-center text-black"
       style={{ backgroundImage: `url(${bgImage})` }} // Add the background image here
     >
       <div className="font-bold flex flex-col gap-6 items-center text-maroon-600">
@@ -99,7 +99,7 @@ function FAQ() {
           <img
             src={dhanurVidyaImage}
             alt="Dhanur Vidya"
-            className="object-contain w-full max-w-xl mb-4"
+            className="object-contain w-full max-w-xl mb-4 hidden md:block"
           />
         </motion.div>
       </div>
