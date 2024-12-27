@@ -15,7 +15,7 @@ export default function Contact() {
 </div>
 
 <div className="py-10">
-  <div className="px-5  mx-auto text-center sm:text-left">
+  <div className="px-[15px] md:px-[60px]  mx-auto text-center sm:text-left">
     <h1 className="text-3xl sm:text-3xl font-bold  text-red-800 mb-6">
       Connect with Us on the Path of Dharma
     </h1>
@@ -34,11 +34,9 @@ export default function Contact() {
     text-sm 
     md:text-base 
     rounded-md 
-    py-3 
-    px-5 
+    py-2
+    px-3
     flex 
-    flex-col 
-    md:flex-row 
     items-center 
     justify-center 
     gap-3 
