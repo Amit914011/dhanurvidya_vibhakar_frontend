@@ -183,6 +183,8 @@ export default function Navbar() {
 
 
 
+
+
         {/* Mobile Menu */}
         <div className="h-[60px] block lg:hidden px-[20px] md:px-[50px] bg-[#5E0000] w-full overflow-hidden fixed">
           <div className="flex justify-between items-center">
@@ -209,7 +211,7 @@ export default function Navbar() {
           />
           <ul className="mainMobileMenu z-50">
             <li className="hover:bg-blue-50 ">
-              <Link to="/" className="block pl-2" onClick={() => {
+              <Link to="/" className="block text-[16px]" onClick={() => {
               setShow("");
             }}>
                 Home
@@ -217,7 +219,7 @@ export default function Navbar() {
             </li>
             <li>
               <div className="flex justify-between " onClick={() => setMenuOpen(!menuOpen)}>
-              <li className="mr-20 pl-2"  >
+              <li className="block text-[16px]"  >
                 About Us
               </li>
               <IoMdArrowDropdown
@@ -328,7 +330,7 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between">
-             <Link to='/gurukulam' className="mr-14 pl-2" >
+             <Link to='/gurukulam' className="mr-14" >
              Gurukulam 
               </Link>
               <IoMdArrowDropdown
@@ -377,12 +379,12 @@ Get Involved
               </ul>
             </li>
             <li>
-              <Link to="/" className="block pl-2" onClick={() => {setShow("");}}>
+              <Link to="/" className="block" onClick={() => {setShow("");}}>
                 Events
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="block pl-2" onClick={() => {setShow("");}}>
+              <Link to="/contact" className="block" onClick={() => {setShow("");}}>
                 Contact
               </Link>
             </li>
