@@ -227,10 +227,10 @@ export default function Navbar() {
               </div>
               <ul className={`${menuOpen ? "block" : "hidden"}`}>
               {
-                        [{"title":"Guru","link":"/guru"},
-                          {"title":"Guru Sankalpa","link":"/"},
+                        [{"title":"Guru Ji","link":"/guru"},
+                          {"title":"Guru Ji Sankalpa","link":"/"},
                           {"title":" Associated centres","link":"/"},
-                          {"title":" Upcoming projects","link":"/upcoming-projects"},
+                          {"title":" Upcoming Projects","link":"/upcoming-projects"},
                           {"title":"Bhargava Upasana","link":"/"}
                       ].map((item,index)=>(
                      <li key={index}  onClick={() => {setShow("");}}>
@@ -253,18 +253,18 @@ export default function Navbar() {
              </div>
               <ul className={`${menuOpen1 ? "block" : "hidden"}`}>
               {
-                        [{"title":"Abhisekam","link":"/abhi"},
-                          {"title":"Abhisekam","link":"/"},
-                          {"title":" Navagraha Homam / Shanti Homam","link":"/"},
-                          {"title":" Lakshmi Homam","link":"/"},
-                          {"title":"Maha Mrithyunjaya Homam","link":"/"},
-                          {"title":"Mahalakshmi Homam","link":"/"},
-                          {"title":"Sri Suktha Homam","link":"/"},
-                          {"title":"Sudarshan Homam","link":"/"},
-                          {"title":" Chandi Homam","link":"/"},
-                          {"title":" Booh Varaha Homam","link":"/"},
-                          {"title":" Saraswathi Homam","link":"/"},
-                          {"title":" Ayushya Homam","link":"/"},
+                        [{"title":"Parashurama Rituals","link":"/parashurama-rituals"},
+                          {"title":"Online Rituals","link":"/"},
+                          {"title":"Yagna and Homam","link":"/"},
+                          // {"title":" Lakshmi Homam","link":"/"},
+                          // {"title":"Maha Mrithyunjaya Homam","link":"/"},
+                          // {"title":"Mahalakshmi Homam","link":"/"},
+                          // {"title":"Sri Suktha Homam","link":"/"},
+                          // {"title":"Sudarshan Homam","link":"/"},
+                          // {"title":" Chandi Homam","link":"/"},
+                          // {"title":" Booh Varaha Homam","link":"/"},
+                          // {"title":" Saraswathi Homam","link":"/"},
+                          // {"title":" Ayushya Homam","link":"/"},
                       ].map((item,index)=>(
                      <li key={index} onClick={() => {setShow("");}}>
                       <Link to={item.link} className="block">
@@ -287,8 +287,8 @@ export default function Navbar() {
               <ul className={`${menuOpen2 ? "block" : "hidden"}`}>
               {
                         [{"title":"Origin","link":"/origin"},
-                          {"title":"Dhanurvidya","link":"/khadagvidya"},
-                          {"title":"Khadgavidya","link":"/"},
+                          {"title":"Dhanurvidya","link":"/dhanur"},
+                          {"title":"Khadgavidya","link":"/khadagvidya"},
                           {"title":" Gadavidya","link":"/gadavidya"},
                           {"title":"Maha Mrithyunjaya Homam","link":"/"},
                           {"title":"Mahalakshmi Homam","link":"/"},
@@ -327,18 +327,18 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-             <div className="flex justify-between" onClick={() => setMenuOpen4(!menuOpen4)}>
-             <p className="mr-14 pl-2" >
+             <div className="flex justify-between">
+             <Link to='/gurukulam' className="mr-14 pl-2" >
              Gurukulam 
-              </p>
+              </Link>
               <IoMdArrowDropdown
                 className="inline cursor-pointer"
-                
+                onClick={() => setMenuOpen4(!menuOpen4)}
               />
              </div>
               <ul className={`${menuOpen4 ? "block" : "hidden"}`}>
               {
-                        [{"title":"Tirupati","link":"/threedays"},
+                        [{"title":"Tirupati","link":"/"},
                          
                       ].map((item,index)=>(
                      <li key={index} onClick={() => {setShow("");}}>
@@ -348,6 +348,9 @@ export default function Navbar() {
                     </li>
                       ))}
               </ul>
+            </li>
+            <li>
+              <Link to='/temple'>Temple</Link>
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen5(!menuOpen5)}>
@@ -363,7 +366,7 @@ Get Involved
               {
                         [{"title":"Valentier","link":"/volenteer"},
                           {"title":" Offer Seva","link":"/"},
-                          {"title":"Careers","link":"/"},
+                          {"title":"Careers","link":"/career"},
                       ].map((item,index)=>(
                      <li key={index} onClick={() => {setShow("");}}>
                       <Link to={item.link} className="block">
