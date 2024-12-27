@@ -352,7 +352,7 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <Link to='/temple'>Temple</Link>
+              <Link to='/temple' onClick={() => {setShow("");}}>Temple</Link>
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen5(!menuOpen5)}>
