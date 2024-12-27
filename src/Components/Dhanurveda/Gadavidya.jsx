@@ -148,7 +148,7 @@ mace was for justice, Duryodhana's use was often driven by pride and ambition, l
   </div>
 </div>
 <div className='mt-2'>
-  <img src={ishdhan} alt="" className="w-full h-[200px]"/>
+  <img src={ishdhan} alt="" className="w-full md:h-[200px]"/>
 </div>
 <div className='flex justify-center'>
   <img src={program} alt=""/>

@@ -173,7 +173,7 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
 
 
 <div className='mt-3'>
-  <img src={ishdhan} alt="" className="w-full h-[200px]"/>
+  <img src={ishdhan} alt="" className="w-full md:h-[200px]"/>
 </div>
 
 <div className='flex justify-center'>
