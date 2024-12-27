@@ -217,9 +217,9 @@ export default function Navbar() {
             </li>
             <li>
               <div className="flex justify-between " onClick={() => setMenuOpen(!menuOpen)}>
-              <p className="mr-20 pl-2"  >
+              <li className="mr-20 pl-2"  >
                 About Us
-              </p>
+              </li>
               <IoMdArrowDropdown
                 className="inline cursor-pointer"
                 
@@ -243,9 +243,9 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen1(!menuOpen1)}>
-             <p className="mr-14 pl-2" >
+             <li className="mr-14 pl-2" >
                 Rituals
-              </p>
+              </li>
               <IoMdArrowDropdown
                 className="inline cursor-pointer"
                 
@@ -276,9 +276,9 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen2(!menuOpen2)}>
-             <p className="mr-14 pl-2" >
+             <li className="mr-14 pl-2" >
                 Dhanurveda
-              </p>
+              </li>
               <IoMdArrowDropdown
                 className="inline cursor-pointer"
                 
@@ -303,9 +303,9 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen3(!menuOpen3)}>
-             <p className="mr-14 pl-2" >
+             <li className="mr-14 pl-2" >
                 Courses
-              </p>
+              </li>
               <IoMdArrowDropdown
                 className="inline cursor-pointer"
                 
@@ -354,9 +354,9 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen5(!menuOpen5)}>
-             <p className="mr-14 pl-2" >            
+             <li className="mr-14 pl-2" >            
 Get Involved 
-              </p>
+              </li>
               <IoMdArrowDropdown
                 className="inline cursor-pointer"
                 
