@@ -164,47 +164,51 @@ const Camps = () => {
   style={{ backgroundImage: `url(${bgImage1})` }}
 >
   <div className="text-center flex flex-col gap-4 text-black">
-    <p className="text-xl md:text-4xl font-bold ml-4 mr-4 md:mt-5 text-[#800000] leading-10">
+    <p className="text-xl md:text-4xl font-bold ml-4 mr-4 md:mt-5 text-[#800000] ">
       "धनुर् गृहीत्वा उपनिषदं महास्त्रं शरं ह्युपासा निशितं सन्धयीत। <br />
    <span className="">   आयम्य तद्भावगतं स्वमेतत् तत् तत्त्वमस्य लक्ष्यं सधनम् हि विद्धि॥"</span>
     </p>
   </div>
 
-  <div className="w-full mb-8 md:mb-0 overflow-hidden py-3 mt-12 mx-auto px-[15px]">
-    <div
-      className="flex transition-transform duration-500 ease-in-out"
-      style={{ transform: `translateX(-${carouselIndex * (100 / visibleCards)}%)` }}
-    >
-      {cards.map((card, index) => (
-        <div
-          key={card.id}
-          className={`relative w-full h-[450px] lg:h-[500px] rounded-lg shadow-xl overflow-hidden flex-shrink-0 transform hover:scale-105 transition-transform duration-300 ease-in-out ${index !== cards.length - 1 ? 'mr-4' : ''}`}
-          style={{ flex: `0 0 ${100 / visibleCards}%` }}
-          onMouseEnter={() => setHoveredCard(card.id)}
-          onMouseLeave={() => setHoveredCard(null)}
-        >
-          {hoveredCard === card.id && (
-            <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-white p-6 text-center z-10 fade-in rounded-lg">
-              <p className="text-xl font-semibold mb-2">{card.data}</p>
-              <p className="text-4xl font-bold">{card.details}</p>
-            </div>
-          )}
-          <img src={card.image} alt={`Card ${card.id}`} className="w-full h-full object-cover rounded-lg" />
-        </div>
-      ))}
-    </div>
-
-    {/* Dots for Navigation */}
-    <div className="flex justify-center mt-4 space-x-2">
-      {Array.from({ length: Math.max(cards.length - visibleCards + 1, 1) }).map((_, index) => (
-        <button
-          key={index}
-          onClick={() => handleDotClick(index)}
-          className={`h-3 w-3 rounded-full transition-colors duration-300 ease-in-out ${carouselIndex === index ? 'bg-white' : 'bg-gray-400'}`}
-        />
-      ))}
-    </div>
+  <div className="w-full mb-8 md:mb-0 overflow-hidden py-3 mx-auto px-[15px]">
+  <div
+    className="flex transition-transform duration-500 ease-in-out gap-3"
+    style={{ transform: `translateX(-${carouselIndex * (100 / visibleCards)}%)` }}
+  >
+    {cards.map((card, index) => (
+      <div
+        key={card.id}
+        className={`relative w-full h-[400px] lg:h-[500px] rounded-lg shadow-xl overflow-hidden flex-shrink-0 transform hover:scale-105 transition-transform duration-300 ease-in-out`}
+        style={{ flex: `0 0 ${100 / visibleCards}%` }}
+        onMouseEnter={() => setHoveredCard(card.id)}
+        onMouseLeave={() => setHoveredCard(null)}
+      >
+        {hoveredCard === card.id && (
+          <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-white p-6 text-center z-10 transition-opacity duration-300 ease-in-out rounded-lg">
+            <p className="text-xl font-semibold mb-2">{card.data}</p>
+            <p className="text-4xl font-bold">{card.details}</p>
+          </div>
+        )}
+        <img src={card.image} alt={`Card ${card.id}`} className="w-full h-full object-cover rounded-lg" />
+      </div>
+    ))}
   </div>
+
+  {/* Navigation Dots */}
+  <div className="flex justify-center mt-4 space-x-2">
+    {Array.from({ length: Math.max(cards.length - visibleCards + 1, 1) }).map((_, index) => (
+      <button
+        key={index}
+        onClick={() => handleDotClick(index)}
+        aria-label={`Navigate to slide ${index + 1}`}
+        className={`h-3 w-3 rounded-full transition-colors duration-300 ease-in-out ${
+          carouselIndex === index ? 'bg-white' : 'bg-gray-400'
+        }`}
+      />
+    ))}
+  </div>
+</div>
+
 </div>
 
       </>

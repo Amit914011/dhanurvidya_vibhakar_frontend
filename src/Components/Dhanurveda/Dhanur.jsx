@@ -38,13 +38,13 @@ export default function Dhanur() {
     alt="" 
     className=""/>
 </div>
-<section className="bg-white text-gray-900 px-6 sm:p-12">
+<section className="bg-white text-gray-900 px-[60px]">
       {/* Content Container */}
-      <div className="flex flex-col-reverse sm:flex-row items-center gap-3">
+      <div className="flex flex-col-reverse sm:flex-row items-center gap-3 ">
         {/* Text Section */}
         <div className="">
           <p className="text-justify text-sm md:text-md">
-          Dhanurvidya, the ancient art of archery, is the first of the saptavidyas or seven martial disciplines that make up the larger framework of Dhanurvidya, which is often revered as a foundational element of traditional Indian martial arts. Derived from the words dhanus (bow) and vidya (knowledge), Dhanurvidya is considered a sacred practice, with references dating back to the Rig Veda. In Vedic iconography, the bow is depicted as a divine weapon of the gods. Lord Shiva wields the Pinaka bow, Vishnu holds the Saranga, Rama carries the Kodhanda, and Parashurama bears the Vijaya bow, each symbolizing divine authority and strength. The association of bows with deities. underlines "Dhanurvidya's spiritual significance, beyond its application in combat.<br></br> <br></br>
+          Dhanurvidya, the ancient art of archery, is the first of the saptavidyas or seven martial disciplines that make up the larger framework of Dhanurvidya, which is often revered as a foundational element of traditional Indian martial arts. Derived from the words dhanus (bow) and vidya (knowledge), Dhanurvidya is considered a sacred practice, with references dating back to the Rig Veda. In Vedic iconography, the bow is depicted as a divine weapon of the gods. Lord Shiva wields the Pinaka bow, Vishnu holds the Saranga, Rama carries the Kodhanda, and Parashurama bears the Vijaya bow, each symbolizing divine authority and strength. The association of bows with deities. underlines "Dhanurvidya's spiritual significance, beyond its application in combat.<br></br> 
 According to tradition, Dhanurvidya is not just a preferred form of martial skill; it is also revered as a discipline that unites body, mind, and spirit. In ancient India, mastery over archery was considered essential for Kshatriyas, the warrior class, as it represented both military prowess and an emblem of their identity. Legendary warriors from the Mahabharata and Ramayana-such as Arjuna with his bow Gandiva, Abhimanyu with his bow Rudra, and Rama, the heroic archer of Ayodhya-demonstrated mastery over archery, embodying the valor and spiritual fortitude intrinsic to the art. Through these figures, Dhanurvidya became immortalized in Indian literature and continues to inspire martial and spiritual practices today.
           </p>
         </div>
@@ -59,12 +59,12 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
       </div>
     </section>
 
-    <section className="bg-white text-gray-900 px-6 sm:p-12">
+    <section className="bg-white text-gray-900 px-[60px] pt-3">
   {/* Content Container */}
-  <div className="flex flex-col sm:flex-row items-center gap-6">
+  <div className="flex flex-col sm:flex-row items-start gap-6">
     
     {/* Image Section - Top Image */}
-    <div className=" flex flex-col justify-center md:w-[20%]">
+    <div className=" flex flex-col justify-center md:w-[25%]">
       <img
         src={dhanurvidyaguruji}
         alt="Vedic art"
@@ -88,7 +88,7 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
     </div>
   </div>
 </section>
-<div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-48">
+<div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-48 mt-3">
   {/* Full-Width Image */}
   <img 
     src={dhanurbanner} 
@@ -99,9 +99,9 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
   {/* Overlapping Content */}
   <div className="absolute inset-0 flex items-center justify-center">
     <div className="text-white px-6 py-4 rounded-md text-center max-w-[90%] md:max-w-[70%]">
-      <p className="text-lg md:text-3xl font-semibold mt-2">
+      <h4 className="text-lg md:text-3xl font-semibold mt-2">
         "The art of <span className='text-yellow-500'>Dhanurvidya</span> turns fear into focus, and strength into grace."
-      </p>
+      </h4>
       <p className='text-right text-yellow-500'>Guru ji</p>
     </div>
   </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import templeimg from '../assets/templeimg.jpg'
 import templeimg1 from '../assets/templeicon.png'
-import templeimg2 from '../assets/abhi2.jpg'
+import templeimg2 from '../assets/temple 3.png'
 
 export default function Temple() {
   return (
@@ -15,93 +15,92 @@ export default function Temple() {
     alt="Temple" 
     className="max-w-full"/>
 </div>
-  <p className='font-serif text-black md:text-xl text-center pt-3 md:px-5'> Details ISODHAN Temple, Parushurama Aradhana Mandira Tirupati Darshan Timings, ISODHAN Parashurama Temple Tirupati Timings, ISODHAN Parashurama Temple Tirupati Visiting Hours, Worship Timings, Opening & Closing Timings below.</p>
+  <p className='text-black md:text-xl text-center pt-3 px-[15px] md:px-[150px]'> Details ISODHAN Temple, Parushurama Aradhana Mandira Tirupati Darshan Timings, ISODHAN Parashurama Temple Tirupati Timings, ISODHAN Parashurama Temple Tirupati Visiting Hours, Worship Timings, Opening & Closing Timings below.</p>
 
         <div className=" min-h-screen p-4">
       {/* Header Section */}
-      <div className="text-center">
-        <h1 className="text-2xl font-bold text-red-700">Temple Darshan Session</h1>
-      </div>
-
       {/* Timing Section */}
       <div className="flex flex-col md:flex-row md:justify-around my-6">
         <div className="w-full md:w-1/2">
           <table className="table-auto border border-gray-400 w-full">
             <thead>
-              <tr className=" font-bold text-black text-xl">
-                <th className="border border-gray-400 px-4 py-2 ">Dayss</th>
-                <th className="border border-gray-400 px-4 py-2">Temple Darshan Session</th>
+              <tr>
+                <th colspan="3" className='text-center text-2xl font-bold text-red-700'>Table</th>
+              </tr>
+              <tr className=" font-bold text-black md:text-xl">
+                <th className="border border-gray-400 px-4 py-2  ">Days</th>
+                <th className="border border-gray-400 px-4 py-2 ">Temple Darshan Session</th>
                 <th className="border border-gray-400 px-4 py-2">Timings</th>
               </tr>
             </thead>
-            <tbody className='text-black text-lg font-serif font-bold'>
+            <tbody className='text-black text-lg'>
               <tr>
-                <td className="border border-gray-400 px-4 py-2">Daily</td>
-                <td className="border border-gray-400 px-4 py-2">Temple Opening Timing</td>
-                <td className="border border-gray-400 px-4 py-2">06:30 am</td>
+                <td className="border border-gray-400 px-4 py-2 text-[14px]">Daily</td>
+                <td className="border border-gray-400 px-4 py-2 text-center text-[14px]">Temple Opening Timing</td>
+                <td className="border border-gray-400 px-4 py-2 text-center text-[14px]">06:30 am</td>
               </tr>
               <tr>
-                <td className="border border-gray-400 px-4 py-2">Daily</td>
-                <td className="border border-gray-400 px-4 py-2">Morning Darshan Timings</td>
-                <td className="border border-gray-400 px-4 py-2">07:00 to 07:30 am</td>
+                <td className="border border-gray-400 px-4 py-2 text-[14px]">Daily</td>
+                <td className="border border-gray-400 px-4 py-2 text-center text-[14px]">Morning Darshan Timings</td>
+                <td className="border border-gray-400 px-4 py-2 text-center text-[14px]">07:00 to 07:30 am</td>
               </tr>
               <tr>
-                <td className="border border-gray-400 px-4 py-2">Daily</td>
-                <td className="border border-gray-400 px-4 py-2">Evening Darshan Timings</td>
-                <td className="border border-gray-400 px-4 py-2">06:00 to 07:00 pm</td>
+                <td className="border border-gray-400 px-4 py-2 text-[14px]">Daily</td>
+                <td className="border border-gray-400 px-4 py-2 text-center text-[14px]">Evening Darshan Timings</td>
+                <td className="border border-gray-400 px-4 py-2 text-center text-[14px]">06:00 to 07:00 pm</td>
               </tr>
               <tr>
-                <td className="border border-gray-400 px-4 py-2">Daily</td>
-                <td className="border border-gray-400 px-4 py-2">Temple Closing Timings</td>
-                <td className="border border-gray-400 px-4 py-2">07:15 pm</td>
+                <td className="border border-gray-400 px-4 py-2 text-[14px]">Daily</td>
+                <td className="border border-gray-400 px-4 py-2 text-center text-[14px]">Temple Closing Timings</td>
+                <td className="border border-gray-400 px-4 text-center text-[14px]">07:15 pm</td>
               </tr>
             </tbody>
           </table>
           <div className="">
-        <h2 className="text-xl font-semibold text-black mt-5 font-serif">ISODHAN Prashurama Temple Tirupati Address Details</h2>
-        <p className="text-black text-lg font-serif">
+        <h2 className="text-xl font-semibold text-black mt-5 ">ISODHAN Prashurama Temple Tirupati Address Details</h2>
+        <p className="text-black">
           Isodhan Dhanurveda Gurukul, <br></br> Anna Rao Circle, street, beside more super market, Srinivasa Nagar, <br></br>Tirupati, Andhra Pradesh 517501.
         </p>
       </div>
         </div>
 
-        <div className="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0">
+        <div className="w-full md:w-1/2 flex justify-center items-start mt-4 md:mt-0">
         <img
   src={templeimg2} // Replace with your image URL
   alt="Temple Deity"
-  className="w-full max-w-[400px] h-96 rounded-md shadow-lg"/>
+  className="w-full max-w-[400px] h-96 rounded-md "/>
         </div>
       </div>
 
       {/* Program Section */}
-      <div className="mt-8 bg-yellow-200 px-4 py-6">
+      <div className="mt-8 bg-yellow-100 px-4 py-6 ">
   <h3 className="text-center text-3xl font-bold text-red-800">TEMPLE PROGRAM</h3>
   <div className="overflow-x-auto mt-4">
-    <table className="border border-black w-full text-sm sm:text-base md:w-3/4">
+    <table className="border border-black w-full text-sm sm:text-base">
       <thead>
-        <tr className="font-bold text-black text-lg sm:text-xl">
-          <th className="border border-gray-700 px-4 py-2 text-left">Seva</th>
-          <th className="border border-gray-700 px-4 py-2 text-left">Description</th>
-          <th className="border border-gray-700 px-4 py-2 text-left">Day</th>
-          <th className="border border-gray-700 px-4 py-2 text-left">Frequency</th>
+        <tr className="text-[16px]  text-black">
+          <th className="border border-gray-700 px-4 text-center text-[16px]">Seva</th>
+          <th className="border border-gray-700 px-4 text-center text-[16px]">Description</th>
+          <th className="border border-gray-700 px-4 text-center text-[16px]">Day</th>
+          <th className="border border-gray-700 px-4 text-center text-[16px]">Frequency</th>
         </tr>
       </thead>
       <tbody>
-        <tr className='text-black font-semibold'>
-          <td className="border border-gray-700 px-4 py-2">Maha Abhishekam</td>
-          <td className="border border-gray-700 px-4 py-2">
+        <tr className='text-black '>
+          <td className="border border-gray-700 px-4 text-[14px]">Maha Abhishekam</td>
+          <td className="border border-gray-700 px-4 text-center text-[14px]">
             Lord Parashurama with sacred water, milk curd, honey, and other offerings, performed to invoke blessings and spiritual purification.
           </td>
-          <td className="border border-gray-700 px-4 py-2">Trayodashi (13th day of the lunar month)</td>
-          <td className="border border-gray-700 px-4 py-2">Twice a month (on each Trayodashi)</td>
+          <td className="border border-gray-700 px-4 text-center text-[14px]">Trayodashi (13th day of the lunar month)</td>
+          <td className="border border-gray-700 px-4 text-center text-[14px]">Twice a month (on each Trayodashi)</td>
         </tr>
-        <tr className='text-black font-semibold'>
-          <td className="border border-gray-700 px-4 py-2">Tulasi Archana</td>
-          <td className="border border-gray-700 px-4 py-2">
+        <tr className='text-black'>
+          <td className="border border-gray-700 px-4 text-center text-[14px]">Tulasi Archana</td>
+          <td className="border border-gray-700 px-4 text-center text-[14px]">
             Special worship using sacred Tulasi (Holy basil) leaves, offered to Lord Parashurama for divine grace and protection.
           </td>
-          <td className="border border-gray-700 px-4 py-2">Every Saturday</td>
-          <td className="border border-gray-700 px-4 py-2">Weekly</td>
+          <td className="border border-gray-700 px-4 text-center text-[14px]">Every Saturday</td>
+          <td className="border border-gray-700 px-4 text-center text-[14px]">Weekly</td>
         </tr>
         {/* Add more rows as needed */}
       </tbody>
@@ -112,13 +111,13 @@ export default function Temple() {
     </div>
 
     <div className="px-4 sm:px-8 md:px-20">
-  <h1 className="font-serif text-black text-xl sm:text-2xl font-semibold">
+  <h1 className=" text-black text-xl sm:text-2xl font-semibold">
     Notes for Devotees :
   </h1>
-  <p className="font-serif text-black text-lg sm:text-xl mt-4">
+  <p className=" text-black text-lg sm:text-xl mt-4">
     Maha Abhishekam: The Rituals are performed monthly on Trayodashi, the 13th day of each lunar month. Devotees are encouraged to participate and receive blessings.
   </p>
-  <p className="font-serif text-black text-lg sm:text-xl mt-4">
+  <p className=" text-black text-lg sm:text-xl mt-4">
     Tulasi Archana: Conducted every Saturday, this ritual focuses on Tulasi offerings, considered highly auspicious and beneficial in invoking Lord Parashurama's grace.
   </p>
 </div>

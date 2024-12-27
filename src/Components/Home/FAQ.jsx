@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import dhanurVidyaImage from '../../assets/bg_net.png'; // Add appropriate image
 import bgImage from '../../assets/bg_faq.jpg'; // Add your background image here
@@ -24,48 +24,40 @@ const faqs = [
 function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
-  useEffect(() => {
-    setExpandedIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex + 1) % faqs.length));
-    // const interval = setInterval(() => {
-    // }, 100000);
-    // return () => clearInterval(interval);
-  }, []);
-
   return (
     <div
       className="py-3 px-[15px] bg-cover bg-center text-black"
       style={{ backgroundImage: `url(${bgImage})` }} // Add the background image here
     >
       <div className="font-bold flex flex-col gap-6 items-center text-maroon-600">
-        <p className="text-2xl text-yellow-500 font-bold">Mastering Dhanur Vidya</p>
-        <h1 className="text-2xl text-center md:text-5xl text-[#800000]">
+        <h3 className="text-2xl text-yellow-500 font-bold">Mastering Dhanur Vidya</h3>
+        <h1 className="text-2xl text-center md:text-3xl text-[#800000]">
           The <span className="text-maroon-600">Art of Warfare</span> in Ancient Times
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center pt-2 px-2">
+      <div className="flex flex-col md:flex-row justify-between items-start px-2">
         {/* FAQ Section (Left Side) */}
         <div className="w-full md:w-1/2">
-          <h1 className=" text-lg text-center md:text-3xl font-bold mb-8 text-[#800000]">Frequently Asked Questions</h1>
+          <h1 className=" text-lg text-let md:text-2xl font-bold mb-8 text-[#800000]">Frequently Asked Questions</h1>
 
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
               className="border border-gray-200 mb-4 p-4 rounded-lg bg-maroon-600 shadow-md"
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0 }}
               animate={{
                 opacity: expandedIndex === index ? 1 : 0.9,
-                x: expandedIndex === index ? 0 : -10,
               }}
               transition={{ duration: 0.5 }}
             >
               <div
-                className="cursor-pointer text-lg font-semibold text-black flex justify-between items-center"
+                className="cursor-pointer text-[16px] font-semibold text-black flex justify-between items-center"
                 onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
               >
                 {faq.question}
                 <motion.div
-                  className="ml-2"
+                  className="ml-2 text-[14px]"
                   initial={{ rotate: 0 }}
                   animate={{ rotate: expandedIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
@@ -99,7 +91,7 @@ function FAQ() {
           <img
             src={dhanurVidyaImage}
             alt="Dhanur Vidya"
-            className="object-contain w-full max-w-xl mb-4 hidden md:block"
+            className="object-contain w-[60%] max-w-xl mb-4 hidden md:block"
           />
         </motion.div>
       </div>

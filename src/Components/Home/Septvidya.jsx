@@ -67,14 +67,14 @@ const Septvidya = () => {
       className="relative w-full justify-center min-h-screen bg-cover bg-center  rounded-lg overflow-hidden"
       style={{ backgroundImage: `url(${newbg})` }}
     >
-      <div className=" pt-2  px-[15px]  md:px-[200px] flex flex-col justify-center items-center">
+      <div className=" pt-2  px-[15px]  md:px-[100px] flex flex-col justify-center items-center">
        
         <img src={aboutus} alt="" />
-        <p className="text-justify md:text-center pb-3">Isodhan Foundation is a dedicated institution rooted in preserving and promoting the rich cultural heritage of India. Our mission is to revive the essence of Indian traditions, spirituality, and the Gurukulam system, nurturing a way of life that aligns with Dharma and universal harmony.
+        <p className="text-justify text-[14px] md:text-[16px]  pb-3">Isodhan Foundation is a dedicated institution rooted in preserving and promoting the rich cultural heritage of India. Our mission is to revive the essence of Indian traditions, spirituality, and the Gurukulam system, nurturing a way of life that aligns with Dharma and universal harmony.
 
 At the heart of our vision is the revival of Dhanurveda, the ancient Vedic science of warfare and self-defense, emphasizing discipline, valor, and righteousness. Inspired by the teachings of Lord Parashurama, the protector of Dharma and embodiment of strength and justice, we aim to instill his virtues in every seeker.</p>
       </div>
-     <div className="flex flex-col-reverse md:flex-row">
+     <div className="flex flex-col-reverse md:flex-row md:pl-5">
        {/* Right Section with Carousel */}
        <div className="relative w-full px-2   mb-8 overflow-hidden   h-full rounded-lg">
         <Swiper
@@ -126,8 +126,8 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[15px] font-bold text-black mt-2 text-center">DHANUR VIDYA</h1>
-        <p className="mt-2 text-[13px] text-black text-center">The ancient art of archery</p>
+        <h1 className="text-[16px] font-bold text-black mt-2 text-center">DHANUR VIDYA</h1>
+        <p className="mt-2 text-[14px] text-black text-center">The ancient art of archery</p>
       </div>
       {/* Icon 2 */}
       <div className="flex flex-col items-center group">
@@ -138,8 +138,8 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[15px] font-bold text-black mt-2 text-center">KUNTHA VIDYA</h1>
-        <p className="mt-2 text-[13px] text-black text-center">The ancient art of spear</p>
+        <h1 className="text-[16px] font-bold text-black mt-2 text-center">KUNTHA VIDYA</h1>
+        <p className="mt-2 text-[14px] text-black text-center">The ancient art of spear</p>
       </div>
       {/* Icon 3 */}
       <div className="flex flex-col items-center group">
@@ -150,8 +150,8 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[15px] text-black font-bold mt-2 text-center">BAHU VIDYA</h1>
-        <p className="mt-2 text-[13px] text-black text-center">The ancient art of sword welding</p>
+        <h1 className="text-[16px] text-black font-bold mt-2 text-center">BAHU VIDYA</h1>
+        <p className="mt-2 text-[14px] text-black text-center">The ancient art of sword welding</p>
       </div>
     </div>
 

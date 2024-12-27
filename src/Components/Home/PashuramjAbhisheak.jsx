@@ -13,6 +13,7 @@ import pic4 from '../../assets/pic4.jpg';
 import pic5 from '../../assets/pic5.jpg';
 import pic6 from '../../assets/pic6.jpg';
 import bgImage from '../../assets/bg_faq.jpg';
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const PashuramjAbhisheak = () => {
   const cards = [
@@ -28,9 +29,9 @@ const PashuramjAbhisheak = () => {
     <div className="bg-cover bg-center py-2 text-black" style={{ backgroundImage: `url(${bgImage})` }}>
       {/* Heading Section */}
       <div className="text-center flex flex-col gap-4 text-black">
-    <p className="text-2xl pb-4 md:text-4xl font-bold ml-4 mr-4 md:mt-5 text-[#800000] leading-10">
+    <h3 className="text-2xl pb-4 md:text-3xl font-bold ml-4 mr-4 md:mt-5 text-[#800000] leading-10">
    Sri  Parashurama Swamy Abhishekam
-    </p>
+    </h3>
   </div>
       {/* Swiper Section */}
       <Swiper
@@ -58,10 +59,10 @@ const PashuramjAbhisheak = () => {
       <div className="flex flex-wrap md:flex-nowrap w-full">
         {/* Left Section with Text */}
         <div className="w-full md:w-2/5 lg:w-1/3 px-8 text-gray-500">
-          <h1 className="text-2xl md:text-4xl font-bold text-center text-[#800000] leading-10 ">
+          <h1 className="text-2xl md:text-3xl font-bold text-center text-[#800000] leading-10 ">
             Rituals and Offerings
           </h1>
-          <p className="leading-8 mt-2 pb-3">
+          <p className="mt-2 pb-3 text-justify">
             To allow devotees to be touched by the grace of Lord Parashurama, unique rituals designed to support individuals at every stage of life—from birth to death, and everything in between—are conducted at his sacred abode. These ceremonies are crafted to invoke the blessings of Lord Parashurama, the eternal warrior-sage, and to ensure his protection, strength, and wisdom throughout a devotee's journey in life.
           </p>
         </div>
@@ -70,7 +71,7 @@ const PashuramjAbhisheak = () => {
         <div className="relative w-full md:w-3/5 lg:w-2/3 mb-8 overflow-hidden px-[15px] mt-1">
           <Swiper
             modules={[Autoplay, Pagination]}
-            spaceBetween={30}
+            spaceBetween={20}
             slidesPerView={1}
             breakpoints={{
               768: { slidesPerView: 2 }, // 2 cards on tablet and larger screens
@@ -82,7 +83,7 @@ const PashuramjAbhisheak = () => {
             className="w-full">
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="relative w-full h-[500px] overflow-hidden lg:h-[450px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
+                <div className="relative w-full h-[400px] overflow-hidden lg:h-[300px] bg-white shadow-lg rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105">
                   {/* Front side of the card */}
                   <div
                     className="absolute w-full h-full transition-opacity duration-500"
@@ -118,9 +119,9 @@ const PashuramjAbhisheak = () => {
           </Swiper>
 
          <div className="w-full"> <Link
-            to="/rituals"
-            className="text-4xl mt-7 text-center font-semibold bg-[#bc4034] text-white  inline-block hover:bg-[#ee580c] hover:text-white transition-colors duration-300 ease-in-out" >
-            Explore All Rituals
+            to="/parashurama-rituals"
+            className="text-1xl px-2 rounded mt-7 text-center font-semibold bg-[#bc4034] text-white  inline-block hover:bg-[#ee580c] hover:text-white transition-colors duration-300 ease-in-out" >
+            Explore All Rituals <FaLongArrowAltRight className="inline" />
           </Link></div>
         </div>
       </div>

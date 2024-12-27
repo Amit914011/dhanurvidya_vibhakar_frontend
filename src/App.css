@@ -6,6 +6,21 @@
   font-family: "Fira Code", serif;
   font-optical-sizing: auto;
 }
+
+body{
+  font-size: 16px;
+}
+
+
+p{
+  font-size: 14px !important;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 16px !important;
+  }
+}
 /* 
   }
   

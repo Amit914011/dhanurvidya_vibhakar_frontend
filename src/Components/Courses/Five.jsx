@@ -19,7 +19,7 @@ export default function ThreeDayscamp() {
 <div className="flex justify-center items-center">
   <img src={fivedays1} alt="" className="max-w-full" />
 </div>
-<p className='font-serif text-black text-lg ml-3 px-3'>The ISODHAN Foundation presents an enriching five-day camp designed Introduce participants to the ancient martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya ithe art of the macel. in this immersive experience, participants will train under the guidance of seasoned Acharyas, embracing the authentic Gurukulam tradition that fosters discipline, focus, and respect for Vedic martial knowledge. The extended five-day format allows for in-depth practice and a more profound engagement with each martial Each day is thoughtfully planned to ensure a balanced experience of intensive skill-building and philosophical discussions, providing a deeper understanding of the purpose and values underpinning each technique. By the conclusion of the camp, learners will have cultivated essential skills, an appreciation of the arts historical significance, and personalized tips for ongoing practice at home. This program offers a unique opportunity to reconnect with India's timeless martial heritage in a supportive, traditional environment.</p>
+<p className='pb-4 text-black  ml-3 px-3'>The ISODHAN Foundation presents an enriching five-day camp designed Introduce participants to the ancient martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya ithe art of the macel. in this immersive experience, participants will train under the guidance of seasoned Acharyas, embracing the authentic Gurukulam tradition that fosters discipline, focus, and respect for Vedic martial knowledge. The extended five-day format allows for in-depth practice and a more profound engagement with each martial Each day is thoughtfully planned to ensure a balanced experience of intensive skill-building and philosophical discussions, providing a deeper understanding of the purpose and values underpinning each technique. By the conclusion of the camp, learners will have cultivated essential skills, an appreciation of the arts historical significance, and personalized tips for ongoing practice at home. This program offers a unique opportunity to reconnect with India's timeless martial heritage in a supportive, traditional environment.</p>
 
 
 <div className='bg-yellow-200'>
@@ -47,10 +47,10 @@ export default function ThreeDayscamp() {
   </div>
 </div>
 
-<div className='bg-yellow-200'>
+<div className=''>
   <img src={threedays4} alt="" />
 </div>
-<div className="flex flex-wrap justify-center gap-6 bg-yellow-200">
+<div className="flex flex-wrap justify-center gap-6 pb-3">
   <div className="flex flex-col items-center">
     <img src={fiveday3} alt="Image 1" className="max-w-[300px] w-full h-auto" />
     <button className="mt-4 px-4 py-1 bg-orange-500 text-black font-bold rounded-3xl">
@@ -108,7 +108,7 @@ export default function ThreeDayscamp() {
         General Program of a Typical Day
       </h2>
 
-      <p className="text-base sm:text-lg text-justify mb-6 leading-relaxed font-bold">
+      <p className=" text-justify mb-6 leading-relaxed">
         Provide a balanced blend of theoretical insights and practical training
         in ancient Dhanurveda disciplines such as Dhanurvidya (Archery),
         Khadgavidya (Sword), and Gadavidya (Mace). Each session is crafted to
@@ -116,7 +116,7 @@ export default function ThreeDayscamp() {
         and enriching.
       </p>
 
-      <p className="text-base sm:text-lg text-justify mb-6 leading-relaxed font-bold">
+      <p className="text-justify mb-6 leading-relaxed">
         The teachings imparted during these sessions will serve as lifelong
         tools, fostering discipline, focus, and self-mastery. Being immersed in
         the gurukul's sacred environment, charged with spiritual and martial
@@ -132,77 +132,77 @@ export default function ThreeDayscamp() {
         <div className="md:flex flex-wrap gap-6">
           {/* Left Column */}
           <ul className="flex-1 text-sm sm:text-base font-bold">
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex font-normal justify-between border-b">
               <span>Wake up & fresh up</span>
-              <span className="font-semibold">04:30 AM to 05:30 AM</span>
+              <span className="font-normal">04:30 AM to 05:30 AM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Pooja & Guru vandanam</span>
-              <span className="font-semibold">05:30 AM to 06:15 AM</span>
+              <span className="font-normal">05:30 AM to 06:15 AM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Yoga & Physical exercises</span>
-              <span className="font-semibold">06:15 AM to 07:00 AM</span>
+              <span className="font-normal">06:15 AM to 07:00 AM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Dhanurvidya practice</span>
-              <span className="font-semibold">07:00 AM to 08:00 AM</span>
+              <span className="font-normal">07:00 AM to 08:00 AM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Satvik Breakfast</span>
-              <span className="font-semibold">08:00 AM to 09:00 AM</span>
+              <span className="font-normal">08:00 AM to 09:00 AM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Dhanurvidya Theory Class</span>
-              <span className="font-semibold">09:00 AM to 11:00 AM</span>
+              <span className="font-normal">09:00 AM to 11:00 AM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Dhanurvidya Practice</span>
-              <span className="font-semibold">11:00 AM to 12:30 AM</span>
+              <span className="font-normal">11:00 AM to 12:30 AM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Break Time</span>
-              <span className="font-semibold">12:30 AM to 01:00 AM</span>
+              <span className="font-normal">12:30 AM to 01:00 AM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Lunch</span>
-              <span className="font-semibold">01:00 PM to 02:00 PM</span>
+              <span className="font-normal">01:00 PM to 02:00 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Rest Time</span>
-              <span className="font-semibold">02:00 PM to 03:30 PM</span>
+              <span className="font-normal">02:00 PM to 03:30 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Refresh</span>
-              <span className="font-semibold">03:30 PM to 04:00 PM</span>
+              <span className="font-normal">03:30 PM to 04:00 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Yoga & Physical exercises</span>
-              <span className="font-semibold">04:00 PM to 04:45 PM</span>
+              <span className="font-normal">04:00 PM to 04:45 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Dhanurvidya Practice</span>
-              <span className="font-semibold">04:45 PM to 06:15 PM</span>
+              <span className="font-normal">04:45 PM to 06:15 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Refresh</span>
-              <span className="font-semibold">06:15 PM to 06:30 PM</span>
+              <span className="font-normal">06:15 PM to 06:30 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Pooja & Guru Vandanam</span>
-              <span className="font-semibold">06:30 PM to 07:00 PM</span>
+              <span className="font-normal">06:30 PM to 07:00 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Dinner</span>
-              <span className="font-semibold">07:00 PM to 08:00 PM</span>
+              <span className="font-normal">07:00 PM to 08:00 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Discussion Time</span>
-              <span className="font-semibold">08:00 PM to 08:30 PM</span>
+              <span className="font-normal">08:00 PM to 08:30 PM</span>
             </li>
-            <li className="flex justify-between py-2 border-b">
+            <li className="flex justify-between font-normal  border-b">
               <span>Bedtime</span>
-              <span className="font-semibold">08:45 PM</span>
+              <span className="font-normal">08:45 PM</span>
             </li>
           </ul>
         </div>

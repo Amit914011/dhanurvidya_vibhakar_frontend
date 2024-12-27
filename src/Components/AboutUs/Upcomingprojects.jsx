@@ -47,7 +47,7 @@ export default function Upcomingprojects() {
   />
 </div>
      
-        <p className=' md:text-xl px-[15px] md:px-[70px]'>The lord Parashurama Temple and Dhanurveda Gurukul project in Tirupati is a groundbreaking initiative to revive India's ancient martial arts and archery traditions from the Dhanurveda. With a full-stone lord Parashurama Temple as its centerpiece, crafted in line with Shilpashastra, this project offers a holistic Gurukul education in martial arts, spirituality, and intellect. By promoting Hari Nama and cultural heritage, it attracts pilgrims and scholars, blending spirituality with physical training for learning experience.</p>
+        <p className=' md:text-xl text-justify px-[15px] md:px-[80px]'>The lord Parashurama Temple and Dhanurveda Gurukul project in Tirupati is a groundbreaking initiative to revive India's ancient martial arts and archery traditions from the Dhanurveda. With a full-stone lord Parashurama Temple as its centerpiece, crafted in line with Shilpashastra, this project offers a holistic Gurukul education in martial arts, spirituality, and intellect. By promoting Hari Nama and cultural heritage, it attracts pilgrims and scholars, blending spirituality with physical training for learning experience.</p>
       </div>
       <div className="relative w-full mt-10">
   {/* Image */}
@@ -78,7 +78,7 @@ export default function Upcomingprojects() {
 
   {/* Centered Content */}
   <div className="w-full flex justify-center items-center text-center ">
-    <h1 className="text-[12px] py-2 md:text-xl lg:text-2xl text-red-700 md:font-bold">
+    <h1 className="text-[14px] py-2 md:text-xl lg:text-2xl text-red-700 md:font-bold">
       "A TEMPLE DONATION BRINGS SPIRITUAL WEALTH, BLESSING YOU AND YOUR CHILDREN WITH LASTING PUNYA"
     </h1>
   </div>
@@ -103,13 +103,13 @@ export default function Upcomingprojects() {
     <img 
       src={hyderabad} 
       alt="Project" 
-      className="w-full h-auto object-cover rounded-lg" 
+      className="w-full h-[80px] object-cover rounded-lg" 
     />
   </div>
 
   {/* Responsive Content */}
-  <div className=" md:text-left pb-5">
-    <p className="md:text-xl md:px-[70px]">
+  <div className=" md:text-left pb-3">
+    <p className="md:text-xl text-justify md:px-[60px] -mt-10">
       The ISODHAN Foundation's Gurukul Temple in Hyderabad is a sacred space for seekers of spiritual and personal growth, blending devotion with the ancient art of Dhanurveda. Rooted in Lord Hari's teachings, the temple offers Moksha Marga, the path to liberation, through meditation, worship, and martial training. Support this initiative to revive timeless wisdom, fostering resilience and enlightenment in future generations. Join us and contribute to a legacy of strength and devotion.
     </p>
   </div>
@@ -123,7 +123,12 @@ export default function Upcomingprojects() {
   />
 
   {/* Overlapping Button on Left */}
-  <div className="absolute bottom-0 left-3  md:bottom-20 md:left-10">
+  <div className="absolute bottom-0  md:bottom-10 left-3   md:left-10 md:hidden">
+    <button className="md:px-6 lg:px-10 px-2 border border-red-800 py-1 bg-yellow-400 text-red-700 text-base text-[11px]  lg:text-xl md:font-semibold rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+      DONATE NOW
+    </button>
+  </div>
+  <div className="absolute  md:bottom-10 left-20 hidden md:block">
     <button className="md:px-6 lg:px-10 px-2 border border-red-800 py-1 bg-yellow-400 text-red-700 text-base text-[11px]  lg:text-xl md:font-semibold rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
       DONATE NOW
     </button>
@@ -143,7 +148,7 @@ export default function Upcomingprojects() {
 
   {/* Centered Content */}
   <div className="w-full flex justify-center items-center text-center ">
-    <h1 className="text-[12px] py-2 md:text-xl lg:text-2xl text-red-700 md:font-bold">
+    <h1 className="text-[14px] py-2 md:text-xl lg:text-2xl text-red-700 md:font-bold">
     "BE PART OF A LEGACY THAT UNITES STRENGTH AND DEVOTION - SUPPORT THE GURUKUL TEMPLE IN REVIVING ANCIENT WISDOM FOR FUTURE GENERATIONS"
     </h1>
   </div>
@@ -173,7 +178,7 @@ export default function Upcomingprojects() {
 
   {/* Responsive Content */}
   <div className=" md:text-left pb-3">
-    <p className="md:text-xl md:px-[70px]">
+    <p className="md:text-xl text-justify md:px-[60px] -mt-10">
     The ISODHAN Foundation is revitalizing the ancient art of "Dhanurveda, the Vedic tradition of martial arts and archery, through the Dhanurveda Project. This initiative aims to preserve, teach, and promote these timeless skills, integrating physical discipline with spiritual growth. By fostering knowledge and practice of these techniques, the foundation seeks to inspire a new generation to reconnect with India's rich heritage of warrior wisdom, values, and traditional self-defense arts.
     </p>
   </div>
@@ -203,7 +208,7 @@ export default function Upcomingprojects() {
 
   {/* Centered Content */}
   <div className="w-full flex justify-center items-center text-center ">
-    <h1 className="text-[12px] py-2 md:text-xl lg:text-2xl text-red-700 md:font-bold">
+    <h1 className="text-[14px] py-2 md:text-xl lg:text-2xl text-red-700 md:font-bold">
     "REVIVING DHANURVEDA IS MORE THAN TEACHING MARTIAL ARTS, IT IS RECONNECTING WITH THE ESSENCE OF INDIA'S WARRIOR WISDOM AND ANCESTRAL STRENGTH"
     </h1>
   </div>
@@ -235,7 +240,7 @@ export default function Upcomingprojects() {
 
   {/* Responsive Content */}
   <div className=" md:text-left pb-3">
-    <p className="md:text-xl md:px-[70px]">
+    <p className="md:text-xl md:px-[60px] -mt-10 text-justify">
     Under the guidance of Sri Sri Sri Vibhakar Tiwari Guru Ji, the ISODHAN Foundation and Parashurama movement revive the teachings of Lord Parashurama, blending devotion with the ancient martial art of Dhanurveda. Through the mantra 'Om Namo Bhagavate Parashuramaya,' devotees are called to follow Moksha Margam, the path to liberation. Guru Ji inspires seekers to cleanse past karma, embody righteousness, and strengthen both body and spirit through disciplined worship and inner resilience.
     </p>
   </div>
@@ -265,7 +270,7 @@ export default function Upcomingprojects() {
 
   {/* Centered Content */}
   <div className="w-full flex justify-center items-center text-center ">
-    <h1 className="text-[12px] py-2 md:text-xl lg:text-2xl text-red-700 md:font-bold">
+    <h1 className="text-[14px] py-2 md:text-xl lg:text-2xl text-red-700 md:font-bold">
     "THE PARASHURAMA MOVEMENT ENCOURAGES INDIVIDUALS TO PRACTICE DISCIPLINED WORSHIP AND MEDITATION, ALIGNING THEIR LIVES WITH JUSTICE AND INNER PEACE."
     </h1>
   </div>
