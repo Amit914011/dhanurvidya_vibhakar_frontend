@@ -15,12 +15,12 @@ export default function Temple() {
     alt="Temple" 
     className="max-w-full"/>
 </div>
-  <p className='text-black md:text-xl text-center pt-3 px-[15px] md:px-[150px]'> Details ISODHAN Temple, Parushurama Aradhana Mandira Tirupati Darshan Timings, ISODHAN Parashurama Temple Tirupati Timings, ISODHAN Parashurama Temple Tirupati Visiting Hours, Worship Timings, Opening & Closing Timings below.</p>
+  <p className='text-black md:text-xl text-justify pt-3 px-[15px] md:px-[60px]'> Details ISODHAN Temple, Parushurama Aradhana Mandira Tirupati Darshan Timings, ISODHAN Parashurama Temple Tirupati Timings, ISODHAN Parashurama Temple Tirupati Visiting Hours, Worship Timings, Opening & Closing Timings below.</p>
 
-        <div className=" min-h-screen p-4">
+        <div className=" min-h-screen py-3">
       {/* Header Section */}
       {/* Timing Section */}
-      <div className="flex flex-col md:flex-row md:justify-around my-6">
+      <div className="flex flex-col md:flex-row md:justify-around px-[15px] md:px-[60px]">
         <div className="w-full md:w-1/2">
           <table className="table-auto border border-gray-400 w-full">
             <thead>
@@ -73,7 +73,8 @@ export default function Temple() {
       </div>
 
       {/* Program Section */}
-      <div className="mt-8 bg-yellow-100 px-4 py-6 ">
+     <div className='px-[15px] md:px-[60px]'>
+     <div className="mt-8 bg-yellow-100 py-6 px-3">
   <h3 className="text-center text-3xl font-bold text-red-800">TEMPLE PROGRAM</h3>
   <div className="overflow-x-auto mt-4">
     <table className="border border-black w-full text-sm sm:text-base">
@@ -107,17 +108,18 @@ export default function Temple() {
     </table>
   </div>
 </div>
+     </div>
 
     </div>
 
-    <div className="px-4 sm:px-8 md:px-20">
-  <h1 className=" text-black text-xl sm:text-2xl font-semibold">
+    <div className="px-4 sm:px-8 md:px-20 mb-3">
+  <h1 className=" text-black text-xl sm:text-2xl font-semibold px-[15px] md:px-[60px]">
     Notes for Devotees :
   </h1>
-  <p className=" text-black text-lg sm:text-xl mt-4">
+  <p className=" text-black text-justify text-lg sm:text-xl mt-4 px-[15px] md:px-[60px]">
     Maha Abhishekam: The Rituals are performed monthly on Trayodashi, the 13th day of each lunar month. Devotees are encouraged to participate and receive blessings.
   </p>
-  <p className=" text-black text-lg sm:text-xl mt-4">
+  <p className=" text-black text-justify text-lg sm:text-xl mt-4 px-[15px] md:px-[60px]">
     Tulasi Archana: Conducted every Saturday, this ritual focuses on Tulasi offerings, considered highly auspicious and beneficial in invoking Lord Parashurama's grace.
   </p>
 </div>

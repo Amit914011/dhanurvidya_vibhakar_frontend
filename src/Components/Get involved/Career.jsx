@@ -12,11 +12,11 @@ export default function Career() {
         <div className="flex items-center justify-center">
     <img src={careerimg} alt="Career Image" className="max-w-full " />
 </div>
-<div className="mx-auto p-6 rounded-lg">
+<div className="mx-auto rounded-lg">
     <h1 className="text-black text-center font-bold text-2xl">
         Working with ISODHAN Foundation
     </h1>
-    <p className=" text-black  text-justify leading-relaxed px-3">
+    <p className=" text-black  text-justify leading-relaxed px-[15px] md:px-[60px]">
         Being a part of ISODHAN Foundation means joining a global spiritual initiative dedicated to preserving and promoting ancient Vedic wisdom and practices. Our organization fosters an inclusive, harmonious work environment where individuals from diverse backgrounds unite to contribute their unique talents and skills towards a shared mission of cultural and spiritual enrichment.
     </p>
     <h1 className='text-red-700 text-center font-bold text-3xl mt-10'>Present Openings</h1>

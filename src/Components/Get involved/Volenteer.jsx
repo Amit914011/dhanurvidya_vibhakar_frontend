@@ -18,37 +18,37 @@ export default function Volenteer() {
 </div>
 
 
-<div className=" sm:px-6 lg:px-8 max-w-7xl mx-auto">
+<div className="px-[15px] md:px-[60px]">
   {/* Title Section */}
-  <h1 className="text-red-700 font-bold text-2xl sm:text-3xl lg:text-3xl px-3 leading-tight">
+  <h1 className="text-red-700 font-bold text-2xl sm:text-3xl lg:text-3xl leading-tight">
     A Pillar of Support for Isodhan Foundation and Parashurama Seva
   </h1>
 
   {/* Paragraph Section */}
-  <p className="text-black  text-lg sm:text-xl   mx-auto px-3">
+  <p className="text-black text-justify mx-auto">
     Volunteers play a unique and invaluable role in the services we provide at Isodhan Foundation, supporting Parashurama Seva and promoting the traditional Gurukulam way of life rooted in Dhanurveda. Your time, commitment, dedication, and skills are deeply valued by us and by the community that benefits from your contributions. Volunteer for many reasons, but the main motivation is often the joy of helping others. Volunteering can also provide opportunities to learn new skills, gain experience, and build confidence and self-esteem while connecting with like-minded individuals. <br></br><br></br>
         At Isodhan Foundation, we actively recruit volunteers to complement and enhance the services we offer. We recognize the immense value volunteers bring to our initiatives, supporting and encouraging those who generously dedicate their time and energy to enriching the quality of services, enhancing the spiritual experience, and preserving sacred traditions.
   </p>
 </div>
-<div className="px-4 py-8 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+<div className="px-[15px] md:px-[60px]">
   {/* Title Section */}
-  <h1 className="text-red-600 font-bold  text-2xl sm:text-3xl lg:text-2xl leading-tight">
+  <h1 className="text-red-800 font-bold pt-5  text-2xl sm:text-3xl lg:text-2xl leading-tight">
     WHY VOLUNTEER WITH ISODHAN FOUNDATION?
   </h1>
 
   {/* Paragraph Section */}
-  <p className="text-black text-lg sm:text-xl mt-4 sm:mt-6 mx-auto leading-relaxed">
+  <p className="text-black text-lg sm:text-xl text-justify mx-auto leading-relaxed">
     Volunteering with Isodhan Foundation is deeply rewarding. It nurtures your personal growth, boosts self-confidence, and fosters a sense of fulfillment as you make meaningful contributions to the spiritual and cultural well-being of the community. Whether you're seeking new experiences, hoping to develop skills, or looking for a way to fulfill your dharma, volunteering with us is a unique opportunity.<br></br>
     We provide training and support, so no prior experience is required. Volunteers can engage in a variety of activities, such as:
   </p>
 </div>
 
-<div className="w-full  bg-white text-gray-800 px-12">
-      <div className=" flex ">
+<div className="w-full  bg-white text-gray-800 px-[15px] md:px-[60px] pt-2">
+      <div className=" flex flex-wrap">
         {/* Left Section */}
-        <div className='w-[80%] '>
+        <div className='md:w-[80%] '>
         
-          <ul className="list-disc list-inside text-lg">
+          <ul className="list-disc list-inside">
             <li>
               <span className="font-bold text-red-700">Supporting Gurukulam Activities</span>
               <p className='text-black'> Assisting in classes, cultural sessions, and skill development programs.</p>
@@ -85,7 +85,7 @@ export default function Volenteer() {
         </div>
 
         {/* Right Section - Images */}
-        <div className="flex flex-col w-[20%]">
+        <div className="flex flex-col w-fill md:w-[20%]">
   <img
     src={pic}
     alt="Activity 1"
@@ -103,7 +103,7 @@ export default function Volenteer() {
       </div>
     </div>
 
-    <div className="p-6 md:p-10 rounded-lg  md:text-left">
+    <div className="px-[15px] md:px-[60px] pt-5 rounded-lg  md:text-left">
   <h1 className="text-xl font-extrabold text-red-700 ">
     Fulfill Your Dharma
   </h1>
@@ -112,7 +112,7 @@ export default function Volenteer() {
   </p>
 </div>
 
-<div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 md:p-10 rounded-lg shadow-md">
+<div className="flex flex-col md:flex-row items-center md:items-start gap-6 px-[15px] pt-5 md:px-[60px] rounded-lg shadow-md">
   {/* Text Content */}
   <div className="md:w-1/1 md:text-left">
     <h1 className="text-2xl sm:text-2xl font-bold text-red-700 ">Serving Lord Parashurama</h1>
@@ -131,7 +131,7 @@ Join us to make a difference in the lives of others and be a part of this transf
     <img
       src={pic4}
       alt="Example"
-      className="w-96 h-auto object-cover rounded-lg"
+      className="w-96 h-auto object-cover rounded-lg mb-3 md:mb-0"
     />
   </div>
 </div>
@@ -141,7 +141,7 @@ Join us to make a difference in the lives of others and be a part of this transf
 </div>
 
 
-<div className="p-6 md:p-10 bg-gray-50 rounded-lg shadow-md  mx-auto">
+<div className="px-[15px] md:p-[60px] bg-gray-50 rounded-lg shadow-md  mx-auto pt-2">
   <h1 className="text-red-700 font-extrabold text-2xl sm:text-3xl mb-4 text-center">
     Get Involved
   </h1>

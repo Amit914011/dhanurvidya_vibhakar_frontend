@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram ,faYoutube, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
 import footerLogo from '../assets/logo.png'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,23 +15,25 @@ const Footer = () => {
           {/* First Section */}
           <div className="w-full lg:w-1/4  lg:mb-0">
             <h3 className="font-semibold text-white mb-3">International Society for Dhanurveda</h3>
+            <Link tp='/'>
             <img 
               src={footerLogo}
               alt="Isodhan International Society Logo" 
               className="w-40 h-auto" 
             />
+            </Link>
           </div>
 
           {/* About Section */}
           <div className="w-full lg:w-1/4  lg:mb-0">
             <h3 className="text-xl font-semibold text-white mb-3">Information</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-orange-500">Home</a></li>
-              <li><a href="#" className="hover:text-orange-500">About Us</a></li>
-              <li><a href="#" className="hover:text-orange-500">Sri Guru Karunamaya</a></li>
-              <li><a href="#" className="hover:text-orange-500">Guru Lineage</a></li>
-              <li><a href="#" className="hover:text-orange-500">Events</a></li>
-              <li><a href="#" className="hover:text-orange-500">Contact</a></li>
+              <li><Link to='/' className="hover:text-orange-500">Home</Link></li>
+              <li><Link to='/guru' className="hover:text-orange-500">About Us</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Sri Guru Karunamaya</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Guru Lineage</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Events</Link></li>
+              <li><Link to='/contact' className="hover:text-orange-500">Contact</Link></li>
             </ul>
           </div>
 
@@ -38,13 +41,13 @@ const Footer = () => {
           <div className="w-full lg:w-1/4  lg:mb-0">
             <h3 className="text-xl font-semibold text-white mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-orange-500">Upcoming Srividya Classes</a></li>
-              <li><a href="#" className="hover:text-orange-500">Special Workshops</a></li>
-              <li><a href="#" className="hover:text-orange-500">Puja</a></li>
-              <li><a href="#" className="hover:text-orange-500">Guruvaani</a></li>
-              <li><a href="#" className="hover:text-orange-500">Remedies</a></li>
-              <li><a href="#" className="hover:text-orange-500">FAQ</a></li>
-              <li><a href="#" className="hover:text-orange-500">Testimonials</a></li>
+              <li><Link to='/upcoming-projects' className="hover:text-orange-500">Upcoming Srividya Classes</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Special Workshops</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Puja</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Guruvaani</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Remedies</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">FAQ</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Testimonials</Link></li>
             </ul>
           </div>
 
@@ -87,8 +90,9 @@ const Footer = () => {
           Copyright © 2024 Srividya Learning Centre (A knowledge partner of Soundarya Lahari)
         </p>
         <p className="text-sm">
-          <a href="#" className="hover:text-orange-500">Privacy Policy</a> | <a href="#" className="hover:text-orange-500">Terms & Conditions</a>
+          <Link to='/' className="hover:text-orange-500">Privacy Policy</Link> | <Link to='/' className="hover:text-orange-500">Terms & Conditions</Link>
         </p>
+        <p>Developed By <a href='https://techxpert.in' target="_blank">Techxpert</a> </p>
       </div>
     </footer>
   );

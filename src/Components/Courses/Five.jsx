@@ -19,13 +19,13 @@ export default function ThreeDayscamp() {
 <div className="flex justify-center items-center">
   <img src={fivedays1} alt="" className="max-w-full" />
 </div>
-<p className='pb-4 text-black  ml-3 px-3'>The ISODHAN Foundation presents an enriching five-day camp designed Introduce participants to the ancient martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya ithe art of the macel. in this immersive experience, participants will train under the guidance of seasoned Acharyas, embracing the authentic Gurukulam tradition that fosters discipline, focus, and respect for Vedic martial knowledge. The extended five-day format allows for in-depth practice and a more profound engagement with each martial Each day is thoughtfully planned to ensure a balanced experience of intensive skill-building and philosophical discussions, providing a deeper understanding of the purpose and values underpinning each technique. By the conclusion of the camp, learners will have cultivated essential skills, an appreciation of the arts historical significance, and personalized tips for ongoing practice at home. This program offers a unique opportunity to reconnect with India's timeless martial heritage in a supportive, traditional environment.</p>
+<p className='pb-4 text-black  ml-3 px-[15px] md:px-[60px] text-justify'>The ISODHAN Foundation presents an enriching five-day camp designed Introduce participants to the ancient martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya ithe art of the macel. in this immersive experience, participants will train under the guidance of seasoned Acharyas, embracing the authentic Gurukulam tradition that fosters discipline, focus, and respect for Vedic martial knowledge. The extended five-day format allows for in-depth practice and a more profound engagement with each martial Each day is thoughtfully planned to ensure a balanced experience of intensive skill-building and philosophical discussions, providing a deeper understanding of the purpose and values underpinning each technique. By the conclusion of the camp, learners will have cultivated essential skills, an appreciation of the arts historical significance, and personalized tips for ongoing practice at home. This program offers a unique opportunity to reconnect with India's timeless martial heritage in a supportive, traditional environment.</p>
 
 
 <div className='bg-yellow-200'>
   <img src={threedays3} alt="" />
 </div>
-<div className="flex flex-wrap justify-center gap-6 bg-yellow-200">
+<div className="flex flex-wrap justify-center gap-6 bg-yellow-200 pb-3">
   <div className="flex flex-col items-center">
     <img src={fiveday2} alt="Image 1" className="max-w-[300px] w-full h-auto" />
     <button className="mt-4 px-4 py-1 bg-orange-500 text-black font-bold rounded-3xl">
@@ -131,8 +131,8 @@ export default function ThreeDayscamp() {
       <div className=" shadow-md rounded-lg p-6 md:p-8 bg-yellow-200">
         <div className="md:flex flex-wrap gap-6">
           {/* Left Column */}
-          <ul className="flex-1 text-sm sm:text-base font-bold">
-            <li className="flex font-normal justify-between border-b">
+          <ul className="flex-1 text-[12px] md:text-[14px]">
+            <li className="flex justify-between border-b">
               <span>Wake up & fresh up</span>
               <span className="font-normal">04:30 AM to 05:30 AM</span>
             </li>
