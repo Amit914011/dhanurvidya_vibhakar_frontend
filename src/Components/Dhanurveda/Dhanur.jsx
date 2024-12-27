@@ -20,6 +20,7 @@ import day7 from '../../assets/7 day residentail camps.jpg'
 import day13_1 from '../../assets/13 days dhanurvidya 1.jpg'
 import day13_2 from '../../assets/13 days dhanurvidya 2.jpg'
 import day13_3 from '../../assets/13 days dhanurvidya 3.jpg'
+import { GoGoal } from "react-icons/go";
 
 
 
@@ -38,7 +39,7 @@ export default function Dhanur() {
     alt="" 
     className=""/>
 </div>
-<section className="bg-white text-gray-900 px-[60px]">
+<section className="bg-white text-gray-900 px-[15px] md:px-[60px]">
       {/* Content Container */}
       <div className="flex flex-col-reverse sm:flex-row items-center gap-3 ">
         {/* Text Section */}
@@ -59,7 +60,7 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
       </div>
     </section>
 
-    <section className="bg-white text-gray-900 px-[60px] pt-3">
+    <section className="bg-white text-gray-900 px-[15px] md:px-[60px] pt-3">
   {/* Content Container */}
   <div className="flex flex-col sm:flex-row items-start gap-6">
     
@@ -111,37 +112,68 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
 </div>
 
 <div className="benefits-container flex flex-col sm:flex-row gap-6 px-3">
+  {/* Image Section */}
   <div className="benefits-image flex-1 flex justify-center">
-    {/* Replace the src with your own image URL */}
-    <img src={dhanurvidyaram} alt="Archer Illustration" className="w-[200px] h-[220px]" />
+    <img
+      src={dhanurvidyaram} 
+      alt="Archer Illustration" 
+      className="w-[250px] h-[270px]" 
+    />
   </div>
-  <div className="benefits-list">
-    <ul>
-      <li>
-        <strong>Enhances Strength and Agility:</strong><br></br>
-         Builds strength, flexibility, balance, and core stability.
+  
+  {/* Benefits List Section */}
+  <div className="benefits-list flex-1">
+    <ul className="space-y-4">
+      {/* Benefit Item */}
+      <li className="flex items-start gap-4">
+        <GoGoal className="text-red-700 text-[24px] flex-shrink-0" />
+        <div>
+          <strong>Enhances Strength and Agility:</strong><br />
+          <span>Builds strength, flexibility, balance, and core stability.</span>
+        </div>
       </li>
-      <li>
-        <strong>Sharpens Focus:</strong> <br></br>Improves concentration, mental clarity, and decision-making.
+      <li className="flex items-start gap-4">
+        <GoGoal className="text-red-700 text-[24px] flex-shrink-0" />
+        <div>
+          <strong>Sharpens Focus:</strong><br />
+          <span>Improves concentration, mental clarity, and decision-making.</span>
+        </div>
       </li>
-      <li>
-        <strong>Instills Discipline:</strong> <br></br> Develops self-control, patience, and resilience.
+      <li className="flex items-start gap-4">
+        <GoGoal className="text-red-700 text-[24px] flex-shrink-0" />
+        <div>
+          <strong>Instills Discipline:</strong><br />
+          <span>Develops self-control, patience, and resilience.</span>
+        </div>
       </li>
-      <li>
-        <strong>Boosts Confidence:</strong> <br></br> Fosters inner strength and self-assurance.
+      <li className="flex items-start gap-4">
+        <GoGoal className="text-red-700 text-[24px] flex-shrink-0" />
+        <div>
+          <strong>Boosts Confidence:</strong><br />
+          <span>Fosters inner strength and self-assurance.</span>
+        </div>
       </li>
-      <li>
-        <strong>Strengthens Mind-Body Connection:</strong> <br></br> Enhances awareness and mindfulness through precision.
+      <li className="flex items-start gap-4">
+        <GoGoal className="text-red-700 text-[24px] flex-shrink-0" />
+        <div>
+          <strong>Strengthens Mind-Body Connection:</strong><br />
+          <span>Enhances awareness and mindfulness through precision.</span>
+        </div>
       </li>
-      <li>
-        <strong>Cultivates Warrior Spirit:</strong> Blends strength with harmony, respect, and inner peace.
+      <li className="flex items-start gap-4">
+        <GoGoal className="text-red-700 text-[24px] flex-shrink-0" />
+        <div>
+          <strong>Cultivates Warrior Spirit:</strong><br />
+          <span>Blends strength with harmony, respect, and inner peace.</span>
+        </div>
       </li>
     </ul>
   </div>
 </div>
 
-<div className='mt-20'>
-  <img src={ishdhan} alt="" className="w-full"/>
+
+<div className='mt-3'>
+  <img src={ishdhan} alt="" className="w-full h-[200px]"/>
 </div>
 
 <div className='flex justify-center'>
@@ -179,7 +211,7 @@ Learn More    </button>
       alt="Image 3" 
       className="w-full h-auto object-cover rounded-lg mb-4"/>
     <button className="px-4  text-black rounded-md text-xl font-bold transition duration-300">
-      Read More
+      Learn More
     </button>
   </div>
 </div>
@@ -191,7 +223,7 @@ Learn More    </button>
 <div className="flex flex-wrap justify-center gap-6 mt-2 px-3">
   {
     [day13_1,day13_2,day13_3].map((item,index)=>(
-      <div className='border border-red-700 w-[25%] h-[200px] overflow-hidden rounded-lg'>
+      <div className='border border-red-700 md:w-[25%] h-[200px] overflow-hidden rounded-lg'>
   <img 
     src={item} 
     alt="Image 1" 
@@ -239,7 +271,7 @@ Learn More    </button>
       alt="Image 3" 
       className="w-full h-[250px] object-cover rounded-lg mb-4"/>
     <button className="px-4 py-2   text-black rounded-md text-xl font-bold transition duration-300">
-      Read More
+      Learn More
     </button>
   </div>
 </div>

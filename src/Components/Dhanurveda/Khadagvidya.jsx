@@ -3,7 +3,7 @@ import khadagvidya from '../../assets/khadagvidya.jpg'
 import origin from '../../assets/origin.png'
 import origin1 from '../../assets/khadgavidya image 1.jpg'
 import origin2 from '../../assets/khadgavidya image 2.jpg'
-// import origin1 from '../../assets/khadgavidya image 1.jpg'
+import origin3 from '../../assets/pic8.jpg'
 import dhanurbanner from '../../assets/dhanurbanner.png'
 import benefits from '../../assets/benefits.png'
 import program from '../../assets/programs.png'
@@ -16,7 +16,7 @@ import khadgavidya_3_days_residential from '../../assets/khadgavidya 3 days resi
 import khadgavidya_5_days_residential from '../../assets/khadgavidya 5 days residentail.jpg'
 import khadgavidya_7_days_residential from '../../assets/pic8.jpg'
 import dhanurvidyaAcharyaTeacher from '../../assets/13 days dhanurvidya 1.jpg'
-
+import { FaKhanda } from "react-icons/fa";
 
 
 export default function Khadagvidya() {
@@ -38,7 +38,7 @@ export default function Khadagvidya() {
     />
   </div>
   <div class="flex-grow">
-    <p class=" text-black text-base md:text-lg">
+    <p class=" text-black text-justify">
     In Vedic history, the Khadga, or sword, holds a revered place as one of the two primary weapons in the Dhanurveda, the ancient Hindu science of warfare. Paired with the bow, bow, which represents skill in long-range combat, the Khadga stands for mastery in close combat, demanding precision, balance, and clarity. Esteemed not only as a weapon of physical strength but also as a symbol of profound spiritual virtues, the Khadga embodies the principi essential for upholding Dharma (righteousness) and protecting order in the universe.<br></br>
 The Khadga's legendary origin, as narrated by Bhishma to Nakula in the Mahabharata, begins with the gods, or devas, who were tormented by the danavas (demons). Seeking relief from the oppression, they turned to Brahma, the Creator. Moved by their plight, Brahma performed a grand sacrificial ritual in the Himalayas, attended by sages and divine beings. Out of the sacrificial flames emerged a fierce being, radiant and awe- inspiring, with a towering form, a sharp-toothed grin, and a complexion as blue as a lotus. The being's birth caused the earth to quake, oceans to rise, and meteors to streak across the sky.<br></br>
 Brahma introduced this divine being as Asi, a force destined to restore balance by destroying evil. in a flash, Asi transformed into a blazing sword, gleaming like flames, symbolizing the primal essence of all weapons to follow. Bhishma explained that Asi was created under the constellation Krittika, with Agni (fire) as its deity, (Rohini as its Gotra Ispiritual lineage), and Rudra (an aspect of Shiva) as its preceptor. Brahma proclaimed that Asi, the first weapon crafted by divine hands, would bring sure victory to its wielder, who would gain mastery over all other weapons.
@@ -48,7 +48,7 @@ Brahma introduced this divine being as Asi, a force destined to restore balance 
 
 <div class="flex flex-col md:flex-row gap-6 p-4">
   <div class="flex-1">
-    <p class="text-black text-base md:text-lg">
+    <p class="text-black text-justify ">
     After its creation, Brahma entrusted the divine sword to Lord Shiva. In his fierce form, Shiva wielded Asi in battle, vanquishing the daityas (demons) and staining the earth red with his victory. The sword's journey continued as Shiva passed it to Lord Vishnu, who wielded it as Nandaka, embedding it in the Dharmik tradition as a symbol of divine justice. Over time, the Khadga became associated with other deities, like Durga, symbolizing protection, courage, and righteousness in Hindu iconography.<br></br> <br></br>
     <img 
       src={origin2} 
@@ -67,9 +67,9 @@ The Khadga, then, is more than a weapon. It is a symbol of wisdom, clarity, and 
       alt="Image 1" 
       class="w-full md:w-80 h-auto object-cover hidden md:block rounded-lg"/>
     <img 
-      src={origin1}
+      src={origin3}
       alt="Image 2" 
-      class="w-full md:w-80 h-auto object-cover rounded-lg"/>
+      class="w-full md:w-80 h-auto md:h-[250px] object-cover rounded-lg"/>
   </div>
 </div>
 <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-48">
@@ -84,9 +84,9 @@ The Khadga, then, is more than a weapon. It is a symbol of wisdom, clarity, and 
   <div className="absolute inset-0 flex items-center justify-center">
   <div className="text-white px-6 py-4 rounded-md text-center max-w-[90%] md:max-w-[70%] relative">
     {/* Quote */}
-    <p className="text-2xl md:text-3xl font-semibold mt-2">
+    <h3 className="text-2xl md:text-3xl font-semibold mt-2">
       "The Path of Khadga Vidya Sharpens both the blade and the mind."
-    </p>
+    </h3>
 
     {/* Guru ji */}
     <p className="absolute right-0 bottom-0 font-medium text-yellow-500 text-xl">
@@ -96,38 +96,58 @@ The Khadga, then, is more than a weapon. It is a symbol of wisdom, clarity, and 
 </div>
 
 </div>
+
+
+
+
 <div className="flex justify-center ">
   <img src={benefits} alt="" />
 </div>
-<div className="benefits-container flex flex-col sm:flex-row gap-6">
-  <div className="benefits-image flex-1 flex justify-center px-3">
+<div className="benefits-container flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+  <div className="benefits-image w-[40%] flex justify-center px-3">
     {/* Replace the src with your own image URL */}
-    <img src={khadagvidyaimage} alt="Archer Illustration" className="w-[100%] h-[300px]" />
+    <img src={khadagvidyaimage} alt="Archer Illustration" className="w-full md:h-[300px]" />
   </div>
-  <div className="benefits-list text-base md:text-xl px-[15px] md:px-5 ">
-    <ul className='pr-5'>
-      <li className='md:text-right'>
-        <strong>Sharpens Reflexes</strong> <br />
-        Quick, Precise movements improve reaction time in close combat
-      </li>
-      <li className='md:text-right'>
-        <strong>Improves Coordination</strong> <br></br>Builds hand-eye coordination and balance through fluid sword techniques.
-      </li>
-      <li className='md:text-right'>
-        <strong>Increases Core Strength</strong> <br></br>Engages the core, building endurance and stability.
-      </li>
-      <li className='md:text-right'>
-        <strong>Enhances Spatial Awareness</strong> <br></br> Developes tactial skills and judgement in dynamic situations.
-      </li>
-      <li className='md:text-right'>
-        <strong>Fosters Emotional Control</strong> <br></br>Teaches Calmness and restraint under pressure.
-      </li>
-      <li className='md:text-right'>
-        <strong>Instills Honor and Responsibility</strong> <br></br>Encourages respect and ethical use of skill.
-      </li>
+  <div className="benefits-list text-base md:text-lg px-4 md:px-6 flex-1">
+    <ul className="space-y-4">
+      {[
+        {
+          title: "Sharpens Reflexes",
+          description: "Quick, precise movements improve reaction time in close combat.",
+        },
+        {
+          title: "Improves Coordination",
+          description: "Builds hand-eye coordination and balance through fluid sword techniques.",
+        },
+        {
+          title: "Increases Core Strength",
+          description: "Engages the core, building endurance and stability.",
+        },
+        {
+          title: "Enhances Spatial Awareness",
+          description: "Develops tactical skills and judgment in dynamic situations.",
+        },
+        {
+          title: "Fosters Emotional Control",
+          description: "Teaches calmness and restraint under pressure.",
+        },
+        {
+          title: "Instills Honor and Responsibility",
+          description: "Encourages respect and ethical use of skill.",
+        },
+      ].map((benefit, index) => (
+        <li key={index} className="flex items-start">
+          <FaKhanda className="text-red-700 mr-4 mt-[5px] text-xl" />
+          <div>
+            <strong className="text-lg font-semibold">{benefit.title}</strong>
+            <p className=" text-gray-600">{benefit.description}</p>
+          </div>
+        </li>
+      ))}
     </ul>
   </div>
 </div>
+
 <div className='mt-20'>
   <img src={khadagicon} alt="" className="w-full"/>
 </div>
