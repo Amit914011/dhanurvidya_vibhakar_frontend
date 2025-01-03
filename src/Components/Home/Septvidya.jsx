@@ -6,12 +6,13 @@ import pic3 from '../../assets/pic3.jpg';
 import pic4 from '../../assets/pic4.jpg';
 import pic5 from '../../assets/pic5.jpg';
 import pic6 from '../../assets/pic6.jpg';
-import DHANUR_VIDYA from '../../assets/dhanurvidya icon.png';
-import KUNTHA_VIDYA from '../../assets/kuntha vidya icon.png';
-import GADA_VIDYA from '../../assets/gada vidya icon.png';
-import BAHU_VIDYA from '../../assets/vahu vidya icon.png';
-import CHAKRA_VIDYA from '../../assets/chakra vidya.png';
-import KSHURIKA_VIDYA from '../../assets/kshurika vidya icon.png';
+import DHANUR_VIDYA from '../../assets/sapt Vidya/bow_arrows.png';
+import KUNTHA_VIDYA from '../../assets/sapt Vidya/spear.png';
+import GADA_VIDYA from '../../assets/sapt Vidya/swords.png';
+import BAHU_VIDYA from '../../assets/sapt Vidya/churika_01.png';
+import CHAKRA_VIDYA from '../../assets/sapt Vidya/gadha_vidya_002.png';
+import KSHURIKA_VIDYA from '../../assets/sapt Vidya/chakram.png';
+import bahuvidya from '../../assets/sapt Vidya/BAHUBLACKcopy1.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -67,10 +68,10 @@ const Septvidya = () => {
       className="relative w-full justify-center min-h-screen bg-cover bg-center  rounded-lg overflow-hidden"
       style={{ backgroundImage: `url(${newbg})` }}
     >
-      <div className=" pt-2  px-[15px]  md:px-[100px] flex flex-col justify-center items-center">
+      <div className=" pt-2  px-[14px]  md:px-[100px] flex flex-col justify-center items-center">
        
         <img src={aboutus} alt="" />
-        <p className="text-justify text-[14px] md:text-[16px]  pb-3">Isodhan Foundation is a dedicated institution rooted in preserving and promoting the rich cultural heritage of India. Our mission is to revive the essence of Indian traditions, spirituality, and the Gurukulam system, nurturing a way of life that aligns with Dharma and universal harmony.
+        <p className="text-justify text-[14px] md:text-[14px]  pb-3">Isodhan Foundation is a dedicated institution rooted in preserving and promoting the rich cultural heritage of India. Our mission is to revive the essence of Indian traditions, spirituality, and the Gurukulam system, nurturing a way of life that aligns with Dharma and universal harmony.
 
 At the heart of our vision is the revival of Dhanurveda, the ancient Vedic science of warfare and self-defense, emphasizing discipline, valor, and righteousness. Inspired by the teachings of Lord Parashurama, the protector of Dharma and embodiment of strength and justice, we aim to instill his virtues in every seeker.</p>
       </div>
@@ -118,82 +119,97 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
     {/* First Section with 3 Icons */}
     <div className="flex flex-col items-center">
       {/* Icon 1 */}
-      <div className="flex flex-col items-center group">
-        <div className="w-16 h-16 flex justify-center">
+      <div className="flex mt-2 flex-col items-center group">
+        <div className="w-10 h-10 flex justify-center">
           <img
             src={DHANUR_VIDYA}
             alt="Dhanur Vidya"
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[16px] font-bold text-black mt-2 text-center">DHANUR VIDYA</h1>
-        <p className="mt-2 text-[14px] text-black text-center">The ancient art of archery</p>
+        <h3 className="text-[14px] font-bold text-black  text-center">DHANURVIDYA</h3>
+        <span className=" text-[12px] text-black text-center capitalize">The ancient art of Bharat.</span>
       </div>
       {/* Icon 2 */}
-      <div className="flex flex-col items-center group">
-        <div className="w-16 h-16">
+      <div className="flex mt-2 flex-col items-center group">
+        <div className="w-10 h-10">
           <img
             src={KUNTHA_VIDYA}
             alt="Kuntha Vidya"
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[16px] font-bold text-black mt-2 text-center">KUNTHA VIDYA</h1>
-        <p className="mt-2 text-[14px] text-black text-center">The ancient art of spear</p>
+        <h3 className="text-[14px] font-bold text-black  text-center uppercase">Kuntavidya         </h3>
+        <span className=" text-[12px] text-black text-center capitalize">Ancient weapon of world
+        </span>
       </div>
       {/* Icon 3 */}
-      <div className="flex flex-col items-center group">
-        <div className="w-16 h-16">
+      <div className="flex mt-2 flex-col items-center group">
+        <div className="w-10 h-10">
           <img
             src={BAHU_VIDYA}
             alt="Bahuv Vidya"
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[16px] text-black font-bold mt-2 text-center">BAHU VIDYA</h1>
-        <p className="mt-2 text-[14px] text-black text-center">The ancient art of sword welding</p>
+        <h3 className="text-[14px] text-black font-bold  text-center uppercase">Kshurikavidya</h3>
+        <span className=" text-[12px] text-black text-center">Hidden weapon of warrior        </span>
       </div>
     </div>
 
     {/* Second Section with 3 Icons */}
-    <div className="flex flex-col items-center">
+    <div className="flex mt-2 flex-col items-center">
       {/* Icon 1 */}
       <div className="flex flex-col items-center group">
-        <div className="w-16 h-16">
+        <div className="w-10 h-10">
           <img
             src={KSHURIKA_VIDYA}
             alt="Kshurika Vidya"
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[15px] text-black font-bold mt-2 text-center">KSHURIKA VIDYA</h1>
-        <p className="mt-2 text-[13px] text-black text-center">The art of self defense</p>
+        <h3 className="text-[14px] text-black font-bold  text-center uppercase">CHAKRA VIDYA</h3>
+        <span className=" text-[12px] text-black text-center capitalize">Vedic weapon of Bharat</span>
       </div>
       {/* Icon 2 */}
-      <div className="flex flex-col items-center group">
-        <div className="w-16 h-16">
+      <div className="flex mt-2 flex-col items-center group">
+        <div className="w-10 h-10">
           <img
             src={GADA_VIDYA}
             alt="Gada Vidya"
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[15px] text-black font-bold mt-2 text-center">GADA VIDYA</h1>
-        <p className="mt-2 text-[13px] text-black text-center">The ancient art of mace</p>
+        <h3 className="text-[14px] text-black font-bold  text-center uppercase">Khadgavidya</h3>
+        <span className=" text-[12px] text-black text-center capitalize">Weapon of Kshatriya</span>
       </div>
       {/* Icon 3 */}
-      <div className="flex flex-col items-center group">
-        <div className="w-16 h-16">
+      <div className="flex mt-2 flex-col items-center group">
+        <div className="w-10 h-10">
           <img
             src={CHAKRA_VIDYA}
             alt="Chakra Vidya"
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
         </div>
-        <h1 className="text-[15px] text-black font-bold mt-2 text-center">CHAKRA VIDYA</h1>
-        <p className="mt-2 text-[13px] text-black text-center">The art of wheel throwing</p>
+        <h3 className="text-[14px] text-black font-bold  text-center uppercase">Gadavidya</h3>
+        <span className=" text-[12px] text-black text-center capitalize">Weapon of firmness warrior</span>
       </div>
     </div>
+          <div className="flex mt-2 flex-col justify-center items-center">
+          <div className="flex flex-col items-center group">
+        <div className="w-10 h-10">
+          <img
+            src={bahuvidya}
+            alt="Chakra Vidya"
+            className="transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-[14px] text-black font-bold  text-center uppercase">Bahuvidya
+        </h3>
+        <span className=" text-[12px] text-black text-center capitalize">Traditional Combat of Bharat</span>
+      </div>
+          </div>
   </div>
 </div>
 
