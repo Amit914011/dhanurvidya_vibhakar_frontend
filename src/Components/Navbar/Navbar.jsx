@@ -20,11 +20,19 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed w-full">
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex flex-col items-end ">
           {/* Top Menu Bar */}
-
+           <div className="bg-[#810000] md:w-full md:flex justify-end text-white px-7 text-[12px]">
+            <Link to="" className="text-[13px] hover:text-white">Trayodashi Calendar | </Link>
+            <Link to="tel:9154264942" className="text-[13px] hover:text-white"> &nbsp; +91 91542 64942 | </Link>
+            <Link to="" className="text-[13px] hover:text-white"> &nbsp; Subscribe | </Link>
+            <Link to="" className="text-[13px] hover:text-white"> &nbsp; Donate | </Link>
+            <Link to="/signup" className="text-[13px] hover:text-white"> &nbsp; Sign up | </Link>
+            <Link to="" className="text-[13px] hover:text-white"> &nbsp; Shop </Link>
+           </div>
           {/* Bottom Menu Bar */}
           <div className="buttommenubar">
+            
             <div>
               <Link to='/' className="text-black font-bold ">
                 <img src={logo} alt="" className="w-44" />

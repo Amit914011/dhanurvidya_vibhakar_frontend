@@ -23,6 +23,8 @@ import Course from './Components/Courses/Course.jsx'
 import TestPage from './Components/AboutUs/TestPage.jsx'
 import ParashuramRitual from './Components/Rituals/ParashuramRitual.jsx'
 import NotFound from './Components/NotFound.jsx'
+import Signup from './Components/Autho/Signup.jsx'
+import Login from './Components/Autho/Login.jsx'
 
 
 const router =createBrowserRouter(
@@ -46,7 +48,8 @@ const router =createBrowserRouter(
    <Route path='/fivedays' element={<Five/>}/>
    <Route path='/course' element={<Course/>}/>
    <Route path="/test" element={<TestPage/>}/>
-
+   <Route path='/signup' element={<Signup/>}/>
+   <Route path='/login' element={<Login/>}/>
 
    <Route path="*" element={<NotFound/>}/>
     </Route>
