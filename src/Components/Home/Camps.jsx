@@ -163,12 +163,12 @@ const Camps = () => {
   className="w-full py-5 bg-cover bg-center bg-no-repeat"
   style={{ backgroundImage: `url(${bgImage1})` }}
 >
-  <div className="text-center flex flex-col gap-4 text-black">
+  {/* <div className="text-center flex flex-col gap-4 text-black">
     <p className="text-xl md:text-4xl font-bold ml-4 mr-4 md:mt-5 text-[#800000] ">
       "धनुर् गृहीत्वा उपनिषदं महास्त्रं शरं ह्युपासा निशितं सन्धयीत। <br />
    <span className="">   आयम्य तद्भावगतं स्वमेतत् तत् तत्त्वमस्य लक्ष्यं सधनम् हि विद्धि॥"</span>
     </p>
-  </div>
+  </div> */}
 
   <div className="w-full mb-8 md:mb-0 overflow-hidden py-3 mx-auto px-[15px]">
   <div

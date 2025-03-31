@@ -1,6 +1,6 @@
 import React from 'react'
 import templeimg from '../assets/templeimg.jpg'
-import templeimg1 from '../assets/templeicon.png'
+import templeimg1 from '../assets/temple.png'
 import templeimg2 from '../assets/temple 3.png'
 
 export default function Temple() {
@@ -9,7 +9,7 @@ export default function Temple() {
         <div className='w-full'>
             <img src={templeimg} alt="" className='w-full bg-cover'/>
         </div>
-        <div className="bg-yellow-200 flex justify-center items-center py-8">
+        <div className="bg-[#ffedd2] flex justify-center items-center py-8">
   <img 
     src={templeimg1} 
     alt="Temple" 
@@ -74,7 +74,7 @@ export default function Temple() {
 
       {/* Program Section */}
      <div className='px-[15px] md:px-[60px]'>
-     <div className="mt-8 bg-yellow-100 py-6 px-3">
+     <div className="mt-8 bg-[#ffedd2] py-6 px-3">
   <h3 className="text-center text-3xl font-bold text-red-800">TEMPLE PROGRAM</h3>
   <div className="overflow-x-auto mt-4">
     <table className="border border-black w-full text-sm sm:text-base">

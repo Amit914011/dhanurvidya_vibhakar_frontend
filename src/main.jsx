@@ -22,6 +22,7 @@ import Five from './Components/Courses/Five.jsx'
 import Course from './Components/Courses/Course.jsx'
 import TestPage from './Components/AboutUs/TestPage.jsx'
 import ParashuramRitual from './Components/Rituals/ParashuramRitual.jsx'
+import NotFound from './Components/NotFound.jsx'
 
 
 const router =createBrowserRouter(
@@ -31,7 +32,7 @@ const router =createBrowserRouter(
     <Route path='' element={<Home/>}/>
    <Route path='/guru' element={<Guru/>}/>
    <Route path='/parashurama-rituals' element={<ParashuramRitual/>}/>
-   <Route path='/dhanur' element={<Dhanur/>}/>
+   <Route path='/dhanurvidya' element={<Dhanur/>}/>
    <Route path='/upcoming-projects' element={<Upcomingprojects/>}/>
    <Route path='/origin' element={<Origin/>}/>
    <Route path='/khadagvidya' element={<Khadagvidya/>}/>
@@ -45,6 +46,9 @@ const router =createBrowserRouter(
    <Route path='/fivedays' element={<Five/>}/>
    <Route path='/course' element={<Course/>}/>
    <Route path="/test" element={<TestPage/>}/>
+
+
+   <Route path="*" element={<NotFound/>}/>
     </Route>
     </>
   )

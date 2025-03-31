@@ -30,9 +30,9 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><Link to='/' className="hover:text-orange-500">Home</Link></li>
               <li><Link to='/guru' className="hover:text-orange-500">About Us</Link></li>
-              <li><Link to='/' className="hover:text-orange-500">Sri Guru Karunamaya</Link></li>
-              <li><Link to='/' className="hover:text-orange-500">Guru Lineage</Link></li>
-              <li><Link to='/' className="hover:text-orange-500">Events</Link></li>
+              <li><Link to='/volenteer' className="hover:text-orange-500">Valentier</Link></li>
+              <li><Link to='/gurukulam' className="hover:text-orange-500">Gurukulam</Link></li>
+              <li><Link to='/temple' className="hover:text-orange-500">Temple</Link></li>
               <li><Link to='/contact' className="hover:text-orange-500">Contact</Link></li>
             </ul>
           </div>
@@ -41,12 +41,12 @@ const Footer = () => {
           <div className="w-full lg:w-1/4  lg:mb-0">
             <h3 className="text-xl font-semibold text-white mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to='/upcoming-projects' className="hover:text-orange-500">Upcoming Srividya Classes</Link></li>
+              <li><Link to='/upcoming-projects' className="hover:text-orange-500">Upcoming Camps</Link></li>
               <li><Link to='/' className="hover:text-orange-500">Special Workshops</Link></li>
-              <li><Link to='/' className="hover:text-orange-500">Puja</Link></li>
-              <li><Link to='/' className="hover:text-orange-500">Guruvaani</Link></li>
-              <li><Link to='/' className="hover:text-orange-500">Remedies</Link></li>
-              <li><Link to='/' className="hover:text-orange-500">FAQ</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Upcoming Projects</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Rituals</Link></li>
+              <li><Link to='/' className="hover:text-orange-500">Yagna & Homan</Link></li>
+              {/* <li><Link to='/' className="hover:text-orange-500">FAQ</Link></li> */}
               <li><Link to='/' className="hover:text-orange-500">Testimonials</Link></li>
             </ul>
           </div>
@@ -87,7 +87,8 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="mt-8 pt-4 border-t border-gray-600 text-center">
         <p className="text-sm">
-          Copyright © 2024 Srividya Learning Centre (A knowledge partner of Soundarya Lahari)
+          Copyright © 2025 ISODHAN. All Rights Reserved.
+
         </p>
         <p className="text-sm">
           <Link to='/' className="hover:text-orange-500">Privacy Policy</Link> | <Link to='/' className="hover:text-orange-500">Terms & Conditions</Link>

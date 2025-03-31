@@ -17,6 +17,7 @@ import khadgavidya_5_days_residential from '../../assets/khadgavidya 5 days resi
 import khadgavidya_7_days_residential from '../../assets/pic8.jpg'
 import dhanurvidyaAcharyaTeacher from '../../assets/13 days dhanurvidya 1.jpg'
 import { FaKhanda } from "react-icons/fa";
+import Templete from '../templete'
 
 
 export default function Khadagvidya() {
@@ -25,17 +26,13 @@ export default function Khadagvidya() {
        <div>
   <img src={khadagvidya} alt="" className="w-full h-auto" />
 </div>
-<div className="flex justify-center items-center">
-  <img src={origin} alt=""/>
+<div className="flex justify-center items-center pt-3">
+  
+    <Templete title="ORIGIN"/>
 </div>
 
 <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-4">
   <div class="flex-shrink-0">
-    <img 
-      src={origin1} 
-      alt="Sample Image" 
-      class="w-full md:w-80 h-auto object-cover rounded-lg" 
-    />
   </div>
   <div class="flex-grow">
     <p class=" text-black text-justify">
@@ -157,7 +154,7 @@ The Khadga, then, is more than a weapon. It is a symbol of wisdom, clarity, and 
 
 <div className="flex flex-wrap gap-6 justify-center px-3">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase">3 days residentail camp</h2>
     <img 
       src={khadgavidya_3_days_residential} 
@@ -168,7 +165,7 @@ Learn More    </button>
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase">5 days residentail camp</h2>
     <img 
       src={khadgavidya_5_days_residential}
@@ -179,7 +176,7 @@ Learn More    </button>
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase">7 days residentail camp</h2>
     <img 
       src={khadgavidya_7_days_residential}
@@ -195,7 +192,7 @@ Learn More    </button>
 </div>
 <div className="flex flex-wrap gap-6 justify-center px-3 mb-5 md:mb-0">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase">gadha VIDYA CAMPS</h2>
     <img 
       src={guru9} 
@@ -206,7 +203,7 @@ Learn More    </button>
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase">dhanurvidhya VIDYA CAMPS</h2>
     <img 
       src={guru8}
@@ -217,7 +214,7 @@ Learn More    </button>
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase text-center">dhanurvidhya acharya (teacher) CAMPS</h2>
     <img 
       src={dhanurvidyaAcharyaTeacher}

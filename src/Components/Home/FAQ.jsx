@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import dhanurVidyaImage from "../../assets/bg_net.png"; // Add appropriate image
+import dhanurVedaImage from "../../assets/bg_net.png"; // Add appropriate image
 import bgImage from "../../assets/bg_faq.jpg"; // Add your background image here
 
 const faqs = [
@@ -72,7 +72,7 @@ function FAQ() {
     >
       <div className="text-center mb-10">
         <h3 className="text-2xl text-yellow-500 font-bold">
-          Mastering Dhanur Vidya
+          Mastering of Dhanurveda
         </h3>
         <h1 className="text-3xl md:text-4xl text-[#800000] font-bold">
           The <span className="text-maroon-600">Art of Warfare</span> in Ancient Times
@@ -130,7 +130,7 @@ function FAQ() {
           transition={{ duration: 0.7 }}
         >
           <img
-            src={dhanurVidyaImage}
+            src={dhanurVedaImage}
             alt="Dhanur Vidya"
             className="object-contain w-[80%] max-w-lg"
           />

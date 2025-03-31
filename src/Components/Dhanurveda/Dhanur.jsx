@@ -21,6 +21,7 @@ import day13_1 from '../../assets/13 days dhanurvidya 1.jpg'
 import day13_2 from '../../assets/13 days dhanurvidya 2.jpg'
 import day13_3 from '../../assets/13 days dhanurvidya 3.jpg'
 import { GoGoal } from "react-icons/go";
+import Templete from '../templete'
 
 
 
@@ -33,11 +34,8 @@ export default function Dhanur() {
     alt="" 
     className="w-full h-auto object-cover" />
 </div>
-<div className="flex justify-center">
-  <img 
-    src={origin1} 
-    alt="" 
-    className=""/>
+<div className="flex justify-center pt-3">
+  <Templete title="ORIGIN"/>
 </div>
 <section className="bg-white text-gray-900 px-[15px] md:px-[60px]">
       {/* Content Container */}
@@ -182,7 +180,7 @@ According to tradition, Dhanurvidya is not just a preferred form of martial skil
 
 <div className="flex flex-wrap gap-6 justify-center p-[15px]">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase pb-4">3 day residential camp</h2>
     <img 
       src={day3} 
@@ -193,7 +191,7 @@ Learn More    </button>
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase pb-4 ">5 day residentail camp</h2>
     <img 
       src={day5}
@@ -204,7 +202,7 @@ Learn More    </button>
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center p-2 bg-yellow-200 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center p-2 bg-[#ffedd2] rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase text-center">7 day residentail camp chala chala (level-1)</h2>
     <img 
       src={day7}
@@ -242,7 +240,7 @@ Learn More    </button>
 
 <div className="flex flex-wrap gap-6 justify-center px-3 mb-3">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
     <img 
       src={guru8} 
@@ -253,7 +251,7 @@ Learn More    </button>
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">GADHA VIDYA CAMPS</h2>
     <img 
       src={guru9}
@@ -264,7 +262,7 @@ Learn More    </button>
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase text-center">dhanurvidhya acharya (teacher) cmaps</h2>
     <img 
       src={day13_2}

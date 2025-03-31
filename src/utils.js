@@ -139,7 +139,7 @@ export const Menus = [
     subMenu: [
       {
         name: "Origin",
-        path: "/Dhanur",
+        path: "/dhanurvidya",
         desc: "Dhanurveda",
         icon: CircleHelp,
       },

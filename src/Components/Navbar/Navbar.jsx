@@ -32,8 +32,8 @@ export default function Navbar() {
             </div>
             <div>
               <ul className="mainMenu">
-                <li>
-                  <Link to="/">Home</Link>
+                <li className="">
+                  <Link to="/" className="hover:text-white">Home</Link>
                 </li>
                 <li>
                   <p className="block">
@@ -42,13 +42,13 @@ export default function Navbar() {
                   <ul className="sumenu">
                       {
                         [{"title":"Guru Ji","link":"/guru"},
-                          {"title":"Guru Ji Sankalpa","link":"/"},
+                          {"title":"Research Teems","link":"/"},
                           {"title":" Associated centres","link":"/"},
                           {"title":" Upcoming projects","link":"/upcoming-projects"},
                           {"title":"Bhargava Upasana","link":"/"}
                       ].map((item,index)=>(
                      <li key={index}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-white" >
                         {item.title}
                       </Link>
                     </li>
@@ -57,7 +57,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <p>
-                    Rituals <IoMdArrowDropdown className="inline icon" />
+                    Rituals <IoMdArrowDropdown className="inline icon hover:text-white" />
                   </p>
                   <ul className="sumenu">
 
@@ -76,7 +76,7 @@ export default function Navbar() {
                           // {"title":" Ayushya Homam","link":"/"},
                       ].map((item,index)=>(
                      <li key={index}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-white">
                         {item.title}
                       </Link>
                     </li>
@@ -91,14 +91,14 @@ export default function Navbar() {
                   <ul className="sumenu">
                   {
                         [{"title":"Origin","link":"/origin"},
-                          {"title":"Dhanurvidya","link":"/dhanur"},
+                          {"title":"Dhanurvidya","link":"/dhanurvidya"},
                           {"title":"Khadgavidya","link":"/khadagvidya"},
                           {"title":" Gadavidya","link":"/gadavidya"},
                           {"title":"Maha Mrithyunjaya Homam","link":"/"},
                           {"title":"Mahalakshmi Homam","link":"/"},
                       ].map((item,index)=>(
                      <li key={index}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-white">
                         {item.title}
                       </Link>
                     </li>
@@ -107,18 +107,18 @@ export default function Navbar() {
                     </ul>
                 </li>
                 <li>
-                  <Link to="/course">
-                    Courses <IoMdArrowDropdown className="inline icon" />
+                  <Link to="/course" className="hover:text-white">
+                    Courses <IoMdArrowDropdown className="inline icon hover:text-white" />
                   </Link>
                   <ul className="sumenu">
                   {
                         [{"title":"3 Days Camp","link":"/threedays"},
                           {"title":"5 Days Camp","link":"/fivedays"},
                           {"title":"7 Days Camp","link":"/"},
-                          {"title":" 11 Days Camp","link":"/"},
+                          // {"title":" 11 Days Camp","link":"/"},
                       ].map((item,index)=>(
                      <li key={index}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-white">
                         {item.title}
                       </Link>
                     </li>
@@ -126,19 +126,19 @@ export default function Navbar() {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/gurukulam">
-                    Gurukulam <IoMdArrowDropdown className="inline icon" />
+                  <Link to="/gurukulam" className="hover:text-white">
+                    Gurukulam <IoMdArrowDropdown className="inline icon hover:text-white" />
                   </Link>
                   <ul className="sumenu">
                     <li>
-                      <Link to="/" className="block">
+                      <Link to="/" className="block hover:text-white">
                         Tirupati
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="/temple">
+                  <Link to="/temple" className="hover:text-white">
                     Temple <IoMdArrowDropdown className="inline icon" />
                   </Link>
                   {/* <ul className="sumenu">
@@ -161,7 +161,7 @@ export default function Navbar() {
                           {"title":"Careers","link":"/career"},
                       ].map((item,index)=>(
                      <li key={index}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-white">
                         {item.title}
                       </Link>
                     </li>
@@ -169,10 +169,10 @@ export default function Navbar() {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/">Events</Link>
+                  <Link to="/" className="hover:text-white">Events</Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="block">
+                  <Link to="/contact" className="block hover:text-white">
                     Contact
                   </Link>
                 </li>
@@ -210,8 +210,8 @@ export default function Navbar() {
             onClick={() => {setShow("");}}
           />
           <ul className="mainMobileMenu z-50">
-            <li className="hover:bg-blue-50 ">
-              <Link to="/" className="block text-[16px]" onClick={() => {
+            <li className=" ">
+              <Link to="/" className="block text-[16px] hover:text-[#5E0000]" onClick={() => {
               setShow("");
             }}>
                 Home
@@ -219,7 +219,7 @@ export default function Navbar() {
             </li>
             <li>
               <div className="flex justify-between " onClick={() => setMenuOpen(!menuOpen)}>
-              <li className="block text-[16px]"  >
+              <li className="block text-[16px] hover:text-[#5E0000] cursor-pointer"  >
                 About Us
               </li>
               <IoMdArrowDropdown
@@ -236,7 +236,7 @@ export default function Navbar() {
                           {"title":"Bhargava Upasana","link":"/"}
                       ].map((item,index)=>(
                      <li key={index}  onClick={() => {setShow("");}}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-[#5E0000]">
                         {item.title}
                       </Link>
                     </li>
@@ -245,7 +245,7 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen1(!menuOpen1)}>
-             <li className="mr-14 pl-2" >
+             <li className="mr-14 pl-2 hover:text-[#5E0000] cursor-pointer" >
                 Rituals
               </li>
               <IoMdArrowDropdown
@@ -269,7 +269,7 @@ export default function Navbar() {
                           // {"title":" Ayushya Homam","link":"/"},
                       ].map((item,index)=>(
                      <li key={index} onClick={() => {setShow("");}}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-[#5E0000]">
                         {item.title}
                       </Link>
                     </li>
@@ -278,7 +278,7 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen2(!menuOpen2)}>
-             <li className="mr-14 pl-2" >
+             <li className="mr-14 pl-2 hover:text-[#5E0000]" >
                 Dhanurveda
               </li>
               <IoMdArrowDropdown
@@ -289,14 +289,14 @@ export default function Navbar() {
               <ul className={`${menuOpen2 ? "block" : "hidden"}`}>
               {
                         [{"title":"Origin","link":"/origin"},
-                          {"title":"Dhanurvidya","link":"/dhanur"},
+                          {"title":"Dhanurvidya","link":"/dhanurvidya"},
                           {"title":"Khadgavidya","link":"/khadagvidya"},
                           {"title":" Gadavidya","link":"/gadavidya"},
                           {"title":"Maha Mrithyunjaya Homam","link":"/"},
                           {"title":"Mahalakshmi Homam","link":"/"},
                       ].map((item,index)=>(
                      <li key={index} onClick={() => {setShow("");}}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-[#5E0000]">
                         {item.title}
                       </Link>
                     </li>
@@ -305,7 +305,7 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen3(!menuOpen3)}>
-             <li className="mr-14 pl-2" >
+             <li className="mr-14 pl-2 hover:text-[#5E0000] cursor-pointer" >
                 Courses
               </li>
               <IoMdArrowDropdown
@@ -318,10 +318,10 @@ export default function Navbar() {
                         [{"title":"3 Days Camp","link":"/threedays"},
                           {"title":"5 Days Camp","link":"/fivedays"},
                           {"title":"7 Days Camp","link":"/"},
-                          {"title":" 11 Days Camp","link":"/"},
+                          // {"title":" 11 Days Camp","link":"/"},
                       ].map((item,index)=>(
                      <li key={index} onClick={() => {setShow("");}}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-[#5E0000]">
                         {item.title}
                       </Link>
                     </li>
@@ -330,7 +330,7 @@ export default function Navbar() {
             </li>
             <li>
              <div className="flex justify-between">
-             <Link to='/gurukulam' className="mr-14" >
+             <Link to='/gurukulam' className="mr-14 hover:text-[#5E0000]" >
              Gurukulam 
               </Link>
               <IoMdArrowDropdown
@@ -344,7 +344,7 @@ export default function Navbar() {
                          
                       ].map((item,index)=>(
                      <li key={index} onClick={() => {setShow("");}}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-[#5E0000]">
                         {item.title}
                       </Link>
                     </li>
@@ -352,11 +352,11 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <Link to='/temple' onClick={() => {setShow("");}}>Temple</Link>
+              <Link to='/temple' className="hover:text-[#5E0000]" onClick={() => {setShow("");}}>Temple</Link>
             </li>
             <li>
              <div className="flex justify-between" onClick={() => setMenuOpen5(!menuOpen5)}>
-             <li className="mr-14 pl-2" >            
+             <li className="mr-14 pl-2 hover:text-[#5E0000] cursor-pointer" >            
 Get Involved 
               </li>
               <IoMdArrowDropdown
@@ -371,7 +371,7 @@ Get Involved
                           {"title":"Careers","link":"/career"},
                       ].map((item,index)=>(
                      <li key={index} onClick={() => {setShow("");}}>
-                      <Link to={item.link} className="block">
+                      <Link to={item.link} className="block hover:text-[#5E0000]">
                         {item.title}
                       </Link>
                     </li>
@@ -379,12 +379,12 @@ Get Involved
               </ul>
             </li>
             <li>
-              <Link to="/" className="block" onClick={() => {setShow("");}}>
+              <Link to="/" className="block hover:text-[#5E0000]" onClick={() => {setShow("");}}>
                 Events
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="block" onClick={() => {setShow("");}}>
+              <Link to="/contact" className="block hover:text-[#5E0000]" onClick={() => {setShow("");}}>
                 Contact
               </Link>
             </li>

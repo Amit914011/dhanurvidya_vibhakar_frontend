@@ -9,7 +9,11 @@ import guruji5 from '../../assets/guruji6.jpg'
 import guru7 from '../../assets/guruji.jpg'
 import guru8 from '../../assets/pic8.jpg'
 import guru9 from '../../assets/pic2.jpg'
+import guru10 from '../../assets/dhanurvidya.jpg'
 import aboutguru from "../../assets/aboutguru.png";
+import { Link } from "react-router-dom";
+import Templete from "../templete";
+
 
 export default function Guru() {
   return (
@@ -17,23 +21,26 @@ export default function Guru() {
       <div className="pt-14 flex justify-between items-center  w-full">
         <img src={guru} alt="" className="w-full" />
       </div>
-      <div className="flex justify-center items-center">
-        <img src={aboutguru} alt="Guru" className="max-w-full h-auto" />
+      <div className="flex justify-center items-center pt-3">
+        {/* <img src={aboutguru} alt="Guru" className="max-w-full h-auto" /> */}
+    <Templete title="ABOUT GURU JI"/>
       </div>
+
+
 
       <div className="bg-white ">
         {/* Header Section */}
-        <h3 className="text-center text-red-800 text-xl md:text-2xl font-bold md:px-10">
+        {/* <h3 className="text-center text-red-800 text-xl md:text-2xl font-bold md:px-10">
           A Pillar of Support for Isodhan Foundation and Parashurama Seva
-        </h3>
+        </h3> */}
       </div>
         <div className='pt-2 '>
       <div className='flex flex-col-reverse md:flex-row lg:px-[80px] justify-between px-[15px] items-center'>
-          <div className=' py-2 md:py-0 md:w-[90%]'>
+          <div className=' py-2 md:py-0 md:w-[60%]'>
               <p className='text-justify'>   Sri Sri Sri Vibhakar Tiwari is a distinguished master of Dhanurveda, the ancient Indian martial art of archery and warfare. Residing at the foothills of Lord Venkateshwara in Tirupati, Andhra Pradesh, Guru Ji's expertise in this discipline is unparalleled, making him a revered figure in the preservation and teaching of traditional combat techniques. As a spiritual master and devoted follower of Lord Parashurama, the sixth avatar of Vishnu, Guru Ji embodies the principles of bravery, discipline, and devotion.</p>
           </div>
-          <div className='md:w-[15%] rounded-lg overflow-hidden flex justify-end'>
-              <img src={guruji} alt="" className='md:w-[90%] md:h-[150px] lg:w-[80%] rounded-lg'/>
+          <div className='md:w-[40%] rounded-lg overflow-hidden flex justify-end'>
+              <img src={guruji3} alt="" className='md:w-[50%] md:h-[] lg:w-[60%] rounded-lg'/>
           </div>
       </div>
       <div className='flex flex-col-reverse md:flex-row  lg:px-[80px] justify-between px-[15px] items-center'>
@@ -55,7 +62,7 @@ export default function Guru() {
       </div>
       <div className='flex flex-col-reverse md:flex-row lg:px-[80px] gap-5 justify-between px-[15px] items-center'>
       <div className='md:w-[15%] rounded-lg overflow-hidden flex justify-start'>
-              <img src={guruji3} alt="" className='md:w-[100%]  md:h-[150px] md:mt-2 rounded-lg'/>
+              <img src={guruji} alt="" className='md:w-[100%]  md:h-[150px] md:mt-2 rounded-lg'/>
           </div>
           <div className='md:w-[90%]'>
               <p className='text-justify pt-2'>   Beyond martial arts, Guru Ji's teachings encompass a holistic approach to personal development. He emphasizes the importance of physical strength, mental discipline, and spiritual enlightenment. His guidance helps students achieve a balanced life, integrating the virtues of martial and spiritual wisdom. Guru Ji's approach ensures that his disciples not only excel in physical combat but also grow as well-rounded individuals with a strong moral foundation.</p>
@@ -84,37 +91,89 @@ export default function Guru() {
       </div>
       
       <div className="w-full p-[15px] md:p-6">
-        <h1 className="text-3xl font-bold mb-4 text-center text-red-700">BLOGS</h1>
+        <h1 className="text-2xl  md:text-4xl font-bold mb-4 uppercase text-center text-red-700">Blog</h1>
         
         {/* Flex Container for Images */}
         <div className="md:flex  gap-6 justify-center">
           
           {/* Image 1 with Title */}
-          <div className="w-full mb-3 md:md-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
-            <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
+          <Link to='/khadagvidya' className="w-full mb-3 md:md-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-4 rounded-lg">
+          <div >
+            <h2 className="text-lg font-bold mb-2 text-center text-[#942e2e]">KHADGAVIDYA CAMPS</h2>
             <img 
               src={guru8} 
               alt="Image 1" 
               className="w-full h-[250px] md:h-[160px] lg:h-[250px] object-cover rounded-lg"/>
           </div>
+          </Link>
+          
       
           {/* Image 2 with Title */}
-          <div className="w-full mb-3 md:mb-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
-            <h2 className="text-lg font-bold mb-2 text-red-700">GADHA VIDYA CAMPS</h2>
+          <Link to='/gadavidya' className="w-full mb-3 md:mb-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-4 rounded-lg">
+          <div>
+            <h2 className="text-lg font-bold mb-2 text-center text-[#942e2e]">GADHAVIDYA CAMPS</h2>
             <img 
               src={guru9}
               alt="Image 2" 
               className="w-full h-auto object-cover rounded-lg"/>
           </div>
+          </Link>
       
           {/* Image 3 with Title */}
-          <div className="w-full mb-3 md:mb-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
-            <h2 className="text-lg font-bold mb-2 text-red-700">GADHA VIDYA CAMPS</h2>
+          <Link to='/dhanurvidya'  className="w-full mb-3 md:mb-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-4 rounded-lg">
+          <div>
+            <h2 className="text-lg text-center font-bold mb-2 text-[#942e2e]">DHANURVIDYA CAMPS</h2>
+            <img 
+              src={guru10}
+              alt="Image 2" 
+              className="w-full h-[245px] object-cover rounded-lg"/>
+          </div>
+          </Link>
+          
+      
+      </div>
+      
+      </div>
+      <div className="w-full p-[15px] md:p-6">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center text-red-700 uppercase">Join the Camps</h1>
+        
+        {/* Flex Container for Images */}
+        <div className="md:flex  gap-6 justify-center">
+          
+          {/* Image 1 with Title */}
+          <Link to='/khadagvidya' className="w-full mb-3 md:md-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-4 rounded-lg">
+          <div >
+            <h2 className="text-lg font-bold mb-2 text-center text-[#942e2e]">KHADGAVIDYA CAMPS</h2>
+            <img 
+              src={guru8} 
+              alt="Image 1" 
+              className="w-full h-[250px] md:h-[160px] lg:h-[250px] object-cover rounded-lg"/>
+          </div>
+          </Link>
+          
+      
+          {/* Image 2 with Title */}
+          <Link to='/gadavidya' className="w-full mb-3 md:mb-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-4 rounded-lg">
+          <div>
+            <h2 className="text-lg font-bold mb-2 text-center text-[#942e2e]">GADHAVIDYA CAMPS</h2>
             <img 
               src={guru9}
               alt="Image 2" 
               className="w-full h-auto object-cover rounded-lg"/>
           </div>
+          </Link>
+      
+          {/* Image 3 with Title */}
+          <Link to='/dhanurvidya'  className="w-full mb-3 md:mb-0 sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-4 rounded-lg">
+          <div>
+            <h2 className="text-lg text-center font-bold mb-2 text-[#942e2e]">DHANURVIDYA CAMPS</h2>
+            <img 
+              src={guru10}
+              alt="Image 2" 
+              className="w-full h-[245px] object-cover rounded-lg"/>
+          </div>
+          </Link>
+          
       
       </div>
       

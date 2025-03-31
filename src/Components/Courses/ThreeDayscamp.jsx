@@ -22,10 +22,10 @@ export default function ThreeDayscamp() {
 <p className=' text-black md:text-lg ml-3 px-[15px] md:px-[60px] text-justify mb-4'>The ISODHAN Foundation is excited to host three-day camp dedicated to the traditional martial arts of Dhanurvidya (archery and warfare), Khadgavidya (swordsmanship), and Gadavidya (the art of the mace). This intensive camp is conducted in the authentic Gurukulam style, offering participants a unique opportunity to learn. in the ancient way, directly from knowledgeable Acharyas. Through this immersive approach, participants connect deeply with the spirit and teachings of these martial arts, developing foundational skills and insights into each. discipline. Each day follows a carefully designed Vedic curriculum that balances practical techniques with philosophical teachings, providing a holistic experience. By the end of the camp, learners will have a strong grasp of the basics of their chosen art form, along with personalized guidance to continue their practice independently. at home. This program is ideal for those who seek not only martial training but also a profound connection to India's rich cultural heritage.</p>
 
 
-<div className='bg-yellow-200'>
+<div className='bg-[#ffedd2]'>
   <img src={threedays3} alt="" />
 </div>
-<div className="flex flex-wrap justify-center gap-6 bg-yellow-200 pb-3">
+<div className="flex flex-wrap justify-center gap-6 bg-[#ffedd2] pb-3">
   <div className="flex flex-col items-center">
     <img src={threedays2} alt="Image 1" className="max-w-[300px] w-full h-auto" />
     <button className="mt-4 px-4 py-1 bg-orange-500 text-black font-bold rounded-3xl">
@@ -72,10 +72,10 @@ export default function ThreeDayscamp() {
   </div>
 </div>
 
-<div className='bg-yellow-200'>
+<div className='bg-[#ffedd2]'>
   <img src={threedays3} alt="" />
 </div>
-<div className="flex flex-wrap justify-center gap-6 bg-yellow-200">
+<div className="flex flex-wrap justify-center gap-6 bg-[#ffedd2]">
   <div className="flex flex-col items-center">
     <img src={threedays6} alt="Image 1" className="max-w-[300px] w-full h-auto" />
     <button className="mt-4 px-4 py-1 bg-orange-500 text-black font-bold rounded-3xl">
@@ -129,7 +129,7 @@ export default function ThreeDayscamp() {
 
     {/* Schedule Section */}
     <div className="flex-1">
-      <div className=" shadow-md rounded-lg p-6 md:p-8 bg-yellow-200">
+      <div className=" shadow-md rounded-lg p-6 md:p-8 bg-[#ffedd2]">
         <div className="flex flex-wrap gap-6">
           {/* Left Column */}
           <ul className="flex-1 text-[12px] md:text-[14px]">

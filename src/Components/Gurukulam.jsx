@@ -18,8 +18,8 @@ export default function Gurukulam() {
     alt="Scholar" 
     className="max-w-full h-auto"/>
 </div>
-<div className="flex items-center justify-center bg-yellow-200 text-red-700">
-  <h1 className="text-3xl font-bold">DHANURVIDYA</h1>
+<div className="flex items-center justify-center py-2 bg-[#ffedd2] text-red-700">
+  <h1 className="text-4xl font-bold">DHANURVIDYA</h1>
 </div>
 
 
@@ -120,8 +120,8 @@ export default function Gurukulam() {
         </div>
       </div>
     </div>
-    <div className="flex items-center justify-center bg-yellow-200 text-red-700">
-  <h1 className="text-3xl font-bold">GADAVIDYA</h1>
+    <div className="flex items-center justify-center bg-[#ffedd2] py-2 text-red-700">
+  <h1 className="text-4xl font-bold">GADAVIDYA</h1>
 </div>
 
 <div className="p-4">
@@ -224,7 +224,7 @@ export default function Gurukulam() {
 
     <div className="flex flex-col items-center p-6">
   {/* Address Section */}
-  <div className="text-center bg-yellow-100 p-4 rounded-t-md w-full">
+  <div className="text-center bg-[#ffedd2] p-4 rounded-t-md w-full">
     <h2 className="text-red-800 text-3xl font-bold uppercase mb-2">Address</h2>
     <h3 className="text-2xl font-bold text-red-800">Isodhan Dhanurveda Gurukulam</h3>
     <p className="text-xl text-black font-semibold mt-2">

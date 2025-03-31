@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {Pagination, Autoplay } from 'swiper/modules';
 import image7 from '../../assets/banner3.jpg';
-import image2 from '../../assets/temple2.jpg';
+import image2 from '../../assets/bannerImage.png';
 import image3 from '../../assets/banner2.jpg';
 // import image4 from '../../assets/Banner Image/15.jpg';
 import Septvidya from '../Home/Septvidya';

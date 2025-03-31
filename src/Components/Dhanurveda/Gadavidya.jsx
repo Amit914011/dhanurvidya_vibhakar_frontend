@@ -18,6 +18,7 @@ import gadavidya_7_days from '../../assets/7 day residentail camps.jpg'
 import khadgavidya from '../../assets/dhanurvidya.jpg'
 import dhanurvidya from '../../assets/13 days dhanurvidya 1.jpg'
 import gadaicon from '../../assets/gada icons.png'
+import Templete from '../templete'
 
 
 
@@ -28,8 +29,8 @@ export default function Gadavidya() {
        <div>
   <img src={gadavidya} alt="" className="w-full h-auto" />
 </div>
-<div className="flex justify-center items-center">
-  <img src={origin} alt=""/>
+<div className="flex justify-center items-center pt-3">
+  <Templete title="ORIGIN"/>
 </div>
 
 <div class="flex flex-col-reverse lg:flex-row items-center md:items-start gap-4 p-[15px] md:px-[60px]">
@@ -156,7 +157,7 @@ mace was for justice, Duryodhana's use was often driven by pride and ambition, l
 
 <div className="flex flex-wrap md:flex-row gap-6 justify-center px-[15px] ">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="md:text-xl text-base  font-bold mb-2 text-red-700 uppercase">3 days residential camp</h2>
     <img 
       src={gadavidya_3_days} 
@@ -167,7 +168,7 @@ Learn More    </button>
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="md:text-xl text-base  font-bold mb-2 text-red-700 uppercase">5 days residential camp</h2>
     <img 
       src={gadavidya_5_days}
@@ -178,7 +179,7 @@ Learn More    </button>
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="md:text-xl text-base  font-bold mb-2 text-red-700 uppercase text-center">7 days residential camp chala chala</h2>
     <img 
       src={gadavidya_7_days}
@@ -194,7 +195,7 @@ Learn More    </button>
 </div>
 <div className="flex flex-wrap gap-6 justify-center px-3 mb-5 md:mb-0">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="md:text-xl text-base  font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
     <img 
       src={guru8} 
@@ -205,7 +206,7 @@ Learn More    </button>
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="md:text-xl text-base  font-bold mb-2 text-red-700 uppercase">dhanur Vidya CAMPS</h2>
     <img 
       src={khadgavidya}
@@ -216,7 +217,7 @@ Learn More    </button>
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="md:text-xl text-base  font-bold mb-2 text-red-700 uppercase text-center">dhanurvidya acharya (teacher) CAMPS</h2>
     <img 
       src={dhanurvidya}

@@ -20,6 +20,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import aboutus from '../../assets/ABOUT US.png'
 import saptVidya from '../../assets/SAPT VIDYA.png'
+import Templete from "../templete";
 
 const Septvidya = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -68,10 +69,11 @@ const Septvidya = () => {
       className="relative w-full justify-center min-h-screen bg-cover bg-center  rounded-lg overflow-hidden"
       style={{ backgroundImage: `url(${newbg})` }}
     >
-      <div className=" pt-2  px-[14px]  md:px-[100px] flex flex-col justify-center items-center">
+      <div className=" pt-4  px-[14px]   md:px-[100px] flex flex-col justify-center items-center">
        
-        <img src={aboutus} alt="" />
-        <p className="text-justify text-[14px] md:text-[14px]  pb-3">Isodhan Foundation is a dedicated institution rooted in preserving and promoting the rich cultural heritage of India. Our mission is to revive the essence of Indian traditions, spirituality, and the Gurukulam system, nurturing a way of life that aligns with Dharma and universal harmony.
+        {/* <img src={aboutus} alt="" /> */}
+        <Templete title="ABOUT US"/>
+        <p className="text-justify text-[14px] md:text-[18px]  pb-3">Isodhan Foundation is a dedicated institution rooted in preserving and promoting the rich cultural heritage of India. Our mission is to revive the essence of Indian traditions, spirituality, and the Gurukulam system, nurturing a way of life that aligns with Dharma and universal harmony.
 
 At the heart of our vision is the revival of Dhanurveda, the ancient Vedic science of warfare and self-defense, emphasizing discipline, valor, and righteousness. Inspired by the teachings of Lord Parashurama, the protector of Dharma and embodiment of strength and justice, we aim to instill his virtues in every seeker.</p>
       </div>
@@ -112,14 +114,15 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
       </div>
 
       {/* Left Section with Icons and Text */}
-      <div className="w-full md:w-[40%]  md:pl-0 text-gray-500 fade-in">
+      <div className="w-full md:w-[40%] flex flex-col justify-start items-center  md:pl-0 text-gray-500 fade-in">
   <img src={saptVidya} alt="" />
 
-  <div className="grid grid-cols-2  px-4 pb-5 md:px-0 w-full justify-center items-start">
+  <div className="grid grid-cols-2  px-4 md:px-0 w-full justify-center items-center">
     {/* First Section with 3 Icons */}
     <div className="flex flex-col items-center">
       {/* Icon 1 */}
-      <div className="flex mt-2 flex-col items-center group">
+     <Link to='/dhanurvidya'>
+     <div className="flex mt-2 flex-col items-center group">
         <div className="w-10 h-10 flex justify-center">
           <img
             src={DHANUR_VIDYA}
@@ -130,7 +133,9 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
         <h3 className="text-[14px] font-bold text-black  text-center">DHANURVIDYA</h3>
         <span className=" text-[12px] text-black text-center capitalize">The ancient art of Bharat.</span>
       </div>
+     </Link>
       {/* Icon 2 */}
+      <Link to='/'>
       <div className="flex mt-2 flex-col items-center group">
         <div className="w-10 h-10">
           <img
@@ -142,9 +147,10 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
         <h3 className="text-[14px] font-bold text-black  text-center uppercase">Kuntavidya         </h3>
         <span className=" text-[12px] text-black text-center capitalize">Ancient weapon of world
         </span>
-      </div>
+      </div></Link>
       {/* Icon 3 */}
-      <div className="flex mt-2 flex-col items-center group">
+     <Link to='/'>
+     <div className="flex mt-2 flex-col items-center group">
         <div className="w-10 h-10">
           <img
             src={BAHU_VIDYA}
@@ -155,12 +161,14 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
         <h3 className="text-[14px] text-black font-bold  text-center uppercase">Kshurikavidya</h3>
         <span className=" text-[12px] text-black text-center">Hidden weapon of warrior        </span>
       </div>
+     </Link>
     </div>
 
     {/* Second Section with 3 Icons */}
     <div className="flex mt-2 flex-col items-center">
       {/* Icon 1 */}
-      <div className="flex flex-col items-center group">
+     <Link to='/'>
+     <div className="flex flex-col items-center group">
         <div className="w-10 h-10">
           <img
             src={KSHURIKA_VIDYA}
@@ -171,8 +179,10 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
         <h3 className="text-[14px] text-black font-bold  text-center uppercase">CHAKRA VIDYA</h3>
         <span className=" text-[12px] text-black text-center capitalize">Vedic weapon of Bharat</span>
       </div>
+     </Link>
       {/* Icon 2 */}
-      <div className="flex mt-2 flex-col items-center group">
+     <Link to='/khadagvidya'>
+         <div className="flex mt-2 flex-col items-center group">
         <div className="w-10 h-10">
           <img
             src={GADA_VIDYA}
@@ -183,8 +193,10 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
         <h3 className="text-[14px] text-black font-bold  text-center uppercase">Khadgavidya</h3>
         <span className=" text-[12px] text-black text-center capitalize">Weapon of Kshatriya</span>
       </div>
+      </Link>
       {/* Icon 3 */}
-      <div className="flex mt-2 flex-col items-center group">
+     <Link to='/gadavidya'>
+     <div className="flex mt-2 flex-col items-center group">
         <div className="w-10 h-10">
           <img
             src={CHAKRA_VIDYA}
@@ -195,8 +207,12 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
         <h3 className="text-[14px] text-black font-bold  text-center uppercase">Gadavidya</h3>
         <span className=" text-[12px] text-black text-center capitalize">Weapon of firmness warrior</span>
       </div>
+     </Link>
     </div>
-          <div className="flex mt-2 flex-col justify-center items-center">
+
+  </div>
+  <Link to='/'>
+<div className="flex  flex-col pt-2 justify-center items-center">
           <div className="flex flex-col items-center group">
         <div className="w-10 h-10">
           <img
@@ -210,7 +226,7 @@ At the heart of our vision is the revival of Dhanurveda, the ancient Vedic scien
         <span className=" text-[12px] text-black text-center capitalize">Traditional Combat of Bharat</span>
       </div>
           </div>
-  </div>
+</Link>
 </div>
 
      </div>

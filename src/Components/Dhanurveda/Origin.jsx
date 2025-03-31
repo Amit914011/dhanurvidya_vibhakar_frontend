@@ -14,6 +14,7 @@ import icons from '../../assets/icons.png'
 import { Link } from 'react-router-dom'
 import dhanurvidyacamps from '../../assets/dhanurvidya.jpg'
 import dhanurvidyaacharya from '../../assets/dhanurvidya acharya.jpg'
+import Templete from '../templete'
 
 
 
@@ -28,12 +29,9 @@ export default function Origin() {
     className="w-full h-auto object-cover" 
   />
 </div>
-<div className="flex justify-center items-center w-full px-4">
+<div className="flex justify-center items-center w-full px-4 pt-3">
   {/* Centered Responsive Image */}
-  <img 
-    src={origin} 
-    alt="Origin" 
-    className="w-full max-w-[600px] h-auto object-contain rounded-lg" />
+    <Templete title='ORIGIN'/>
 </div>
 
 <section className="bg-white w-full text-gray-900 p-3 lg:p-6 sm:p-12">
@@ -115,7 +113,7 @@ export default function Origin() {
 </div>
 <div className="md:flex flex flex-col md:flex-row gap-6 justify-center px-[15px] lg:px-0">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
     <img 
       src={guru8} 
@@ -126,7 +124,7 @@ Learn More    </Link>
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase">Dhanur vidya Camps</h2>
     <img 
       src={dhanurvidyacamps}
@@ -137,7 +135,7 @@ Learn More</Link>
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase text-center">dhanurvidhya acharya (teacher) camps</h2>
     <img 
       src={dhanurvidyaacharya}
@@ -158,7 +156,7 @@ Learn More</Link>
 
 <div className="md:flex flex flex-col md:flex-row gap-6 justify-center p-3">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
     <img 
       src={guru8} 
@@ -169,7 +167,7 @@ Learn More    </Link>
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">GADHA VIDYA CAMPS</h2>
     <img 
       src={guru9}
@@ -180,7 +178,7 @@ Learn More    </Link>
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 uppercase text-center px-2">Dhanurvidya acharya (teacher) Camps</h2>
     <img 
       src={dhanurvidyaacharya}
@@ -201,7 +199,7 @@ Learn More    </Link>
 </div>
 <div className="md:flex flex flex-col md:flex-row gap-6 justify-center p-3">
   {/* Image 1 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-4 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">KHADGA VIDYA CAMPS</h2>
     <img 
       src={guru8} 
@@ -212,7 +210,7 @@ Learn More    </button> */}
   </div>
 
   {/* Image 2 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-4 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-4 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700">GADHA VIDYA CAMPS</h2>
     <img 
       src={guru9}
@@ -223,7 +221,7 @@ Learn More    </button> */}
   </div>
 
   {/* Image 3 with Title and Button */}
-  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-yellow-200 p-2 rounded-lg">
+  <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col items-center bg-[#ffedd2] p-2 rounded-lg">
     <h2 className="text-lg font-bold mb-2 text-red-700 px-2 uppercase text-center">Dhanurvidya acharya (teacher) CAMPS</h2>
     <img 
       src={dhanurvidyaacharya}

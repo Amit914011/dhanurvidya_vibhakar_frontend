@@ -6,7 +6,19 @@ import pic1 from '../../assets/volunteer image 2.jpg'
 import pic2 from '../../assets/volunteer image 3.jpg'
 import pic4 from '../../assets/volunteer image 4.jpg'
 import bluebg from '../../assets/bluebg.png'
+import { useForm } from 'react-hook-form'
 export default function Volenteer() {
+    const {
+          register,
+          handleSubmit,
+          formState: { errors },
+        } = useForm();
+      
+        const onSubmit = (data) => {
+          console.log("Form Data:", data);
+          alert("Subscription Successful!");
+          reset();
+        };
   return (
     <div className='pt-[60px] md:pt-16 '>
         <div className='w-full'>
@@ -152,23 +164,124 @@ Join us to make a difference in the lives of others and be a part of this transf
   <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
     If you're interested in becoming an Isodhan volunteer, you can fill out the form below:
   </p>
-  <div className="text-gray-700 text-base sm:text-lg leading-relaxed space-y-3">
-    <p>
-      <span className="font-semibold">1. Full Name:</span>
-    </p>
-    <p>
-      <span className="font-semibold">2. Email:</span>
-    </p>
-    <p>
-      <span className="font-semibold">3. WhatsApp Number:</span>
-    </p>
-    <p>
-      <span className="font-semibold">4. Alternate Number:</span>
-    </p>
-    <p>
-      <span className="font-semibold">5. Place:</span>
-    </p>
-  </div>
+  
+  <div className="bg-[#ffedd2] p-6 rounded-lg shadow-lg w-full max-w-4xl mx-auto">
+  {/* <h2 className="text-2xl font-semibold text-center mb-4 text-red-700">Subscribe Now</h2> */}
+
+  <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {/* Full Name */}
+    <div className="col-span-1 md:col-span-1">
+      <input
+        type="text"
+        {...register("firstName", { required: "First Name is required" })}
+        className="w-full p-2 border rounded mt-1"
+        placeholder="First Name"
+      />
+      {errors.firstName && <p className="text-red-500 text-sm">{errors.firstName.message}</p>}
+    </div>
+    <div className="col-span-1 md:col-span-1">
+      <input
+        type="text"
+        {...register("lastName", { required: "Last Name is required" })}
+        className="w-full p-2 border rounded mt-1"
+        placeholder="Last Name"
+      />
+      {errors.lastName && <p className="text-red-500 text-sm">{errors.lastName.message}</p>}
+    </div>
+
+    {/* Email */}
+    <div className="col-span-1">
+      <input
+        type="email"
+        {...register("email", {
+          required: "Email is required",
+          pattern: {
+            value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+            message: "Enter a valid email address",
+          },
+        })}
+        className="w-full p-2 border rounded mt-1"
+        placeholder="Email"
+      />
+      {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+    </div>
+
+    {/* WhatsApp Number */}
+    <div className="col-span-1">
+      <input
+        type="tel"
+        {...register("whatsapp", {
+          required: "WhatsApp number is required",
+          pattern: {
+            value: /^[0-9]{10}$/,
+            message: "Enter a valid 10-digit phone number",
+          },
+        })}
+        className="w-full p-2 border rounded mt-1"
+        placeholder="WhatsApp Number"
+      />
+      {errors.whatsapp && <p className="text-red-500 text-sm">{errors.whatsapp.message}</p>}
+    </div>
+
+    {/* Alternate Number */}
+    <div className="col-span-1">
+      <input
+        type="tel"
+        {...register("alternate", {
+          required: "Alternate number is required",
+          pattern: {
+            value: /^[0-9]{10}$/,
+            message: "Enter a valid 10-digit phone number",
+          },
+        })}
+        className="w-full p-2 border rounded mt-1"
+        placeholder="Alternate Number"
+      />
+      {errors.alternate && <p className="text-red-500 text-sm">{errors.alternate.message}</p>}
+    </div>
+
+    {/* State */}
+    <div className="col-span-1">
+      <input
+        type="text"
+        {...register("state", { required: "State is required" })}
+        className="w-full p-2 border rounded mt-1"
+        placeholder="State"
+      />
+      {errors.state && <p className="text-red-500 text-sm">{errors.state.message}</p>}
+    </div>
+
+    {/* City */}
+    <div className="col-span-1">
+      <input
+        type="text"
+        {...register("city", { required: "City is required" })}
+        className="w-full p-2 border rounded mt-1"
+        placeholder="City"
+      />
+      {errors.city && <p className="text-red-500 text-sm">{errors.city.message}</p>}
+    </div>
+
+    {/* Address */}
+    <div className="col-span-1 md:col-span-2">
+      <textarea
+        {...register("address", { required: "Address is required" })}
+        className="w-full p-2 border rounded mt-1"
+        placeholder="Address"
+        rows={3}
+      ></textarea>
+      {errors.address && <p className="text-red-500 text-sm">{errors.address.message}</p>}
+    </div>
+
+    {/* Submit Button */}
+    <div className="col-span-1 md:col-span-2">
+      <button type="submit" className="w-full bg-red-700 text-white p-2 rounded hover:bg-red-900">
+        Subscribe
+      </button>
+    </div>
+  </form>
+</div>
+
 </div>
 
 
